@@ -1,5 +1,5 @@
 url: ''
-baseurl: ''
+baseurl: '/coguro'
 title: ''
 
 plugins:
@@ -10,9 +10,8 @@ postcss:
 
 exclude:
   - package.json
-  - postcss.config.js
-  - tailwind.config.js
   - yarn.lock
+
 
 assets:
   source_maps: true
