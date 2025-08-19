@@ -1,0 +1,206 @@
+---
+layout: default
+title: "Onvedeo"
+---
+ 
+{% include header.html %}
+
+<div class="relative isolate overflow-hidden" x-data='{onDiscover: false, scrollPosition: window.pageYOffset}' @scroll.window='scrollPosition = window.pageYOffset'>
+
+  <div x-data :style='`transform: translateY(${scrollPosition/4}px)`'>
+
+  <div class="mx-auto container px-6 pb-24 pt-10 lg:flex items-stretch lg:px-8 pt-48 lg:h-screen">
+    <div class="mx-auto lg:max-w-xl shrink-0 lg:mx-0 self-end" x-intersect="$el.classList.add('fadeUpIn')">
+
+      <img src="assets/images/work/onvedeo/logo-mark.svg" alt="TD Logo Mark" class="h-10 md:h-12"  >
+      <h1 class="mt-6 text-pretty text-5xl font-black tracking-tight text-gray-900 sm:text-7xl">Onvedeo</h1>
+      <div class="mt-6 lg:mt-8 mb-6">
+        <a href="#" class="inline-flex space-x-3">
+          <span class="rounded-full bg-gray-600/10 px-3 py-1 text-xs/6 font-semibold text-gray-600 ring-1 ring-inset ring-gray-600/10">Product</span>
+          <span class="rounded-full bg-gray-600/10 px-3 py-1 text-xs/6 font-semibold text-gray-600 ring-1 ring-inset ring-gray-600/10">UX/UI</span>
+          <span class="rounded-full bg-gray-600/10 px-3 py-1 text-xs/6 font-semibold text-gray-600 ring-1 ring-inset ring-gray-600/10">Illustration</span>
+          <span class="rounded-full bg-gray-600/10 px-3 py-1 text-xs/6 font-semibold text-gray-600 ring-1 ring-inset ring-gray-600/10">Motion Graphics</span>
+        </a>
+      </div>
+      <p class="mt-8 text-pretty font-medium text-gray-600 text-2xl/9">A customizible video generation application with the ability to scale with large amounts of data.</p>
+    
+    </div>
+
+
+   <div class="mx-auto mt-16 flex max-w-full sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32" x-intersect="$el.classList.add('fadeUpIn')">
+      <div class="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none relative">
+        <img src="assets/images/work/onvedeo/hero-listing-page.jpg" alt="App screenshot" class="onvedeo-hero-media w-[55%] absolute ml-16 rounded-md shadow-2xl">
+        <img src="assets/images/work/onvedeo/hero-image.jpg" alt="App screenshot" class="w-[45%] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10">
+      </div>
+    </div>
+  </div>
+
+  <div class="w-full border-t border-solid">
+    <div class="container px-6 lg:px-8 mx-auto pt-[50px] pb-[250px]">
+
+      <div class="mt-8 mr-16 inline-block max-w-xs align-top">
+        <h2 class="font-black text-xs text-[#018deb]">ROLE</h2>
+        <div class="text-gray-600 font-bold text-sm mt-1">Principal Designer / Co-founder</div>
+      </div>
+      <div class="mt-8 mr-16 inline-block max-w-xs align-top">
+        <h2 class="font-black text-xs text-[#018deb]">TEAM</h2>
+        <div class="text-gray-600 text-sm mt-1">1  Product / Founder</div>
+        <div class="text-gray-600 text-sm">1  Principal Designer / Co-founder</div>
+        <div class="text-gray-600 text-sm">1  Operations / Co-founder</div>
+        <div class="text-gray-600 text-sm">1  Business Developer</div>
+        <div class="text-gray-600 text-sm">2  Engineers</div>
+      </div>
+      <div class="mt-8 mr-16 inline-block max-w-sm align-top">
+        <h2 class="font-black text-xs text-[#018deb]">IMPACT</h2>
+        <div class="text-gray-600 text-sm mt-1">The Onvedeo video engine was used by the biggest Real Estate company in the world, Realogy (owner of Century 21, Coldwell Banker, Better Homes and Gardens Real Estate, etc.) among others to generate video listings for their properties nationwide.</div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+
+</div>
+
+<div class="mx-auto relative">
+
+    <div class="w-full">
+
+        <div class="grid grid-cols-8 mx-auto gap-2 p-2">
+
+            <div class="bg-[#018deb] col-span-5 px-24 pt-24 rounded-md overflow-hidden">
+              <img src="assets/images/work/onvedeo/homepage-airdrop.jpg" class="rounded-t-lg ring-1 ring-gray-400/10 shadow-2xl" alt="">
+            </div>
+
+            <div class="bg-[#f5f5f5] col-span-3 pl-16 rounded-md">
+
+                <div class="sticky top-0">
+                    <div class="lg:max-w-lg py-24 pr-12">
+                        <h2 class="text-base/7 font-semibold text-[#018deb]">Product Design</h2>
+                        <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight sm:text-5xl">The Website</p>
+                        <p class="mt-6 text-base/7">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="">
+
+        <div class="grid grid-cols-2 grid-rows-2 xl:grid-cols-4 xl:grid-rows-1 gap-2 px-2 pb-2">
+            <div class="bg-gray-800 p-12 text-white rounded-md overflow-hidden">
+                <h2 class="text-base/7 font-semibold text-[#018deb]">Personas</h2>
+                <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">Agents,<br>Filmmakers,<br> & Brokers.</p>
+            </div>
+            <div class="bg-blue-100 rounded-md overflow-hidden p-10"><img src="assets/images/work/onvedeo/agent.png" alt="Vinyl Packaging" class=""></div>
+            <div class="bg-blue-100 rounded-md overflow-hidden p-10"><img src="assets/images/work/onvedeo/filmmaker.png" alt="AMG Tshirt" class=""></div>
+            <div class="bg-blue-100 rounded-md overflow-hidden p-10"><img src="assets/images/work/onvedeo/broker.png" alt="AMG Tshirt" class=""></div>
+        </div>
+
+    </div>
+
+    <div class="w-full">
+
+        <div class="grid grid-cols-8 gap-2 px-2 pb-2">
+
+            <div class="col-span-3 px-16 bg-[#f5f5f5] rounded-md">
+
+                <div class="sticky top-0">
+                    <div class="py-24 lg:max-w-lg">
+                        <h2 class="text-base/7 font-semibold text-[#018deb]">Product Design</h2>
+                        <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight sm:text-5xl">B2B2C</p>
+                        <p class="mt-6 text-base/7">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-span-5 bg-gray-300 rounded-md overflow-hidden">
+                <img src="assets/images/work/onvedeo/pricing-page.jpg" class="" alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="bg-white w-full">
+
+    <div class="grid grid-cols-8 mx-auto gap-2 px-2">
+
+        <div class="col-span-5 p-16 rounded-md">
+        <img src="assets/images/work/onvedeo/layer-graphic.jpg" class="w-full" alt="">
+        </div>
+
+        <div class="col-span-3 px-16 bg-[#018deb] rounded-md">
+
+            <div class="sticky top-0">
+                <div class="lg:max-w-lg text-white py-24">
+                    <h2 class="text-[#b0deff] text-base/7 font-semibold">Product Design</h2>
+                    <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight sm:text-5xl">Video Anatomy</p>
+                    <p class="mt-6 text-base/7">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+                    <dl class="mt-10 max-w-xl space-y-8 text-base/7 lg:max-w-none">
+                        <div class="relative pl-9">
+                        <dt class="inline font-semibold">
+                            <svg class="absolute left-1 top-1 size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                            <path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 0 1-1.44-8.765 4.5 4.5 0 0 1 8.302-3.046 3.5 3.5 0 0 1 4.504 4.272A4 4 0 0 1 15 17H5.5Zm3.75-2.75a.75.75 0 0 0 1.5 0V9.66l1.95 2.1a.75.75 0 1 0 1.1-1.02l-3.25-3.5a.75.75 0 0 0-1.1 0l-3.25 3.5a.75.75 0 1 0 1.1 1.02l1.95-2.1v4.59Z" clip-rule="evenodd" />
+                            </svg>
+                            Push to deploy.
+                        </dt>
+                        <dd class="inline text-base/7">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
+                        </div>
+                        <div class="relative pl-9">
+                        <dt class="inline font-semibold">
+                            <svg class="absolute left-1 top-1 size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                            <path fill-rule="evenodd" d="M10 1a4.5 4.5 0 0 0-4.5 4.5V9H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-.5V5.5A4.5 4.5 0 0 0 10 1Zm3 8V5.5a3 3 0 1 0-6 0V9h6Z" clip-rule="evenodd" />
+                            </svg>
+                            SSL certificates.
+                        </dt>
+                        <dd class="inline text-base/7">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.</dd>
+                        </div>
+                        <div class="relative pl-9">
+                        <dt class="inline font-semibold">
+                            <svg class="absolute left-1 top-1 size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                            <path d="M4.632 3.533A2 2 0 0 1 6.577 2h6.846a2 2 0 0 1 1.945 1.533l1.976 8.234A3.489 3.489 0 0 0 16 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234Z" />
+                            <path fill-rule="evenodd" d="M4 13a2 2 0 1 0 0 4h12a2 2 0 1 0 0-4H4Zm11.24 2a.75.75 0 0 1 .75-.75H16a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75h-.01a.75.75 0 0 1-.75-.75V15Zm-2.25-.75a.75.75 0 0 0-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 0 0 .75-.75V15a.75.75 0 0 0-.75-.75h-.01Z" clip-rule="evenodd" />
+                            </svg>
+                            Database backups.
+                        </dt>
+                        <dd class="inline text-base/7">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="w-full newspaper h-3 bg-white grid grid-cols-8 mx-auto">
+        <div class="col-span-5"></div>
+        <div class="col-span-3 bg-[#018deb] newspaper"></div>
+    </div>
+
+    <div class="w-full pt-24 bg-[#f1f1f1]">
+        <div class="mx-auto max-w-4xl">
+            <img src="assets/images/work/onvedeo/inthepress.jpg" alt="Vinyl Packaging" class="">
+        </div>
+    </div>
+
+    <div class="bg-[#f1f1f1] py-24 sm:py-32">
+    <div class="mx-auto max-w-4xl text-base/7">
+        <img src="assets/images/work/onvedeo/vixer.jpg" alt="" class="rounded-lg bg-white/5 shadow-2xl ring-1 ring-white/10">
+        <p class="mt-12 max-w-xlg text-pretty text-4xl font-semibold tracking-tight sm:text-5xl mb-6">A short pivot</p>
+        <p class="mt-8 mb-16 text-base/7">is the single most important page across the site. The primary goal during our concepting phase was to evolve the display of content over the life-cycle of the game. In it's existing form the gamespace merely displayed the latest content in compartmentalized modules. We instead opted to evolve it into a feed sorted by recency while floating the most trafficked content up top (images, videos, review). The core gamespace navigation remained above the fold and the feed content could be emphasized in layout and scale depending on popularity. This concept of visual hierarchy would be thematic throughout the redesign process.</p>
+        <img src="assets/images/work/onvedeo/smartvix.jpg" alt="" class="rounded-lg bg-white/5 shadow-2xl ring-1 ring-white/10">
+    </div>
+    </div>
+
+</div>

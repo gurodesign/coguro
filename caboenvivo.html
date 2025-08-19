@@ -1,0 +1,351 @@
+---
+layout: default
+title: "Cabo en Vivo"
+---
+ 
+{% include header.html %}
+
+<div class="relative isolate overflow-hidden" x-data='{onDiscover: false, scrollPosition: window.pageYOffset}' @scroll.window='scrollPosition = window.pageYOffset'>
+
+  <div x-data :style='`transform: translateY(${scrollPosition/4}px)`'>
+
+    <div class="mx-auto container px-6 pt-10 lg:flex items-stretch lg:px-8 pt-48 lg:h-screen">
+
+      <div class="mx-auto lg:max-w-xl shrink-0 lg:mx-0 self-end pb-24" x-cloak x-intersect="$el.classList.add('fadeUpIn')">
+
+        <img src="assets/images/work/caboenvivo/caboenvivo-mark.png" alt="TD Logo Mark" class="h-16 md:h-20">
+        <h1 class="mt-6 text-pretty text-5xl font-black tracking-tight text-gray-900 sm:text-7xl">Cabo en Vivo</h1>
+        <div class="mt-6 lg:mt-8 mb-6">
+          <a href="#" class="inline-flex space-x-3">
+            <span class="rounded-full bg-gray-600/10 px-3 py-1 text-xs/6 font-semibold text-gray-600 ring-1 ring-inset ring-gray-600/10">Product</span>
+            <span class="rounded-full bg-gray-600/10 px-3 py-1 text-xs/6 font-semibold text-gray-600 ring-1 ring-inset ring-gray-600/10">3D</span>
+            <span class="rounded-full bg-gray-600/10 px-3 py-1 text-xs/6 font-semibold text-gray-600 ring-1 ring-inset ring-gray-600/10">Motion</span>
+            <span class="rounded-full bg-gray-600/10 px-3 py-1 text-xs/6 font-semibold text-gray-600 ring-1 ring-inset ring-gray-600/10">UX/UI</span>
+          </a>
+        </div>
+        <p class="mt-8 text-pretty font-medium text-gray-600 text-2xl/9">Cabo en Vivo was Laneone's foray into producing destination luxury events, which would potentially lead to future festivals and other unique showcases.</p>
+      
+      </div>
+
+
+      <div class="mx-auto flex mt-8 md:mt-0 lg:ml-10 lg:mr-0 lg:flex-none xl:ml-32 -mb-[175px]">
+        <div class="w-full flex-none relative lg:h-[85%] rounded-md overflow-hidden"  x-cloak x-intersect="$el.classList.add('fadeRightIn')">
+            <img src="assets/images/work/caboenvivo/cabo-rocks.png" alt="TD Logo Mark" class="absolute bottom-0 z-20 max-w-full">
+            <img src="assets/images/work/caboenvivo/marquee-logo.png" alt="TD Logo Mark" class="cabo-hero-lockup absolute center right-0 left-0 top-[18%] mx-auto w-[50%]">
+            <video width="100%" muted loop autoplay="true"  class="w-full lg:h-full">
+            <source src="assets/videos/gulls-bg.mp4" type="video/mp4" />
+            Your browser does not support the video tag. 
+        </div>
+      </div>
+
+    </div>
+
+    <div class="w-full border-t border-solid">
+
+      <div class="container px-6 lg:px-8 mx-auto pt-[100px] pb-[325px]">
+
+        <div class="max-w-xs mr-16 inline-block align-top">
+          <h2 class="font-black text-xs text-[#f4a300]">ROLE</h2>
+          <div class="text-gray-600 text-sm mt-1 font-bold">Principal / Design Director / Product</div>
+          <div class="text-gray-600 text-sm">Product design</div>
+          <div class="text-gray-600 text-sm">Prototype creation</div>
+          <div class="text-gray-600 text-sm"></div>
+        </div>
+
+        <div class="max-w-xs inline-block align-to">
+          <h2 class="font-black text-xs text-[#f4a300]">OVERVIEW</h2>
+          <div class="text-gray-600 text-sm mt-1">Tap District gave me a chance to work in a few areas that I hadn't previously had experience with; consumables, inventory systems, and last mile delivery. Collaborating with former bus-dev and engineering co-workers allowed me to dive in and focus on design and product vision.</div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+    <div class="grid grid-cols-6 bg-[#57b1a5] w-full mx-auto">
+
+        <div class="col-span-6 lg:col-span-4 lg:pt-32 pr-8 lg:pr-24 order-last lg:order-first mb-20">
+            <img src="assets/images/work/caboenvivo/eagles-cabo-landing.jpg" alt="App screenshot" class="image-after sm:rounded-tr-lg sm:rounded-br-lg shadow-2xl">
+        </div>
+
+        <div class="col-span-6 lg:col-span-2 md:pr-12 xl:pr-24 lg:pt-32">
+
+            <div class="sticky top-20 px-8 lg:px-0 pb-12">
+                <div class="max-w-full lg:max-w-lg lg:mb-6">
+                <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl mb-6">The Microsite</p>
+                <p class="mt-2 text-white text-sm/6 md:pr-10 pb-20">
+                    
+                    We decided to develop a modular microsite builder that would facilitate the creation of future events. This extended the project cycle but afforded us the ability to make content changes on the fly which was a net win. <br/><br/>
+
+                    While the dev team worked on the site building CMS, I would piece together the the landing page using a combination of found stock, band admats, 3d renders and composite imaging. I decided to run with the iconic Arch of Cabo rocks as the visual anchor for the hero. Animating in the logo and adding some ambient video of seagulls to the background helped vibe it out. <br/><br/>
+                
+                    The design came quickly, but for me it's typically a bit of a challenge to use a CMS to build a site. Flashbacks of wordpress and drupal linger heavily. Site content mainly detailed all the varying packages spanning 17 hotels, travel and seating info, and excursions. The interactive svg seatmap I built was under constant update, a pain point, but unavoidable when working under such a short timeline. Users would be funneled to Laneone for room choice, seat selection and transaction.
+                </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="bg-[#ffae00] pt-5 pb-5 px-5">
+    
+        <div class="grid grid-cols-6 w-full mx-auto gap gap-4">
+            <div class="col-span-2">
+                <img src="assets/images/work/caboenvivo/packages.jpg" alt="App screenshot" class="rounded-md ">
+            </div>
+            <div class="col-span-2">
+                <img src="assets/images/work/caboenvivo/seatmap.jpg" alt="App screenshot" class="rounded-md ">
+            </div>
+            <div class="col-span-2">
+                <img src="assets/images/work/caboenvivo/comparison.jpg" alt="App screenshot" class="rounded-md ">
+            </div>
+        
+        </div>
+
+    </div>
+
+  <div class="py-24 sm:pt-32">
+    <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+
+        <h2 class="text-base/7 font-semibold text-teal-400">3D Modeling</h2>
+        <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight sm:text-5xl mb-6">Site Renderings</p>
+
+        <div class="slide-reveal-container rounded-lg shadow-2xl ">
+            <div class="image-container">
+                <img src="assets/images/work/caboenvivo/site-1.jpg" alt="New Homepage" class="image-before slider-image">
+                <img src="assets/images/work/caboenvivo/site-2.jpg" alt="Old HomePage" class="image-after slider-image">
+            </div>
+            <!-- step="10" -->
+            <input
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="Percentage of before photo shown"
+                class="slider"
+            />
+            <div class="slider-line shadow-lg" aria-hidden="true"></div>
+            <div class="slider-button" aria-hidden="true">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                viewBox="0 0 256 256"
+                >
+                <rect width="256" height="256" fill="none"></rect>
+                <line
+                    x1="128"
+                    y1="40"
+                    x2="128"
+                    y2="216"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                ></line>
+                <line
+                    x1="96"
+                    y1="128"
+                    x2="16"
+                    y2="128"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                ></line>
+                <polyline
+                    points="48 160 16 128 48 96"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                ></polyline>
+                <line
+                    x1="160"
+                    y1="128"
+                    x2="240"
+                    y2="128"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                ></line>
+                <polyline
+                    points="208 96 240 128 208 160"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                ></polyline>
+                </svg>
+            </div>
+        </div>
+
+        <p class="my-10 md:pr-10 text-sm/6 ">We needed a way to show the event set up even if plans weren't fully baked. After capturing drone footage from multiple angles I rendered the event area over a couple of stills using sketchup and composited flat imagery. Rendering the models pushed the 16gb of ram on my laptop to its limits. While the fidelity wasn't perfect it was enough to give a sense of scale and layout of the event and something for fans to get excited over.
+        </p>
+
+        <div class="slide-reveal-container2 rounded-lg shadow-2xl ">
+            <div class="image-container">
+                <img src="assets/images/work/caboenvivo/site-3.jpg" alt="New Homepage" class="image-before slider-image">
+                <img src="assets/images/work/caboenvivo/site-4.jpg" alt="Old HomePage" class="image-after slider-image">
+            </div>
+            <!-- step="10" -->
+            <input
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="Percentage of before photo shown"
+                class="slider2"
+            />
+            <div class="slider-line" aria-hidden="true"></div>
+            <div class="slider-button" aria-hidden="true">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                viewBox="0 0 256 256"
+                >
+                <rect width="256" height="256" fill="none"></rect>
+                <line
+                    x1="128"
+                    y1="40"
+                    x2="128"
+                    y2="216"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                ></line>
+                <line
+                    x1="96"
+                    y1="128"
+                    x2="16"
+                    y2="128"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                ></line>
+                <polyline
+                    points="48 160 16 128 48 96"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                ></polyline>
+                <line
+                    x1="160"
+                    y1="128"
+                    x2="240"
+                    y2="128"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                ></line>
+                <polyline
+                    points="208 96 240 128 208 160"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                ></polyline>
+                </svg>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+ 
+<div class="grid grid-cols-6 bg-[#57b1a5] w-full mx-auto pb-24">
+
+    <div class="col-span-6 lg:col-span-2 md:pl-12 xl:pl-24 lg:pt-32">
+
+        <div class="sticky top-0 px-8 lg:px-0 py-12">
+            <div class="max-w-full lg:max-w-lg lg:mb-6">
+            <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl mb-6">The Purchase Flow</p>
+            <p class="mt-2 text-sm/6 text-white md:pr-10">This project was a partnership between Laneone, Live Nation and an experience marketing agency. The agency would take ownership of brand and enviromental design while we would focus on product and sales. The nature of this event required a big upgrade to our sales platform as we would be incorporating a wide range of package options and lodging; more on that later. <br/><br/>
+                
+                As it happened the agency didn't offer much support or direction outside of a logo lockup and a simple design pattern. All good, ready get to work ... but hold up. We're going to produce events like this in the future so rather than hard-coding the promo site we could develop a modular site builder that would facilitate the creation of future events. Alright, bet. This extended the project cycle but afforded us the ability to make content changes on the fly which was a net win. <br/><br/>
+
+                While the dev team worked on the site building admin, I would piece together the design of the landing page using a combination of found stock, band admats, 3d renders and composite imaging. I decided to run with the iconic Arch of Cabo rocks as the visual anchor for the hero. Animating in the logo and adding some ambient video of seagulls to the background helped add to the vibe. <br/><br/>
+            
+                The design came quickly, but for me it's typically a bit of a challenge to use a CMS to build a site. Flashbacks of wordpress and drupal linger heavily. Site content mainly detailed all the varying packages spanning 17 hotels, travel and seating info, and excursions. The interactive svg seatmap I built was under constant update, a pain point for me, but unavoidable when working under such a short timeline. Users would be funneled to Laneone for room choice, seat selection and transaction.
+            </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-span-6 lg:col-span-4 lg:pt-32 pl-8 lg:pl-24  order-first lg:order-last mb-20">
+        <ul id="gallery" class="fading-slideshow sm:rounded-tl-lg sm:rounded-bl-lg overflow-hidden shadow-2xl mt-8">
+            <li><img src="assets/images/work/caboenvivo/purchase-flow-0.jpg" alt="" class=""></li>
+            <li><img src="assets/images/work/caboenvivo/purchase-flow-1.jpg" alt="" class=""></li>
+            <li><img src="assets/images/work/caboenvivo/purchase-flow-2.jpg" alt="" class=""></li>
+            <li><img src="assets/images/work/caboenvivo/purchase-flow-3.jpg" alt="" class=""></li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="cabo-app-section mx-auto max-w-full">
+  <div class="relative isolate overflow-hiddenpx-6 py-20 sm:px-10 sm:py-24 lg:py-10 xl:px-24">
+    <div  class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+
+      <div class="mx-auto grid max-w-lg grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-0">
+        <div class="lg:row-start-2 lg:max-w-md">
+          <h2 class="text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl">The App</h2>
+          <p class="mt-6  text-sm/6 text-white">Offering a hollistic sales solution to craft beverage makers represented a unique challenge that bred some unique functionality.</p>
+        </div>
+        <div class="mx-auto w-[22.875rem] lg:row-span-4 lg:w-[25rem] lg:max-w-none max-w-full origin-center rotate-6">
+            <svg viewBox="0 0 366 729" role="img" class="drop-shadow-xl -mt-24 ">
+            <title>App screenshot</title>
+            <defs>
+                <clipPath id="2ade4387-9c63-4fc4-b754-10e687a0d332">
+                <rect width="316" height="684" rx="36" />
+                </clipPath>
+            </defs>
+            <path fill="#4B5563" d="M363.315 64.213C363.315 22.99 341.312 1 300.092 1H66.751C25.53 1 3.528 22.99 3.528 64.213v44.68l-.857.143A2 2 0 0 0 1 111.009v24.611a2 2 0 0 0 1.671 1.973l.95.158a2.26 2.26 0 0 1-.093.236v26.173c.212.1.398.296.541.643l-1.398.233A2 2 0 0 0 1 167.009v47.611a2 2 0 0 0 1.671 1.973l1.368.228c-.139.319-.314.533-.511.653v16.637c.221.104.414.313.56.689l-1.417.236A2 2 0 0 0 1 237.009v47.611a2 2 0 0 0 1.671 1.973l1.347.225c-.135.294-.302.493-.49.607v377.681c0 41.213 22 63.208 63.223 63.208h95.074c.947-.504 2.717-.843 4.745-.843l.141.001h.194l.086-.001 33.704.005c1.849.043 3.442.37 4.323.838h95.074c41.222 0 63.223-21.999 63.223-63.212v-394.63c-.259-.275-.48-.796-.63-1.47l-.011-.133 1.655-.276A2 2 0 0 0 366 266.62v-77.611a2 2 0 0 0-1.671-1.973l-1.712-.285c.148-.839.396-1.491.698-1.811V64.213Z" />
+            <path fill="#343E4E" d="M16 59c0-23.748 19.252-43 43-43h246c23.748 0 43 19.252 43 43v615c0 23.196-18.804 42-42 42H58c-23.196 0-42-18.804-42-42V59Z" />
+            <foreignObject width="316" height="684" transform="translate(24 24)" clip-path="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)" id="slide-container">
+                <ul id="gallery" class="fading-slideshow mt-0">
+                    <li><img src="assets/images/work/caboenvivo/app-1.jpg" alt="" class="rounded-lg"></li>
+                    <li><img src="assets/images/work/caboenvivo/app-2.jpg" alt="" class="rounded-lg"></li>
+                    <li><img src="assets/images/work/caboenvivo/app-3.jpg" alt="" class="rounded-lg"></li>
+                </ul>
+            </foreignObject>
+            </svg>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="pointer-events-none absolute left-12 top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-3xl lg:bottom-[-12rem] lg:top-auto lg:translate-y-0 lg:transform-gpu" aria-hidden="true">
+    </div>
+  </div>
+</div>
+
+
+
+<script src="/assets/js/fading-slideshow.js"></script>
+<script src="/assets/js/slide-reveal.js"></script>
+<script src="/assets/js/slide-reveal-2.js"></script>

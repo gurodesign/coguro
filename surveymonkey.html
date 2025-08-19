@@ -1,0 +1,305 @@
+---
+layout: default
+title: "SurveyMonkey"
+---
+
+{% include header.html %}
+
+<div class="relative isolate overflow-hidden" x-data='{onDiscover: false, scrollPosition: window.pageYOffset}' @scroll.window='scrollPosition = window.pageYOffset'>
+
+<div x-data :style='`transform: translateY(${scrollPosition/4}px)`'>
+
+  <div class="mx-auto container px-6 pb-24 pt-10 lg:flex items-stretch lg:px-8 pt-48 lg:h-screen">
+    <div class="mx-auto lg:max-w-xl shrink-0 lg:mx-0 self-end" x-cloak x-intersect="$el.classList.add('fadeUpIn')">
+
+      <img src="assets/images/work/surveymonkey/sm-mark.svg" alt="TD Logo Mark" class="h-16 md:h-20">
+      <h1 class="mt-6 text-pretty text-5xl font-black tracking-tight text-gray-900 sm:text-7xl">SurveyMonkey</h1>
+      <div class="mt-6 lg:mt-8 mb-6">
+        <a href="#" class="inline-flex space-x-3">
+          <span class="rounded-full bg-gray-600/10 px-3 py-1 text-xs/6 font-semibold text-gray-600 ring-1 ring-inset ring-gray-600/10">Brand</span>
+          <span class="rounded-full bg-gray-600/10 px-3 py-1 text-xs/6 font-semibold text-gray-600 ring-1 ring-inset ring-gray-600/10">Presentation</span>
+          <span class="rounded-full bg-gray-600/10 px-3 py-1 text-xs/6 font-semibold text-gray-600 ring-1 ring-inset ring-gray-600/10">Motion Graphics</span>
+        </a>
+      </div>
+      <p class="mt-8 text-pretty font-medium text-gray-600 text-2xl/9">Touching key pages of the world's best survey platform presented an opportunity for improvement coupled with a handful of technical constraints.</p>
+    
+    </div>
+
+
+    <div class="mx-auto flex mt-8 md:mt-0 lg:ml-10 lg:mr-0 lg:flex-none xl:ml-32">
+      <div class="w-full flex-none relative -mb-[220px]">
+        <img src="assets/images/work/surveymonkey/hero-image.jpg" alt="App screenshot" class="w-full lg:h-[90%] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10" x-cloak x-intersect="$el.classList.add('fadeRightIn')">
+      </div>
+    </div>
+
+  </div>
+
+  <div class="w-full border-t border-solid">
+    <div class="container px-6 lg:px-8 mx-auto pt-[90px] pb-[250px]">
+        <!-- <p class="mt-6 text-base/7 text-gray-600">From a new homepage to dozens of side door landing pages to GTM decks for different business units, or even graphics and animations for internal comms, it was exciting to be able to contribute design in the midst of a brand evolution.</p> -->
+      <div class="max-w-sm mr-16 inline-block align-top">
+        <h2 class="font-black text-xs text-[#3cb462]">ROLE</h2>
+        <div class="text-gray-600 font-bold text-sm mt-1">Guro Design Contract</div>
+        <ul class="mt-1 text-pretty font-medium text-gray-600 text-sm list-disc pl-4">
+          <li>Produce wireframes and high fidelity mockups.</li>
+          <li>Design layouts based on existing CMS capabilities.</li>
+          <li>Prototype improvements to site functionality.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+
+</div>
+
+<div class="bg-[#3cb462] lg:py-32">
+  <div class="mx-auto px-6 container lg:px-8">
+
+    <div class="grid grid-cols-1 gap-1 lg:grid-cols-6">
+      <div class="relative lg:col-span-4" x-data>
+        <img src="assets/images/work/surveymonkey/sm-hero-2.jpg" alt="New Homepage" class="top-20 sticky rounded-lg shadow-2xl " x-cloak x-intersect="$el.classList.add('fadeUpIn')">
+      </div>
+      
+      <div class="relative lg:col-span-2 pl-16">
+        <h2 class="text-base/7 font-semibold text-[#d9ffe5]">Survey says...</h2>
+        <p class="mt-2 max-w-xl text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl mb-6">New Homepage</p>
+        <p class="mt-2 max-w-lg text-sm/6 text-white">With the homepage update I wanted to inject some personality into the brand, something that could be improved upon and resonate alongside the playful name. After concpeting a hadful of directions one stood out to me. It involved a bit of subtle interactivity that would showcase the product and value proposition at the same time.<br/><br/>
+        It revolved around embedding a mock survey in the hero area. Each multiple choice option would be a core user intention (the final answer being all of the above). Every selection would result in a form response detailing the associated value proposition and each answer would laterally lead to the other value propositions and inevitably end at the 'All the above' result with a sign up form.<br/><br/>
+        By skewing the axis of the form and surrounded it with graphics, it was emphasized as a visual element rather than an actual working survey making it a bit of an easter egg. To stay playful and define a visual style I incorporated animated patterns in the background that would move and rotate organically. As they passed under the hero module I would use an svg filter to blur them to maintain legibility.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-gray-800 pt-12 sm:pt-20">
+  <div class="mx-auto px-6 container lg:px-8">
+
+    <div class="mt-10 grid grid-cols-1 gap-1 sm:mt-16 lg:grid-cols-6 ">
+      <div class="relative lg:col-span-2 pr-16">
+        <div class="top-20 sticky relative pb-20">
+          <h2 class="text-base/7 font-semibold text-[#3cb462]">Survey says...</h2>
+          <p class="mt-2 max-w-xl text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl mb-6">Brand Refresh</p>
+          <p class="mt-2 max-w-lg text-sm/6 text-white">SurveyMonkey was in the midst of a leadership change and brand reorganization. They spent the past few years building distinct business units for their consumer, enterprise and data products under the umbrella brand, Momentive, but the new direction involved consolidating the brands back into the singlular SurveyMonkey entity.<br/><br/>To recognize the re-org, it was necessary to launch an updates to key pages to reflect the change. It was an opportunity to change the creative that had not been updated for some time.</p>
+        </div>
+      </div>
+      <div class="relative lg:col-span-4">
+         
+        <div class="slide-reveal-container rounded-tl-lg rounded-tr-lg shadow-2xl ">
+          <div class="image-container">
+            <img src="assets/images/work/surveymonkey/homepage-update-2.jpg" alt="New Homepage" class="image-before slider-image">
+            <img src="assets/images/work/surveymonkey/old-hp-2.jpg" alt="Old HomePage" class="image-after slider-image">
+          </div>
+          <!-- step="10" -->
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            aria-label="Percentage of before photo shown"
+            class="slider"
+          />
+          <div class="slider-line" aria-hidden="true"></div>
+          <div class="slider-button" aria-hidden="true">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              viewBox="0 0 256 256"
+            >
+              <rect width="256" height="256" fill="none"></rect>
+              <line
+                x1="128"
+                y1="40"
+                x2="128"
+                y2="216"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></line>
+              <line
+                x1="96"
+                y1="128"
+                x2="16"
+                y2="128"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></line>
+              <polyline
+                points="48 160 16 128 48 96"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></polyline>
+              <line
+                x1="160"
+                y1="128"
+                x2="240"
+                y2="128"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></line>
+              <polyline
+                points="208 96 240 128 208 160"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></polyline>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="bg-[#dedede] lg:py-36">
+  <div class="container grid grid-cols-1 lg:grid-cols-6 mx-auto lg:px-8">
+    <div class="lg:col-span-4">
+      <img src="assets/images/work/surveymonkey/old-UI.jpg" alt="" class="rounded-lg bg-white/5 shadow-2xl ring-1 ring-white/10">
+    </div>
+    <div class="mx-auto text-base/7 lg:col-span-2  pl-20">
+      <h2 class="text-base/7 font-semibold text-[#3cb462]">Marketing dilemma</h2>
+      <p class="mt-2 max-w-xlg text-pretty text-4xl font-semibold tracking-tight sm:text-5xl mb-6">A Product Design Gap</p>
+      <p class="mt-8 mb-16 text-sm/6 ">The core direction of the visual design was to incorporate more UI graphics to reinforce feature propostion, problem being that the presentability of product shots was lacking. The brand design team were designing UI mock-ups specifically for marketing use only. This felt necessary, but disingenuous seeing that they lacked parity with the design of the in-use product. Product shots were being incorporated as core visuals without any additional flourish which made it feel dry.<br/><br/>
+      Instead using the UI components as secondary imagery seemed to work well and bred a visual style, something that was lacking from the existing site. I opted for a line driven style incorporating the range of brand colors. Photographic imagery would be used a visual anchor</p>
+    </div>
+  </div>
+</div>
+
+<div class="bg-paper lg:py-36">
+  <div class="container grid grid-cols-1 lg:grid-cols-6 mx-auto lg:px-8">
+    <div class="mx-auto text-base/7 lg:col-span-2 pr-20">
+      <div class="top-24 sticky">
+      <h2 class="text-base/7 font-semibold text-[#009CDB]">A land of ...</h2>
+      <p class="mt-2 max-w-xlg text-pretty text-4xl font-semibold tracking-tight sm:text-5xl mb-6">Landing Pages</p>
+      <p class="mt-8 mb-16 text-sm/6">There were dozens of landing pages and side doors funneled through paid search. All of these would also need updated content and imagery for a unified launch.<br/><br/>The core direction of the visual design was to incorporate more UI graphics to reinforce feature propostion, problem being that the presentability of product shots was lacking. The brand design team was designing UI mock-ups specifically for marketing use, lacking parity with the in use product. This felt disingenuous. Additionally these product shots were being incorporated as core visuals without any accompanying graphics which also felt dry.
+      </p>
+      </div>
+    </div>
+    <div class="lg:col-span-4">
+      <img src="assets/images/work/surveymonkey/salesforce-page.jpg" alt="" class="rounded-lg bg-white/5 shadow-2xl ring-1 ring-white/10">
+    </div>
+  </div>
+</div>
+
+<!-- <div class="bg-[#394851] lg:py-32">
+  <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+    <img src="assets/images/work/surveymonkey/3up-module.svg" alt="App screenshot" class="">
+  </div>
+</div> -->
+
+<div class="bg-[#F7F2FD] lg:py-32">
+  
+    <div class="container grid grid-cols-1 lg:grid-cols-6 mx-auto lg:px-8">
+
+      <div class="relative lg:col-span-2 pr-20">
+        <h2 class="text-base/7 text-[#CC8AC6] font-semibold">Brand assets</h2>
+        <p class="mt-2 max-w-xl text-pretty text-4xl font-semibold tracking-tight sm:text-5xl mb-6">Workin' with what you got</p>
+        <p class="mt-2 max-w-lg text-sm/6">Attempts at incoporating new creative</p>
+      </div>
+
+      <div class="relative lg:col-span-4">
+        <img src="assets/images/work/surveymonkey/sm-people-icons.png" alt="New Homepage" class="-mt-[200px]">
+      </div>
+     
+    <div class="lg:col-span-6 mt-20">
+      <img src="assets/images/work/surveymonkey/workin-modules.svg" alt="New Homepage" class="lg:max-w-6xl mx-auto">
+    </div>
+  </div>
+</div>
+
+<div class="grid grid-cols-1 grid-rows-5 md:grid-cols-8 md:grid-rows-4 gap-2 p-2 rounded-md overflow-hidden">
+  <div class="col-span-1 md:col-span-2 rounded-md overflow-hidden bg-[#EEF9FE] flex items-center p-[10%]">
+    <img src="assets/images/work/surveymonkey/salesforce.svg" alt="App screenshot" class="">
+  </div>
+  <div class="col-span-1 md:col-span-2 flex items-center bg-[#EEF9FE] p-[20%] rounded-md overflow-hidden">
+    <img src="assets/images/work/surveymonkey/autosend-lightblue.svg" alt="App screenshot" class=" mx-auto">
+  </div>
+  <div class="col-span-1 md:col-span-2 bg-[#EEF9FE] p-[13%] rounded-md overflow-hidden flex items-center">
+    <img src="assets/images/work/surveymonkey/nps-lightblue.svg" alt="App screenshot" class="">
+  </div>
+  <div class="col-span-1 md:col-span-2 rounded-md overflow-hidden bg-[#EEF9FE] flex items-center p-[10%]">
+    <img src="assets/images/work/surveymonkey/sentiment-lightblue.svg" alt="App screenshot" class="">
+  </div>
+  <div class="col-span-1 md:col-span-2 rounded-md overflow-hidden bg-[#F5FAF6] flex items-center p-[13%]">
+    <img src="assets/images/work/surveymonkey/hero-lightgreen.svg" alt="App screenshot" class="">
+  </div>
+  <div class="col-span-1 md:col-span-2 flex items-center bg-[#F5FAF6] p-[15%] rounded-md overflow-hidden">
+    <img src="assets/images/work/surveymonkey/share-lightgreen.svg" alt="App screenshot" class=" mx-auto">
+  </div>
+  <div class="col-span-1 md:col-span-2 bg-[#F5FAF6] p-[15%] rounded-md overflow-hidden flex items-center">
+    <img src="assets/images/work/surveymonkey/multichoice-lightgreen.svg" alt="App screenshot" class="">
+  </div>
+  <div class="col-span-1 md:col-span-2 rounded-md overflow-hidden bg-[#F5FAF6] flex items-center p-[10%]">
+    <img src="assets/images/work/surveymonkey/sendemail-lightgreen.svg" alt="App screenshot" class="">
+  </div>
+   <div class="col-span-1 md:col-span-2 rounded-md overflow-hidden bg-[#fff7e0] flex items-center p-[10%]">
+    <img src="assets/images/work/surveymonkey/hero-yellow.svg" alt="App screenshot" class="">
+  </div>
+  <div class="col-span-1 md:col-span-2 flex items-center bg-[#fff7e0] p-[15%] rounded-md overflow-hidden">
+    <img src="assets/images/work/surveymonkey/choices-yellow.svg" alt="App screenshot" class=" mx-auto">
+  </div>
+  <div class="col-span-1 md:col-span-2 bg-[#fff7e0] p-[10%] rounded-md overflow-hidden flex items-center">
+    <img src="assets/images/work/surveymonkey/embed-yellow.svg" alt="App screenshot" class="">
+  </div>
+  <div class="col-span-1 md:col-span-2 rounded-md overflow-hidden bg-[#fff7e0] flex items-center p-[10%]">
+    <img src="assets/images/work/surveymonkey/map-yellow.svg" alt="App screenshot" class="">
+  </div>
+  <div class="col-span-1 md:col-span-2 rounded-md overflow-hidden bg-[#F7F2FD] flex items-center p-[13%]">
+    <img src="assets/images/work/surveymonkey/hero-purple.svg" alt="App screenshot" class="">
+  </div>
+  <div class="col-span-1 md:col-span-2 flex items-center bg-[#F7F2FD] p-[15%] rounded-md overflow-hidden">
+    <img src="assets/images/work/surveymonkey/feedback-purple.svg" alt="App screenshot" class=" mx-auto">
+  </div>
+  <div class="col-span-1 md:col-span-2 bg-[#F7F2FD] p-[10%] rounded-md overflow-hidden flex items-center">
+    <img src="assets/images/work/surveymonkey/insights-purple.svg" alt="App screenshot" class="">
+  </div>
+  <div class="col-span-1 md:col-span-2 rounded-md overflow-hidden bg-[#F7F2FD] flex items-center p-[10%]">
+    <img src="assets/images/work/surveymonkey/chart-purple.svg" alt="App screenshot" class="">
+  </div>
+  <div class="col-span-1 md:col-span-2 rounded-md overflow-hidden bg-[#FFECE7] flex items-center p-[13%]">
+    <img src="assets/images/work/surveymonkey/red-1.svg" alt="App screenshot" class="">
+  </div>
+  <div class="col-span-1 md:col-span-2 flex items-center bg-[#FFECE7] p-[15%] rounded-md overflow-hidden">
+    <img src="assets/images/work/surveymonkey/red-2.svg" alt="App screenshot" class=" mx-auto">
+  </div>
+  <div class="col-span-1 md:col-span-2 bg-[#FFECE7] py-[24%] pl-[9%] pr-[20%] rounded-md overflow-hidden flex items-center">
+    <img src="assets/images/work/surveymonkey/red-3.svg" alt="App screenshot" class="">
+  </div>
+  <div class="col-span-1 md:col-span-2 rounded-md overflow-hidden bg-[#FFECE7] flex items-center p-[15%]">
+    <img src="assets/images/work/surveymonkey/red-4.svg" alt="App screenshot" class="">
+  </div>
+  <div class="col-span-1 md:col-span-2 bg-[#05467E] p-[15%] rounded-md overflow-hidden">
+    <img src="assets/images/work/surveymonkey/warriors.svg" alt="App screenshot" class="">
+  </div>
+  <div class="col-span-1 md:col-span-2 rounded-md overflow-hidden">
+    <img src="assets/images/work/surveymonkey/enterprise.svg" alt="App screenshot" class="">
+  </div>
+  <div class="col-span-1 md:col-span-2 bg-[#05467E] p-[15%] rounded-md overflow-hidden">
+    <img src="assets/images/work/surveymonkey/warriors.svg" alt="App screenshot" class="">
+  </div>
+  <div class="col-span-1 md:col-span-2 rounded-md overflow-hidden">
+    <img src="assets/images/work/surveymonkey/enterprise.svg" alt="App screenshot" class="">
+  </div>
+</div>
+
+<script src="/assets/js/slide-reveal.js"></script>
+

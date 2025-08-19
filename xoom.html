@@ -1,0 +1,195 @@
+---
+layout: default
+title: "Xoom Homepage"
+---
+ 
+{% include header.html %}
+
+<div class="relative isolate overflow-hidden" x-data='{onDiscover: false, scrollPosition: window.pageYOffset}' @scroll.window='scrollPosition = window.pageYOffset'>
+
+  <div x-data :style='`transform: translateY(${scrollPosition/4}px)`'>
+
+  <div class="mx-auto container px-6 pb-24 pt-10 lg:flex items-stretch lg:px-8 pt-48 lg:h-screen">
+    <div class="mx-auto lg:max-w-xl shrink-0 lg:mx-0 self-end" x-intersect="$el.classList.add('fadeUpIn')">
+
+      <img src="assets/images/work/xoom/xoom-mark.svg" alt="TD Logo Mark" class="h-16 md:h-20"  >
+      <h1 class="mt-6 text-pretty text-5xl font-black tracking-tight text-gray-900 sm:text-7xl">Xoom</h1>
+      <div class="mt-6 lg:mt-8 mb-6">
+        <a href="#" class="inline-flex space-x-3">
+          <span class="rounded-full bg-gray-600/10 px-3 py-1 text-xs/6 font-semibold text-gray-600 ring-1 ring-inset ring-gray-600/10">Product</span>
+          <span class="rounded-full bg-gray-600/10 px-3 py-1 text-xs/6 font-semibold text-gray-600 ring-1 ring-inset ring-gray-600/10">UX/UI</span>
+        </a>
+      </div>
+      <p class="mt-8 text-pretty font-medium text-gray-600 text-2xl/9">Xoom is an international money transfer service that allows users to easily send money, pay bills, and reload phones all around the world.</p>
+    
+    </div>
+
+
+    <div class="mx-auto flex mt-8 md:mt-0 lg:ml-10 lg:mr-0 lg:flex-none xl:ml-32" x-intersect="$el.classList.add('fadeUpIn')">
+        <div class="w-full flex-none relative -mb-[200px]">
+            <img src="assets/images/work/xoom/hero.jpg" alt="App screenshot" class="w-full lg:h-[90%] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10">
+        </div>
+    </div>
+  </div>
+
+  <div class="w-full border-t border-solid">
+    <div class="container px-6 lg:px-8 mx-auto pt-[50px] pb-[250px]">
+
+      <div class="mt-8 mr-16 inline-block max-w-sm">
+        <h2 class="font-black text-xs text-[#0256b9]">ROLE</h2>
+        <div class="text-gray-600 font-bold text-sm">Product Designer</div>
+        <div class="text-gray-600 text-sm">Guro Design Project</div>
+        <p>More recently they were acquired by Paypal. Prior to that I had the opportunity to work on a redesign of their existing landing pages.</p>
+      </div>
+      <div class="mt-8 mr-16 inline-block max-w-sm align-top">
+        <h2 class="font-black text-xs text-[#0256b9] mb-2">IMPACT</h2>
+        <div class=" grid grid-cols-2 text-gray-600">
+          <div class="col-span-2">
+            <div class="text-sm"><span class="font-black text-gray-600">+25%</span> Sign-up Conversion</div>
+            <div class="text-sm"><span class="font-black text-gray-600">+10%</span> New User Conversion</div>
+          </div>
+        </div>
+        <div class="mt-3 text-xs">based on test and target data @ 100% confidence.</div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+</div>
+  <div class="grid grid-cols-6 bg-[#169802] w-full mx-auto ">
+
+    <div class="col-span-6 lg:col-span-4 lg:pt-32 pr-8 pl-8 lg:pl-24 lg:pr-24 order-last lg:order-first">
+      
+      <div class="slide-reveal-container2 rounded-tl-lg rounded-tr-lg shadow-2xl ">
+          <div class="image-container">
+            <img src="assets/images/work/xoom/xoom-polish-1.jpg" alt="App screenshot" class="image-before slider-image">
+            <img src="assets/images/work/xoom/xoom-polish-2.jpg" alt="App screenshot" class="image-after slider-image">
+          </div>
+          <!-- step="10" -->
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            aria-label="Percentage of before photo shown"
+            class="slider2"
+          />
+          <div class="slider-line-2 shadow-md" aria-hidden="true"></div>
+          <div class="slider-button-2" aria-hidden="true">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              viewBox="0 0 256 256"
+            >
+              <rect width="256" height="256" fill="none"></rect>
+              <line
+                x1="128"
+                y1="40"
+                x2="128"
+                y2="216"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></line>
+              <line
+                x1="96"
+                y1="128"
+                x2="16"
+                y2="128"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></line>
+              <polyline
+                points="48 160 16 128 48 96"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></polyline>
+              <line
+                x1="160"
+                y1="128"
+                x2="240"
+                y2="128"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></line>
+              <polyline
+                points="208 96 240 128 208 160"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></polyline>
+            </svg>
+          </div>
+        </div>
+    </div>
+
+    <div class="col-span-6 lg:col-span-2 md:pr-12 xl:pr-24 lg:pt-32">
+
+        <div class="sticky top-0 px-8 lg:px-0 pt-4 pb-12">
+          <h2 class="text-base/7 font-semibold text-[#e2ffd6]">Countrified homepage</h2>
+          <p class="mt-2 max-w-xlg text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl mb-6">Phase 1: Polish</p>
+          <p class="mt-8 text-white text-sm/6">As a stop-gap solution we made minor adjustments to the aesthetic of the landing pages that would buy time to address more critical issues in phase 2 of the redesign. Doing as much as possible without any html or layout change was fairly straightforward. One change I was earnest to push was consolidating global navigation into a unified header and adding currency selection in the form. </p>
+
+            <ul class="list-disc text-white mt-6 lg:mb-16 pl-4 text-sm/6">
+                <li>Legitimize brand by adding professional design aesthetic.</li>
+                <li>Improve spacing of elements.</li>
+                <li>Incorporate improved visual marketing.</li>
+                <li>Add iconography to draw eyes toward important content.</li>
+                <li>Incorporate testimonials component.</li>
+                <li>Improve visual styling of form elements.</li>
+            </ul>
+        </div>
+
+
+    </div>
+
+  </div>
+
+<div class="grid grid-cols-6 bg-[#0256b9] w-full mx-auto">
+
+    <div class="col-span-6 lg:col-span-4 lg:pt-32 pr-8 pl-8 lg:pl-24 lg:pr-24 order-last lg:order-last mb-20">
+        <ul class="fading-slideshow rounded-lg shadow-xl overflow-hidden">
+          <li><img src="assets/images/work/xoom/hp_1.jpg" class="block" alt=""></li>
+          <li><img src="assets/images/work/xoom/hp_2.jpg" alt="App screenshot" class="block"></li>
+          <li><img src="assets/images/work/xoom/hp_3.jpg" alt="App screenshot" class="block"></li>
+          <li><img src="assets/images/work/xoom/hp_4.jpg" alt="App screenshot" class="block"></li>
+        </ul>
+    </div>
+
+    <div class="col-span-6 lg:col-span-2 ml:pr-12 xl:pl-24 lg:pt-32">
+
+        <div class="sticky top-0 px-8 lg:px-0 py-12">
+            <div class="max-w-full lg:max-w-lg lg:mb-6">
+            <h2 class="text-base/7 font-semibold text-[#b0dcff]">General homepage</h2>    
+            <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl mb-6">Phase 2: Radical</p>
+            <p class="mt-2 text-white text-sm/6 md:pr-10">When a user hits the homepage for the first time there is insufficient information to populate contextual content on the page.  Trying to execute or initiate a transaction immediately is a stretch. Instead we determined that reinforcing the value proposition, bubbling up marketing information, explaining the process, and funneling into the appropriate country specific landing page is the most effective flow.
+            </p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<script src="/assets/js/slide-reveal.js"></script>
+<script src="/assets/js/slide-reveal-2.js"></script>
+<script src="/assets/js/fading-slideshow.js"></script>

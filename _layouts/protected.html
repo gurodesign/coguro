@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}" class="scroll-smooth">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+        <!-- Alpine Plugins -->
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/nvt4zii.css">
+    <link rel="stylesheet" href="assets/css/blobz.min.css">
+  </head>
+  
+  <body class="bg-paper text-gray-800"></body>
+
+    {% include header.html %}
+
+    <svg class="absolute inset-0 size-full stroke-gray-300 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)] pointer-events-none" aria-hidden="true">
+      <defs>
+        <pattern id="983e3e4c-de6d-4c3f-8d64-b9761d1534cc" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
+          <path d="M.5 200V.5H200" fill="none" />
+        </pattern>
+      </defs>
+      <svg x="50%" y="-1" class="overflow-visible fill-gray-500/10">
+        <path d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z" stroke-width="0" />
+      </svg>
+      <rect width="100%" height="100%" stroke-width="0" fill="url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)" />
+    </svg>
+
+    <div id="password-protected-content">
+
+      <div id="password-modal" class="max-w-lg mx-auto p-24 bg-paper relative rounded-lg ring-1 ring-gray-400/10 block shadow-2xl mt-36 ">
+        <div class="font-bold">This is a protected area. </div>
+        <form id="password-form">
+            <label for="password" class="block mb-2">What's the secret word, boss?</label>
+            <input type="password" id="password" name="password" class="border border-1 rounded-md h-[40px] text-lg p-3 block w-full text-sm" placeholder="password">
+            <button type="submit" class="bg-[#2986d3] hover:bg-[#0098ff] text-white font-bold py-2 px-6 rounded-md block mt-2 w-full">Enter</button>
+        </form>
+        <div id="error-message" style="display: none; color: red;">Incorrect password</div>
+        <div class="mt-2">
+            Need access? Request it <a href="contact" class="text-[#2986d3]">here</a>. 
+        </div>
+      </div>
+      
+      <div id="decrypted-content" style="display: none;">
+
+        {{ content }}
+
+      </div>
+
+    </div>
+
+    <script>
+      const passwordForm = document.getElementById('password-form');
+      const passwordModal = document.getElementById('password-modal');
+      const decryptedContent = document.getElementById('decrypted-content');
+      const errorMessage = document.getElementById('error-message');
+      const passwordProtectedContent = document.getElementById('password-protected-content');
+
+      passwordForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const password = document.getElementById('password').value;
+
+        // Replace 'your_password' with your actual password
+        if (password === 'your_password') {
+          decryptedContent.style.display = 'block';
+          passwordProtectedContent.style.display = 'block';
+          passwordModal.style.display = 'none';
+          errorMessage.style.display = 'none';
+          passwordForm.style.display = 'none';
+        } else {
+          errorMessage.style.display = 'block';
+        }
+      });
+    </script>
+
+  </body>
+</html>

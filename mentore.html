@@ -1,0 +1,193 @@
+---
+layout: default
+title: "Mentore"
+---
+
+{% include header.html %}
+
+<div class="relative isolate overflow-hidden" x-data='{onDiscover: false, scrollPosition: window.pageYOffset}' @scroll.window='scrollPosition = window.pageYOffset'>
+
+  <div x-data :style='`transform: translateY(${scrollPosition/4}px)`'>
+
+  <div class="mx-auto container px-6 lg:flex items-stretch lg:px-8">
+    <div class="mx-auto lg:max-w-xl shrink-0 lg:mx-0 self-end pt-[50%] lg:pt-0 lg:pb-24" x-intersect="$el.classList.add('fadeUpIn')">
+
+      <img src="assets/images/work/mentore/logo-mark.svg" alt="TD Logo Mark" class="h-16 md:h-20"  >
+      <h1 class="mt-6 text-pretty text-5xl font-black tracking-tight text-gray-900 sm:text-7xl">Mentore</h1>
+      <div class="mt-6 lg:mt-8 mb-6">
+        <a href="#" class="inline-flex space-x-3">
+          <span class="rounded-full bg-gray-600/10 px-3 py-1 text-xs/6 font-semibold text-gray-600 ring-1 ring-inset ring-gray-600/10">Product</span>
+          <span class="rounded-full bg-gray-600/10 px-3 py-1 text-xs/6 font-semibold text-gray-600 ring-1 ring-inset ring-gray-600/10">UI/UX</span>
+          <span class="rounded-full bg-gray-600/10 px-3 py-1 text-xs/6 font-semibold text-gray-600 ring-1 ring-inset ring-gray-600/10">Motion Graphics</span>
+        </a>
+      </div>
+      <p class="mt-8 text-pretty font-medium text-gray-600 text-2xl/9">Mentore is a productivity wearable start-up used on the frontline that transitioned from proprietary hardware into SaaS. </p>
+    
+    </div>
+
+
+   <div class="mx-auto mt-16 flex max-w-full sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32" x-intersect="$el.classList.add('fadeRightIn')">
+        <img src="assets/images/work/mentore/watch-hero.png" alt="App screenshot" class="max-h-[50rem] md:max-h-screen w-auto">
+    </div>
+  </div>
+
+  <div class="w-full border-t border-solid">
+    <div class="container px-6 lg:px-8 mx-auto pt-[50px] pb-[250px]">
+      <div class="mr-16 inline-block max">
+        <h2 class="font-black text-xs text-[#05d2ff]">ROLE</h2>
+        <div class="text-gray-600 font-bold sm:text-sm">Product Designer</div>
+        <div class="text-gray-600 sm:text-sm">Guro Design Contract</div>
+      </div>
+      <div class=" inline-block max-w-sm align-top">
+        <h2 class="font-black text-xs text-[#05d2ff] uppercase">Deliverables</h2>
+        <div class="text-gray-600 sm:text-sm">The new iteration of the product was compatible with samsung galaxy watches paired with a mobile and web app.</div>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+
+</div>
+
+
+<div class="mx-auto w-full z-20 relative" x-data>
+  <div class="grid grid-cols-4 grid-rows-1 gap-2 p-2">
+    <div class="col-span-2 lg:col-span-1 bg-[#02d1ff] rounded-md overflow-hidden"><img src="assets/images/work/mentore/watch-scores.png" alt="Vinyl Packaging" class="px-16 py-8 md:px-24 md:py-16" x-intersect="$el.classList.add('fadeUpIn')"></div>
+    <div class="col-span-2 lg:col-span-1 bg-[#00e090] rounded-md overflow-hidden"><img src="assets/images/work/mentore/watch-coach.png" alt="AMG Hat" class="px-16 py-8 md:px-24 md:py-16" x-intersect="$el.classList.add('fadeUpIn')"></div>
+    <div class="col-span-2 lg:col-span-1 bg-[#f37b37] rounded-md overflow-hidden"><img src="assets/images/work/mentore/watch-profile.png" alt="AMG Tshirt" class="px-16 py-8 md:px-24 md:py-16" x-intersect="$el.classList.add('fadeUpIn')"></div>
+    <div class="col-span-2 lg:col-span-1 bg-[#a67cff] rounded-md overflow-hidden"><img src="assets/images/work/mentore/watch-menu.png" alt="AMG Tshirt" class="px-16 py-8 md:px-24 md:py-16" x-intersect="$el.classList.add('fadeUpIn')"></div>
+  </div>
+</div>
+
+<section class="grid grid-cols-1 md:grid-cols-2 gap-2 px-2 pb-2 offwhite-bg overflow-hidden" x-data>
+  <div class="col-span-1 relative bg-zinc-900 z-10 text-center rounded-md overflow-hidden pt-24 text-center">
+    <div class="mx-auto border-gray-700 dark:border-gray-700 bg-gray-700 border-[14px] rounded-t-[2.5rem] h-[582px] w-[350px] bottom-0 relative" x-intersect="$el.classList.add('fadeUpIn')">
+      <div class="h-[32px] w-[3px] bg-gray-700 dark:bg-gray-700 absolute -start-[17px] top-[72px] rounded-s-lg"></div>
+      <div class="h-[46px] w-[3px] bg-gray-700 dark:bg-gray-700 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
+      <div class="h-[46px] w-[3px] bg-gray-700 dark:bg-gray-700 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
+      <div class="h-[64px] w-[3px] bg-gray-700 dark:bg-gray-700 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
+      <div class="rounded-t-[2rem] overflow-hidden w-[322px] h-[568px] bg-white dark:bg-gray-800">
+        <img src="assets/images/work/mentore/mentore-mobile.svg" alt="AMG Tshirt" class="">
+      </div>
+    </div>
+    <div class="pointer-events-none absolute left-12 top-1/2 -z-5 -translate-y-1/2 transform-gpu blur-3xl lg:bottom-[-12rem] lg:top-auto lg:translate-y-0 lg:transform-gpu" aria-hidden="true">
+      <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#02d1ff] to-[#ff9f2d] opacity-50" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+    </div>
+  </div>
+  <div class="col-span-1 px-16 py-20 bg-[#3f3f3f] relative z-20 rounded-md">
+    <h4 class="text-balance text-2xl font-semibold tracking-tight text-white sm:text-2xl">The wearable</h4>
+      <p class="mt-2 text-base/7 text-white">Used by frontline workers in factory environments like Rivian and Johnsonville, the wearable app was used to monitor ergo safety standards, provide productivity feedback and act as a communication vessel between co-workers and management. In some frontline environments the wearable would stay at the workplace and be shared by employees. The companion mobile app would be offered to accomodate access to the app and allow workers to view data in a friendier screen format.</p>
+  </div>
+</section>
+
+<div class="bg-[#212121]">
+  <div class="">
+    <video muted loop controls="true" autoplay="true" class="">
+      <source src="assets/videos/samsung-submission.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+<div class="bg-paper py-24 sm:py-32">
+    <div class="grid grid-cols-5 max-w-7xl mx-auto">
+
+    <div class="col-span-5 lg:col-span-2 pr-16">
+      <div class="pt-16 sticky top-0">
+        <h2 class="text-base/7 font-semibold text-[#05d2ff]">Data visualization</h2>
+        <p class="mt-2 max-w-xlg text-pretty text-4xl font-semibold tracking-tight sm:text-5xl mb-6">The User Admin</p>
+        <p class="mt-8 mb-16 text-base/7">The core direction of the visual design was to incorporate more UI graphics to reinforce feature propostion, problem being that the presentability of product shots was lacking. The brand design team were designing UI mock-ups specifically for marketing use only. This felt disingenuous. Additionally these product shots were being incorporated as core visuals without any accompanying graphics which also felt dry.</p>
+      </div>
+    </div>
+
+    <div class="col-span-5 lg:col-span-3">
+      <div class="grid grid-cols-4 mx-auto">
+        <div class="col-span-2">
+          <div class="relative mx-auto border-gray-700 dark:border-gray-700 bg-gray-700 border-[14px] rounded-[2.5rem] h-[600px] w-[300px]">
+            <div class="h-[32px] w-[3px] bg-gray-700 dark:bg-gray-700 absolute -start-[17px] top-[72px] rounded-s-lg"></div>
+            <div class="h-[46px] w-[3px] bg-gray-700 dark:bg-gray-700 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
+            <div class="h-[46px] w-[3px] bg-gray-700 dark:bg-gray-700 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
+            <div class="h-[64px] w-[3px] bg-gray-700 dark:bg-gray-700 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
+            <div class="rounded-[1.65rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-700">
+              <video width=100% preload="auto" muted loop autoplay="true" class="">
+                <source src="assets/videos/mentore-1.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-2">
+          <div class="relative mx-auto border-gray-700 dark:border-gray-700 bg-gray-700 border-[14px] rounded-[2.5rem] h-[600px] w-[300px]">
+            <div class="h-[32px] w-[3px] bg-gray-700 dark:bg-gray-700 absolute -start-[17px] top-[72px] rounded-s-lg"></div>
+            <div class="h-[46px] w-[3px] bg-gray-700 dark:bg-gray-700 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
+            <div class="h-[46px] w-[3px] bg-gray-700 dark:bg-gray-700 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
+            <div class="h-[64px] w-[3px] bg-gray-700 dark:bg-gray-700 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
+            <div class="rounded-[1.65rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-700">
+              <img src="assets/images/work/mentore/mentore-web-2.jpg" alt="" class="rounded-lg bg-white/5 shadow-2xl ring-1 ring-white/10">
+            </div>
+          </div>
+      </div>
+
+        <div class="col-span-4 p-10">
+          <img src="assets/images/work/mentore/admin-map.jpg" alt="" class="rounded-lg bg-white/5 shadow-2xl ring-1 ring-white/10">
+        </div>
+
+        <div class="col-span-4 p-10 mt-8">
+          <figure class="relative z-1 max-w-full h-auto shadow-[0_2.75rem_3.5rem_-2rem_rgb(45_55_75_/_20%),_0_0_5rem_-2rem_rgb(45_55_75_/_15%)] dark:shadow-[0_2.75rem_3.5rem_-2rem_rgb(0_0_0_/_20%),_0_0_5rem_-2rem_rgb(0_0_0_/_15%)] rounded-b-lg">
+            <div class="relative flex items-center max-w-3xl bg-[#343E4E] rounded-t-lg py-2 px-24">
+              <div class="flex gap-x-1 absolute top-2/4 start-4 -translate-y-1">
+                <span class="size-2 bg-[#343E4E] rounded-full dark:bg-[#4B5563]"></span>
+                <span class="size-2 bg-[#343E4E] rounded-full dark:bg-[#4B5563]"></span>
+                <span class="size-2 bg-[#343E4E] rounded-full dark:bg-[#4B5563]"></span>
+              </div>
+              <div class="flex justify-center items-center size-full bg-gray-700 text-[.25rem] text-gray-400 rounded-sm sm:text-[.5rem] dark:bg-[#4B5563] dark:text-neutral-400">johnsonville.mentore.com</div>
+            </div>
+
+            <div class="bg-paper">
+              <ul class="fading-slideshow shadow-xl border border-1">
+                <li><img src="assets/images/work/mentore/admin-desktop.jpg" class="block" alt=""></li>
+                <li><img src="assets/images/work/mentore/admin-desktop-3.jpg" alt="App screenshot" class="block"></li>
+                <li><img src="assets/images/work/mentore/admin-desktop-1.jpg" alt="App screenshot" class="block"></li>
+                <li><img src="assets/images/work/mentore/admin-desktop-4.jpg" alt="App screenshot" class="block"></li>
+                <li><img src="assets/images/work/mentore/admin-desktop-2.jpg" alt="App screenshot" class="block"></li>
+              </ul>
+            </div>
+          </figure>
+        </div>
+
+        <div class="col-span-4 p-10">
+          <img src="assets/images/work/mentore/date-selector.jpg" alt="" class="rounded-lg bg-white/5 shadow-2xl ring-1 ring-white/10">
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+</div>
+
+<section class="isolate overflow-hidden bg-white px-6 lg:px-8">
+  <div class="relative mx-auto max-w-2xl py-24 sm:py-32 lg:max-w-4xl"
+    <figure class="grid grid-cols-1 items-center gap-x-6 gap-y-8 lg:gap-x-10">
+      <div class="relative col-span-2 lg:col-start-1 lg:row-start-2">
+        <svg viewBox="0 0 162 128" fill="none" aria-hidden="true" class="absolute -top-12 left-0 -z-10 h-32 stroke-gray-900/10">
+          <path id="b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb" d="M65.5697 118.507L65.8918 118.89C68.9503 116.314 71.367 113.253 73.1386 109.71C74.9162 106.155 75.8027 102.28 75.8027 98.0919C75.8027 94.237 75.16 90.6155 73.8708 87.2314C72.5851 83.8565 70.8137 80.9533 68.553 78.5292C66.4529 76.1079 63.9476 74.2482 61.0407 72.9536C58.2795 71.4949 55.276 70.767 52.0386 70.767C48.9935 70.767 46.4686 71.1668 44.4872 71.9924L44.4799 71.9955L44.4726 71.9988C42.7101 72.7999 41.1035 73.6831 39.6544 74.6492C38.2407 75.5916 36.8279 76.455 35.4159 77.2394L35.4047 77.2457L35.3938 77.2525C34.2318 77.9787 32.6713 78.3634 30.6736 78.3634C29.0405 78.3634 27.5131 77.2868 26.1274 74.8257C24.7483 72.2185 24.0519 69.2166 24.0519 65.8071C24.0519 60.0311 25.3782 54.4081 28.0373 48.9335C30.703 43.4454 34.3114 38.345 38.8667 33.6325C43.5812 28.761 49.0045 24.5159 55.1389 20.8979C60.1667 18.0071 65.4966 15.6179 71.1291 13.7305C73.8626 12.8145 75.8027 10.2968 75.8027 7.38572C75.8027 3.6497 72.6341 0.62247 68.8814 1.1527C61.1635 2.2432 53.7398 4.41426 46.6119 7.66522C37.5369 11.6459 29.5729 17.0612 22.7236 23.9105C16.0322 30.6019 10.618 38.4859 6.47981 47.558L6.47976 47.558L6.47682 47.5647C2.4901 56.6544 0.5 66.6148 0.5 77.4391C0.5 84.2996 1.61702 90.7679 3.85425 96.8404L3.8558 96.8445C6.08991 102.749 9.12394 108.02 12.959 112.654L12.959 112.654L12.9646 112.661C16.8027 117.138 21.2829 120.739 26.4034 123.459L26.4033 123.459L26.4144 123.465C31.5505 126.033 37.0873 127.316 43.0178 127.316C47.5035 127.316 51.6783 126.595 55.5376 125.148L55.5376 125.148L55.5477 125.144C59.5516 123.542 63.0052 121.456 65.9019 118.881L65.5697 118.507Z" />
+          <use href="#b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb" x="86" />
+        </svg>
+        <blockquote class="text-xl/8 font-semibold text-gray-900 sm:text-2xl/9">
+          <p>Commodo amet fugiat excepteur sunt qui ea elit cupidatat ullamco consectetur ipsum elit consequat. Elit sunt proident ea nulla ad nulla dolore ad pariatur tempor non. Sint veniam minim et ea.</p>
+        </blockquote>
+      </div>
+      <div class="col-end-1 w-16 lg:row-span-4 lg:w-72">
+        <img class="rounded-xl bg-indigo-50 lg:rounded-full" src="assets/images/work/mentore/dino-pic.jpg" alt="" />
+      </div>
+      <figcaption class="text-base lg:col-start-1 lg:row-start-3">
+        <div class="font-semibold text-gray-900">Dino Brusco</div>
+        <div class="mt-1 text-gray-500">Strategy and Product Management</div>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<script src="/assets/js/slide-reveal.js"></script>
+<script src="/assets/js/fading-slideshow.js"></script>

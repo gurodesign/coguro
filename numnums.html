@@ -1,0 +1,214 @@
+---
+layout: default
+title: "numnums"
+---
+
+{% include header.html %}
+
+<div class="relative isolate overflow-hidden" x-data='{onDiscover: false, scrollPosition: window.pageYOffset}' @scroll.window='scrollPosition = window.pageYOffset'>
+
+  <div x-data :style='`transform: translateY(${scrollPosition/4}px)`'>
+
+    <div class="mx-auto container px-6 pb-24 pt-10 lg:flex items-stretch lg:px-8 pt-36 lg:h-screen">
+
+      <div class="mx-auto lg:max-w-xl shrink-0 pr-20 lg:mx-0 self-end" x-cloak x-intersect="$el.classList.add('fadeUpIn')">
+
+        <img src="assets/images/work/numnums/numnums-mark.svg" alt="TD Logo Mark" class="h-16 md:h-20">
+        <h1 class="mt-6 text-pretty text-5xl font-black tracking-tight text-gray-900 sm:text-7xl">numnums</h1>
+        <div class="mt-6 lg:mt-8 mb-6">
+          <a href="#" class="inline-flex space-x-3">
+            <span class="rounded-full bg-gray-600/10 px-3 py-1 text-xs/6 font-semibold text-gray-600 ring-1 ring-inset ring-gray-600/10">Product</span>
+            <span class="rounded-full bg-gray-600/10 px-3 py-1 text-xs/6 font-semibold text-gray-600 ring-1 ring-inset ring-gray-600/10">UX/UI</span>
+            <span class="rounded-full bg-gray-600/10 px-3 py-1 text-xs/6 font-semibold text-gray-600 ring-1 ring-inset ring-gray-600/10">Branding</span>
+            <span class="rounded-full bg-gray-600/10 px-3 py-1 text-xs/6 font-semibold text-gray-600 ring-1 ring-inset ring-gray-600/10">Illustration</span>
+          </a>
+        </div>
+        <p class="mt-8 text-pretty font-medium text-gray-600 text-2xl/9">A single recipe platform to rule them all. Built to fill the needs of everyday cooks.</p>
+      
+      </div>
+
+
+      <div class="mx-auto flex mt-8 md:mt-0 lg:mr-0 lg:flex-none xl:ml-32">
+        <div class="w-full flex-none relative -mb-[100px]">
+          <img src="assets/images/work/numnums/numnums-dude.png" alt="App screenshot" class="w-full h-[120%]" x-cloak x-intersect="$el.classList.add('fadeRightIn')">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="w-full border-t border-solid">
+
+      <div class="container px-6 lg:px-8 mx-auto pt-[100px] pb-[300px]">
+
+        <div class="mr-16 inline-block max-w-xs align-top">
+          <h2 class="font-black text-xs text-[#f8634f]">ROLE</h2>
+          <div class="text-gray-600 text-sm mt-1 font-bold">Principal / Design Director / Product</div>
+          <div class="text-gray-600 text-sm">Product design</div>
+          <div class="text-gray-600 text-sm">Prototype creation</div>
+          <div class="text-gray-600 text-sm"></div>
+        </div>
+        <div class=" inline-block max-w-sm align-top">
+          <h2 class="font-black text-xs text-[#f8634f]">OVERVIEW</h2>
+          <div class="text-gray-600 text-sm mt-1">This stealth start-up gave me a chance to work in a few areas that I hadn't previously had experience with; consumables, inventory systems, and last mile delivery. Collaborating with former bus-dev and engineering co-workers allowed me to dive in and focus on design and product vision.</div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="bg-[#7c7c7c] w-full py-32">
+
+  <div class="grid grid-cols-5 mx-auto">
+
+    <div class="col-span-5 lg:col-span-3" x-data>
+      <img src="assets/images/work/numnums/recipe-index.jpg" class="w-full rounded-tr-lg rounded-br-lg ring-1 ring-gray-400/10 block z-20" x-intersect="$el.classList.add('fadeUpIn')" alt="">
+    </div>
+
+    <div class="col-span-5 lg:col-span-2 pl-16 pr-16">
+
+      <div class="sticky top-20">
+        <div class="lg:max-w-lg">
+          <h2 class="text-base/7 font-semibold text-[#ff9177]">The Problem</h2>
+          <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">Recipes Everywhere</p>
+          <p class="mt-6 text-sm/6 text-white">Online recipes, recipe books, hand written recipes, photos of newspaper recipes. We had recipes all over the place and our collection was growing. We wanted a singular place to store and access them easily. This led to numnums, the recipe repository made for people who p.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="bg-[#ff9177] w-full py-32">
+
+  <div class="grid grid-cols-5 max-w-7xl mx-auto">
+
+    <div class="col-span-5 lg:col-span-2 pr-16">
+
+      <div class="sticky top-0 pt-8 px-4">
+        <div class="lg:max-w-lg">
+          <h2 class="text-base/7 font-semibold text-white">A nice, clean</h2>
+          <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">Recipe Page</p>
+          <p class="mt-6 text-sm/6  text-white">If the recipe page is the foundation of every recipe site, why do most overlook the UX/UI? You can find recipe pages riddled with advertising or long-winded anecdotes and narratives. The 'jump to recipe' anchor link is a common pattern. And while advertising and revenue establishment were important to us, we didn't want to sacrifice user experience.<br/><br/>
+          One design paradigm that was born out of our cooking flow was the ability to map ingredients to steps. Even with proper <span class="italic span">mise en place</span> there was no visual cue to grab specific ingredients as you read through a recipe. By color coding each ingredient to match each step we were able to visualize the connection and minimize ambiguity. What about ingredients used in multiple steps? Do we multiply each instance of it? No, instead we opted to use mutli-colored indicators for them. To facilitate this we used the font based pie chart, FF Chartwell, which allowed us to implement this solution easily.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-span-5 lg:col-span-3 px-4 xl:px-0" x-data>
+      <img src="assets/images/work/numnums/recipe-page.jpg" class="w-full rounded-lg ring-1 ring-gray-400/10 block" x-intersect="$el.classList.add('fadeUpIn')" alt="">
+    </div>
+
+  </div>
+
+</div>
+
+
+<div class="overflow-hidden bg-zinc-900 py-24 sm:py-32 relative shopping-hero">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+      <div class="col-span-1">
+        <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] lg:h-[810px] lg:w-[400px]">
+            <div class="h-[32px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[72px] lg:top-[160px] rounded-s-lg"></div>
+            <div class="h-[46px] lg:h-[65px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[124px] lg:top-[200px] rounded-s-lg"></div>
+            <div class="h-[46px] lg:h-[65px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[178px] lg:top-[282px]  rounded-s-lg"></div>
+            <div class="h-[64px] lg:h-[90px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -end-[17px] top-[142px] lg:top-[202px] rounded-e-lg"></div>
+            <div class="rounded-[2rem] overflow-hidden w-[272px] h-[572px] lg:h-[782px] lg:w-[372px] bg-white dark:bg-gray-800">
+              <ul class="fading-slideshow w-full">
+                <li><img src="assets/images/work/numnums/shopping-list-mobile.jpg" class="w-full" alt=""></li>
+                <li><img src="assets/images/work/numnums/shopping-list-mobile-store.jpg" class="w-full" alt=""></li>
+                <li><img src="assets/images/work/numnums/shopping-list-mobile-recipe.jpg" class="w-full" alt=""></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+      <div class="lg:pr-8 lg:pt-4 col-span-1">
+        <div class="lg:max-w-lg">
+          <h2 class="text-base/7 font-semibold text-[#ff9177]">A companion</h2>
+          <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">Shopping List</p>
+          <p class="mt-6 text-sm/6  text-white">
+            A shopping list seems like a common feature in many of today's recipe apps, but in our infancy very few had this feature. Even today most integrations of it seem like an after thought. We wanted ours to have seamless integration, yet be powerful enough to stand alone. <br/><br/>
+            To achieve this we had a handful of differentiators that set us apart, starting with clean purposeful design. Next, we would distinguish ingredient type by grocery 'aisle', color coding and sorting as such. This would buff the shopping experience, making the in-store route more efficient. We would seed the database with pre-categorized items from a grocery SKU API. Sorting would be a critical aspect allowing users to break down lists by aisle, store and recipe depending on need. Each ingredient was mapped back to recipe and you could it access via deep link. Ultimately it was a goal to pair it with a grocery shopping API like instacart or doordash in order to drive referral-based revenue.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-[#e6e6e6] py-24 sm:py-32 ">
+    <div class="mx-auto max-w-7xl grid grid-cols-1 sm:grid-cols-3 ">
+        <div class="col-span-1 sm:col-span-1">
+          <div class="lg:max-w-lg">
+            <h2 class="text-base/7 font-semibold text-[#ff9177]">Feature creep</h2>
+            <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight sm:text-5xl">Publish Cookbooks</p>
+            <p class="mt-6 text-sm/6 ">
+              Carmeilta and I have been self-publishing cookbooks since our wedding when we gifted a collection of some of our favorite recipes to our guests. It seemed natural to publish a compendium of numnum recipes as a way to showcase the platform and capabilites. The recipe page layout worked well in print, and incorporating while wkhtmltopdf took some finnegaling to integrate, it's a feature that would resonate with some businesses. 
+            </p>
+          </div>
+        </div>
+        <div class="col-span-1 sm:col-span-2">
+            <img src="assets/images/work/numnums/numnums-book.jpg" class="w-full" alt="">
+        </div>
+
+    </div>
+</div>
+
+<div class="bg-[#ff9177] py-16 px-5">
+
+    <div class="mx-auto max-w-7xl grid grid-cols-6 w-full mx-auto gap gap-5">
+        <div class="col-span-6">
+            <img src="assets/images/work/numnums/homepage-hero.jpg" alt="App screenshot" class="rounded-lg overflow-hidden">
+        </div>
+        <div class="col-span-2">
+            <img src="assets/images/work/numnums/sign-in.jpg" alt="App screenshot" class="rounded-lg overflow-hidden">
+        </div>
+        <div class="col-span-2">
+            <img src="assets/images/work/numnums/beta.jpg" alt="App screenshot" class="rounded-lg overflow-hidden">
+        </div>
+        <div class="col-span-2">
+            <img src="assets/images/work/numnums/about-us.jpg" alt="App screenshot" class="rounded-lg overflow-hidden">
+        </div>
+    
+    </div>
+
+</div>
+
+
+<div class="bg-[#7c7c7c] py-16 px-5">
+
+    <div class="mx-auto max-w-7xl grid grid-cols-6 w-full mx-auto gap gap-5">
+
+        <div class="col-span-4">
+            <img src="assets/images/work/numnums/folio-flyer.jpg" alt="App screenshot" class="rounded-lg overflow-hidden">
+        </div>
+
+        <div class="col-span-2">
+            <h2 class="text-base/7 font-semibold text-[#ff9177]">The MVP</h2>
+          <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">Collecting recipes</p>
+          <p class="mt-6 text-sm/6  text-white">This project seemed like an easy win to me, it proved otherwise and ended up as a lesson learned. The overall concept of the homepage was to showcase the AMG brand and its products in a fresh and engaging way. The existing site design was extremely dated. AMG preferred keeping the same commerce and CMS platform, magento. The baseline templates for this platform were not very perfomant. I found after research that HYVA was a theme that could be fully customized and had the speed and performance that would ultimately benefit the site.</p>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="w-full">
+  <img src="assets/images/work/numnums/recipe-card.jpg" alt="App screenshot" class="rounded-lg overflow-hidden">
+</div>
+
+<div class="w-full">
+  <img src="assets/images/work/numnums/print-collateral-1.jpg" alt="App screenshot" class="rounded-lg overflow-hidden">
+</div>
+<div class="w-full">
+  <img src="assets/images/work/numnums/print-collateral-2.jpg" alt="App screenshot" class="rounded-lg overflow-hidden">
+</div>
+
+
+<script src="/assets/js/fading-slideshow.js"></script>

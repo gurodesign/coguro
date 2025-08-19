@@ -1,0 +1,426 @@
+---
+layout: default
+title: "GameSpot Redesign"
+---
+
+{% include header.html %}
+
+<div class="relative isolate overflow-hidden" x-data='{onDiscover: false, scrollPosition: window.pageYOffset}' @scroll.window='scrollPosition = window.pageYOffset'>
+
+  <div x-data :style='`transform: translateY(${scrollPosition/4}px)`'>
+
+    <div class="mx-auto container px-6 pb-24 pt-10 lg:flex items-stretch lg:px-8 pt-48 lg:h-screen">
+
+      <div class="mx-auto lg:max-w-xl shrink-0 lg:mx-0 self-end" x-cloak x-intersect="$el.classList.add('fadeUpIn')">
+
+        <img src="assets/images/work/gamespot/gmark.svg" alt="TD Logo Mark" class="h-16 md:h-20">
+        <h1 class="mt-6 text-pretty text-5xl font-black tracking-tight text-gray-900 sm:text-7xl">GameSpot</h1>
+        <div class="mt-6 lg:mt-8 mb-6">
+          <a href="#" class="inline-flex space-x-3">
+            <span class="rounded-full bg-gray-600/10 px-3 py-1 text-xs/6 font-semibold text-gray-600 ring-1 ring-inset ring-gray-600/10">Product</span>
+            <span class="rounded-full bg-gray-600/10 px-3 py-1 text-xs/6 font-semibold text-gray-600 ring-1 ring-inset ring-gray-600/10">Brand</span>
+            <span class="rounded-full bg-gray-600/10 px-3 py-1 text-xs/6 font-semibold text-gray-600 ring-1 ring-inset ring-gray-600/10">UX/UI</span>
+          </a>
+        </div>
+        <p class="mt-8 text-pretty font-medium text-gray-600 text-2xl/9">After a decade of working on one of the most popular gaming websites of all time I had the opportunity to redesign GameSpot as my parting final project.</p>
+      
+      </div>
+
+
+      <div class="mx-auto flex mt-8 md:mt-0 lg:ml-10 lg:mr-0 lg:flex-none xl:ml-32">
+        <div class="w-full flex-none relative -mb-[200px]">
+          <img src="assets/images/work/gamespot/homepage_hero-v2.jpg" alt="App screenshot" class="w-full lg:h-[90%] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10" x-cloak x-intersect="$el.classList.add('fadeRightIn')">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="w-full border-t border-solid">
+
+      <div class="container px-6 lg:px-8 mx-auto pt-[100px] pb-[250px]">
+
+        <div class="mr-16 inline-block max-w-sm align-top">
+          <h2 class="font-black text-xs text-[#ff3200]">ROLE</h2>
+          <div class="text-gray-600 text-sm mt-1 font-bold">Principal / Design Director</div>
+          <div class="text-gray-600 text-sm">Product design</div>
+          <div class="text-gray-600 text-sm"></div>
+        </div>
+
+        <div class=" inline-block max-w-sm">
+          <h2 class="font-black text-xs text-[#ff3200]">Team</h2>
+          <div class="text-gray-600 text-sm mt-1 font-bold">Design Director</div>
+          <div class="text-gray-600 text-sm mt-1">Creative Director</div>
+          <div class="text-gray-600 text-sm mt-1">A lot of Engineers</div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="mx-auto ring-1 ring-gray-400/10 shadow-2xl overflow-hidden sm:overflow-visible">
+
+
+  <div class="grid grid-cols-6 bg-[#ff3200] w-full mx-auto">
+
+    <div class="col-span-6 lg:col-span-4 lg:pt-32 pr-8 pl-8 lg:pl-24 lg:pr-24 order-last lg:order-first">
+        <div class="slide-reveal-container rounded-tl-lg rounded-tr-lg shadow-2xl ">
+          <div class="image-container">
+            <img src="assets/images/work/gamespot/GS_homepage_slide-reveal-1.jpg" alt="App screenshot" class="image-before slider-image">
+            <img src="assets/images/work/gamespot/GS_homepage_slide-reveal-2.jpg" alt="App screenshot" class="image-after slider-image">
+          </div>
+          <!-- step="10" -->
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            aria-label="Percentage of before photo shown"
+            class="slider"
+          />
+          <div class="slider-line shadow-md" aria-hidden="true"></div>
+          <div class="slider-button" aria-hidden="true">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              viewBox="0 0 256 256"
+            >
+              <rect width="256" height="256" fill="none"></rect>
+              <line
+                x1="128"
+                y1="40"
+                x2="128"
+                y2="216"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></line>
+              <line
+                x1="96"
+                y1="128"
+                x2="16"
+                y2="128"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></line>
+              <polyline
+                points="48 160 16 128 48 96"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></polyline>
+              <line
+                x1="160"
+                y1="128"
+                x2="240"
+                y2="128"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></line>
+              <polyline
+                points="208 96 240 128 208 160"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></polyline>
+            </svg>
+          </div>
+        </div>
+    </div>
+
+    <div class="col-span-6 lg:col-span-2 md:pr-12 xl:pr-24 lg:pt-32">
+
+        <div class="sticky top-0 px-8 lg:px-0 py-12">
+            <div class="max-w-full lg:max-w-lg lg:mb-6">
+              <h2 class="text-base/7 font-semibold text-red-300">An overdue</h2>
+              <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl mb-6">Site Redesign</p>
+              <p class="mt-2 text-sm/6 text-white md:pr-10">It had been years since a site update. The games and entertainment group had changed leadership and design was embedded with engineering .</p>
+            </div>
+        </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="mx-auto grid grid-cols-6 grid-rows-12 gap-2 p-2 relative">
+
+    <div class="col-span-3 col-start-1 row-span-3 bg-gray-900 row-start-1 rounded-md overflow-hidden p-[15%]">
+      <h2 class="text-base/7 font-semibold text-[#ff3200]">An attempted</h2>
+      <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">Rebrand</p>
+      <p class="mt-6 mb-8 text-sm/6 text-white">Some time prior to the site redesign project there was an intensive rebrand project that was a collaboration between our team (product/editorial design) and marketing design. In an attempt to revive my contribution, the octa-star, I reintroduced it as an option.<br/><br/>
+      The goal was to modernize the brand while retaining the core elements that made GameSpot recognizable. The octa-star was a nod to the original logo, but with a more contemporary twist. It was designed to be versatile, working well across various platforms and devices and introduced a standalone mark.
+      </p>
+    </div>
+
+    <div class="col-span-3 col-start-1 row-span-3 bg-gray-900 rounded-md overflow-hidden p-[15%]">
+      <div class="grid grid-cols-12 grid-rows-5">
+        <div class="col-span-1"></div>
+        <div class="col-span-10 border-x border-solid border-gray-600"></div>
+        <div class="col-start-12 col-span-1"></div>
+        <div class="row-span-3 row-start-2 border-y border-solid border-gray-600 col-span-1"></div>
+        <div class="col-span-10 col-start-2 row-span-3 row-start-2 border border-solid border-gray-600 relative"><img src="assets/images/work/gamespot/gamespot-logo.svg" alt="Surfin Safari" class="w-full mx-auto"></div>
+        <div class="row-span-3 col-start-12 row-start-2 border-y border-solid border-gray-600"></div>
+        <div class="row-start-5 col-span-1"></div>
+        <div class="col-span-10 col-start-2 row-start-5 border-x border-solid border-gray-600"></div>
+        <div class="col-start-10 row-start-5 col-span-1"></div>
+      </div>
+      <p class="mx-auto mt-8 mb-12 text-sm/6 text-white">While it still carried strong brand equity, the existing logo was feeling dated. Stuck is a skeumorphic box along with the existing site style. Simply flattening the style may have been enough, but it still lacked a standalone mark and modern typeface.</p>
+    </div>
+
+    <div class="col-span-3 col-start-1 row-span-3 bg-gray-900 rounded-md overflow-hidden p-[15%]">
+      <div class="grid grid-cols-12 grid-rows-5 py-10">
+        <div class="col-span-1"></div>
+        <div class="col-span-10 border-x border-solid border-gray-600"></div>
+        <div class="col-start-12 col-span-1"></div>
+        <div class="row-span-3 row-start-2 border-y border-solid border-gray-600 col-span-1"></div>
+        <div class="col-span-10 col-start-2 row-span-3 row-start-2 border border-solid border-gray-600"><img src="assets/images/work/gamespot/gs-logotype.svg" alt="Surfin Safari" class="max-w-none mx-auto"></div>
+        <div class="row-span-3 col-start-12 row-start-2 border-y border-solid border-gray-600"></div>
+        <div class="row-start-5 col-span-1"></div>
+        <div class="col-span-10 col-start-2 row-start-5 border-x border-solid border-gray-600"></div>
+        <div class="col-start-10 row-start-5 col-span-1"></div>
+      </div>
+      <p class="mx-auto mt-8 mb-12 text-sm/6 text-white">Breaking the typeface out of the enclosure and replacing the 'O' with the mark was enough to modernize it while still referencing the original. </p>
+    </div>
+
+    <div class="col-span-3 col-start-1 row-span-3 bg-gray-900 rounded-md overflow-hidden p-[15%]">
+      <h2 class="text-base/7 font-semibold text-[#ff3200] mb-6">Display Font</h2>
+      <img src="assets/images/work/gamespot/klavika.svg" alt="Klavika Font Set" class="">
+      <p class="mx-auto mt-8 mb-12 text-sm/6 text-white">I was excited to finally introduce custom fonts. We had been stuck in web-safe mode for an eternity and finally updating to  </p>
+    </div>
+
+
+    <div class="col-span-3 row-start-1 col-start-4 bg-gray-900 row-span-12 rounded-md  relative">
+      <lottie-player src="assets/lottie/gs-emblem.json" id="firstLottie" background="transparent" class="top-0 sticky" style="width: 100%; height: auto;" :style='`transform: translateY(${scrollPosition/4}px)`'></lottie-player>
+    </div>
+
+  </div>
+
+  <div class="w-full">
+    <img src="assets/images/work/gamespot/gamespace-hero.jpg" alt="" class="">
+  </div>
+
+  <div class="grid grid-cols-6 bg-[#ff3200] w-full mx-auto ">
+
+    <div class="col-span-6 lg:col-span-4 lg:pt-32 pr-8 pl-8 lg:pl-24 lg:pr-24 order-last lg:order-first">
+      
+      <div class="slide-reveal-container2 rounded-tl-lg rounded-tr-lg shadow-2xl ">
+          <div class="image-container">
+            <img src="assets/images/work/gamespot/gamespace-2.jpg" alt="App screenshot" class="image-before slider-image">
+            <img src="assets/images/work/gamespot/gamespace-1.jpg" alt="App screenshot" class="image-after slider-image">
+          </div>
+          <!-- step="10" -->
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            aria-label="Percentage of before photo shown"
+            class="slider2"
+          />
+          <div class="slider-line shadow-md" aria-hidden="true"></div>
+          <div class="slider-button" aria-hidden="true">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              viewBox="0 0 256 256"
+            >
+              <rect width="256" height="256" fill="none"></rect>
+              <line
+                x1="128"
+                y1="40"
+                x2="128"
+                y2="216"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></line>
+              <line
+                x1="96"
+                y1="128"
+                x2="16"
+                y2="128"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></line>
+              <polyline
+                points="48 160 16 128 48 96"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></polyline>
+              <line
+                x1="160"
+                y1="128"
+                x2="240"
+                y2="128"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></line>
+              <polyline
+                points="208 96 240 128 208 160"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></polyline>
+            </svg>
+          </div>
+        </div>
+    </div>
+
+    <div class="col-span-6 lg:col-span-2 md:pr-12 xl:pr-24 lg:pt-32">
+
+        <div class="sticky top-0 px-8 lg:px-0 pt-4 pb-12">
+          <p class="mt-2 max-w-xlg text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl mb-6">The Gamespace</p>
+          <p class="mt-8 text-white text-sm/6 lg:mb-16">... is the single most important page across the site. The primary goal during our concepting phase was to evolve the display of content over the life-cycle of the game. In it's existing form the gamespace merely displayed the latest content in compartmentalized modules. We instead opted to evolve it into a feed sorted by recency while floating the most trafficked content up top (images, videos, review). The core gamespace navigation remained above the fold and the feed content could be emphasized in layout and scale depending on popularity. This concept of visual hierarchy would be thematic throughout the redesign process.</p>
+        </div>
+
+    </div>
+
+  </div>
+  
+  <div class="w-full">
+    <img src="assets/images/work/gamespot/homepage-iso-hero.jpg" alt="" class="w-full">
+  </div>
+
+  <div class="grid grid-cols-6 bg-slate-950 w-full mx-auto">
+    <div class="col-span-6 xl:col-span-4 px-8 pt-12 lg:px-24 lg:pt-32">
+      <p class="mt-2 max-w-xlg text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl mb-6 lg:mb-12">The Homepage</p>
+      <p class="mt-4 text-white mb-10 text-sm/6">The Homepage is the biggest impact marketing opportunity for advertisers. The existing model relied upon full page takeovers and skins. This came at a cost to brand and user experience, leaving the enitre page aesthetic open to advertiser whim. Moving to an integrated ad/content model had a less detrimental effect. If an advertiser required a larger footprint, the hero unit could be leveraged and paired with standard ad units to satistfy their needs optically.</p>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-6 bg-slate-950 w-full mx-auto">
+
+    <div class="col-span-6 mb-6 lg:mb-0 xl:col-span-4 lg:pt-0 pr-8 pl-8 lg:pl-24 lg:pr-24">
+      <img src="assets/images/work/gamespot/homepage-above-fold.jpg" class="w-full rounded-t-lg block" alt="">
+    </div>
+
+    <div class="col-span-6 xl:col-span-2">
+
+        <div class="sticky top-0 pl-8 pr-8 xl:pr-24 lg:pl-24 lg:pr-24 xl:pl-0 pt-6 xl:pb-6">
+            <div class="">
+                <h2 class="text-base/7 font-semibold text-[#ff3200]">
+                  Above the fold 
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline h-[16px]">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+                  </svg>
+                </h2>
+                <p class="mt-4 text-white xl:mb-8">The Homepage is the biggest impact marketing opportunity for advertisers. The existing model relied upon full page takeovers and skins. This came at a cost to brand and user experience, leaving the enitre page aesthetic open to advertiser whim. Moving to an integrated ad/content model had a less detrimental effect. If an advertiser required a larger footprint, the hero unit could be leveraged and paired with standard ad units to satistfy their needs optically.</p>
+            </div>
+        </div>
+
+    </div>
+
+  </div>
+
+  <div class="grid grid-cols-6 bg-slate-950 w-full mx-auto">
+
+    <div class="col-span-6 xl:col-span-2 order-first xl:order-last">
+
+        <div class="sticky top-0 pl-8 pr-8 xl:pr-24 lg:pl-24 lg:pr-24 xl:pl-0 py-12">
+            <div class="xl:max-w-lg">
+                <h2 class="text-base/7 font-semibold text-[#ff3200]">
+                  Below the fold
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-[16px] inline">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                  </svg>
+                </h2>
+                <p class="mt-4 text-white mb-2">The Homepage is the biggest impact marketing opportunity for advertisers. The existing model relied upon full page takeovers and skins. This came at a cost to brand and user experience, leaving the enitre page aesthetic open to advertiser whim. Moving to an integrated ad/content model had a less detrimental effect. If an advertiser required a larger footprint, the hero unit could be leveraged and paired with standard ad units to satistfy their needs optically.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-span-6 xl:col-span-4 lg:pt-0 pr-8 pl-8 lg:pl-24 lg:pr-24">
+      <img src="assets/images/work/gamespot/hierarchy-grid-3.jpg" class="w-full block" alt="">
+    </div>
+
+  </div>
+
+  <div class="grid grid-cols-6 w-full mx-auto">
+
+    <div class="col-span-6 lg:col-span-4 lg:py-32 pr-8 pl-8 lg:pl-24 lg:pr-24 order-last lg:order-first">
+        <div class="rounded-lg shadow-2xl overflow-hidden">
+           <img src="assets/images/work/gamespot/homepage-2.jpg" alt="App screenshot" class="">
+        </div>
+    </div>
+
+    <div class="col-span-6 lg:col-span-2 md:pr-12 xl:pr-24 lg:pt-32">
+
+        <div class="sticky top-0 px-8 lg:px-0 py-12">
+            <div class="max-w-full lg:max-w-lg lg:mb-16">
+              <h2 class="text-base/7 font-semibold text-red-400">Sorted Content</h2>
+              <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight sm:text-5xl mb-6">Alt Homepage</p>
+              <p class="mt-2 text-sm/6 md:pr-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida justo et nulla efficitur, maximus egestas sem pellentesque.</p>
+            </div>
+        </div>
+
+    </div>
+
+  </div>
+
+  
+
+   <div class="bg-[#ff3200] pt-5 pb-5 px-5">
+        <div class="max-w-3xl mx-auto pt-5">
+          <p class="mt-2 max-w-xlg text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl mb-6">Other Pages</p>
+          <p class="mt-8 text-white mb-16">is the single most important page across the site. The primary goal during our concepting phase was to evolve the display of content over the life-cycle of the game. In it's existing form the gamespace merely displayed the latest content in compartmentalized modules. We instead opted to evolve it into a feed sorted by recency while floating the most trafficked content up top (images, videos, review). The core gamespace navigation remained above the fold and the feed content could be emphasized in layout and scale depending on popularity. This concept of visual hierarchy would be thematic throughout the redesign process.</p>
+        </div>
+    
+        <div class="grid grid-cols-6 max-w-3xl mx-auto gap gap-5">
+            <div class="col-span-6">
+                <img src="assets/images/work/gamespot/video-page.jpg" alt="App screenshot" class="">
+            </div>
+            <div class="col-span-3">
+                <img src="assets/images/work/gamespot/review-page.jpg" alt="App screenshot" class="">
+            </div>
+            <div class="col-span-3">
+                <img src="assets/images/work/gamespot/search.jpg" alt="App screenshot" class="">
+            </div>
+
+            <div class="col-span-6">
+                <img src="assets/images/work/gamespot/news-story.jpg" alt="App screenshot" class="">
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+   
+<script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+<script src="/assets/js/lottie-scroll.js"></script>
+<script src="/assets/js/slide-reveal.js"></script>
+<script src="/assets/js/slide-reveal-2.js"></script>

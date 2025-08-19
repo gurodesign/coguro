@@ -1,0 +1,473 @@
+
+<header class="w-full absolute z-10 top-0">
+  <nav class="mx-auto flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+    
+    <div class="flex lg:flex-1">
+      <a href="index.html" class="p-1.5 mt-4" x-cloak x-data>
+        <span class="sr-only">Guro Design</span>
+        <div class="overflow-hidden"><img src="assets/images/header-logo-guro.svg" alt="TD Logo Mark" class="h-8 mb-[1px]" x-cloak x-intersect="$el.classList.add('maskUp')"></div>
+        <div class="overflow-hidden"><img src="assets/images/header-logo-design.svg" alt="TD Logo Mark" class="h-8 mb-[3px]" x-cloak x-intersect="$el.classList.add('maskUp')"></div>
+        <div class="overflow-hidden"><img src="assets/images/header-logo-text.svg" alt="TD Logo Mark" class="h-[8px] " x-cloak x-intersect="$el.classList.add('maskUp')"></div>
+      </a>
+    </div>
+
+    <div class="flex lg:hidden">
+      <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+        <span class="sr-only">Open main menu</span>
+        <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="hidden lg:flex lg:gap-x-12">
+
+      <div class="relative text-[#3d3d3d]" x-data="{ open: false }"> 
+        <button  @mouseover="open = true" 
+                 @mouseleave = "open = false" 
+                 type="button" 
+                 class="flex items-center gap-x-1 text-sm/6 font-semibold overflow-hidden" 
+                 aria-expanded="false">
+          <p class="" x-intersect="$el.classList.add('maskUp')">Product</p>
+        </button>
+
+        <div class="absolute left-1/2 z-10 mt-3 w-screen max-w-[200px] -translate-x-1/2 overflow-hidden rounded-lg bg-paper shadow-lg ring-1 ring-gray-900/5" 
+            x-show="open"
+            @mouseenter = "open = true"
+            @mouseleave = "open = false"
+            x-transition:enter="ease-out duration-200"
+            x-transition:enter-start="opacity-0 translate-y-1"
+            x-transition:enter-end="opacity-100 translate-y-0"
+            x-transition:leave="ease-in duration-150"
+            x-transition:leave-start="opacity-100 translate-y-0"
+            x-transition:leave-end="opacity-0 translate-y-1"
+            x-cloak
+            >
+          <div class="p-4">
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="amg.html" class="block">
+                  Audio Media Grading
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="caboenvivo.html" class="block">
+                  Cabo en Vivo
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="gs-redesign.html" class="block">
+                  GameSpot
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="laneone.html" class="block">
+                  LaneOne
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="mentore.html" class="block">
+                  Mentore
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="numnums.html" class="block">
+                  numnums
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="onvedeo.html" class="block">
+                  Onvedeo
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="pwcc.html" class="block">
+                  Pre-war Card Collector
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="tapdistrict.html" class="block">
+                  Tap District
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="xoom.html" class="block">
+                  Xoom
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative text-[#3d3d3d]" x-data="{ open: false }"> 
+        <button  @mouseover="open = true" 
+                 @mouseleave = "open = false" 
+                 type="button" 
+                 class="flex items-center gap-x-1 text-sm/6 font-semibold overflow-hidden" 
+                 aria-expanded="false">
+                 <p class="" x-intersect="$el.classList.add('maskUp2')">Brand</p>
+        </button>
+
+        <div class="absolute left-1/2 z-10 mt-3 w-screen max-w-[200px] -translate-x-1/2 overflow-hidden rounded-lg bg-paper shadow-lg ring-1 ring-gray-900/5" 
+            x-show="open"
+            @mouseenter = "open = true"
+            @mouseleave = "open = false"
+            x-transition:enter="ease-out duration-200"
+            x-transition:enter-start="opacity-0 translate-y-1"
+            x-transition:enter-end="opacity-100 translate-y-0"
+            x-transition:leave="ease-in duration-150"
+            x-transition:leave-start="opacity-100 translate-y-0"
+            x-transition:leave-end="opacity-0 translate-y-1"
+            x-cloak>
+          <div class="p-4">
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="amg.html" class="block">
+                  Audio Media Grading
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="beachboys.html" class="block">
+                  Beach Boys
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="gs-redesign.html" class="block">
+                  GameSpot
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="kezar.html" class="block">
+                  Kezar Life Sciences
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="laneone.html" class="block">
+                  LaneOne
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="numnums.html" class="block">
+                  numnums
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="onvedeo.html" class="block">
+                  Onvedeo
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="pwcc.html" class="block">
+                  Pre-war Card Collector
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="seewelltolearn.html" class="block">
+                  See Well to Learn
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="surveymonkey.html" class="block">
+                  SurveyMonkey
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="tapdistrict.html" class="block">
+                  Tap District
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative text-[#3d3d3d]" x-data="{ open: false }"> 
+        <button  @mouseover="open = true" @mouseleave = "open = false" type="button" class="flex items-center gap-x-1 text-sm/6 font-semibold overflow-hidden" aria-expanded="false">
+          <p class="" x-intersect="$el.classList.add('maskUp3')">Graphic</p>
+        </button>
+
+        <div class="absolute left-1/2 z-10 mt-3 w-screen max-w-[200px] -translate-x-1/2 overflow-hidden rounded-lg bg-paper shadow-lg ring-1 ring-gray-900/5" 
+            x-show="open"
+            @mouseenter = "open = true"
+            @mouseleave = "open = false"
+            x-transition:enter="ease-out duration-200"
+            x-transition:enter-start="opacity-0 translate-y-1"
+            x-transition:enter-end="opacity-100 translate-y-0"
+            x-transition:leave="ease-in duration-150"
+            x-transition:leave-start="opacity-100 translate-y-0"
+            x-transition:leave-end="opacity-0 translate-y-1"
+            x-cloak>
+          <div class="p-4">
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="editorial.html" class="block">
+                  Editorial Graphics
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="numnums.html" class="block">
+                  numnums
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="onvedeo.html" class="block">
+                  Onvedeo
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="#" class="block">
+                  Print
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="#" class="block">
+                   SurveyMonkey Graphics
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative text-[#3d3d3d]" x-data="{ open: false }"> 
+        <button  @mouseover="open = true" @mouseleave = "open = false" type="button" class="flex items-center gap-x-1 text-sm/6 font-semibold overflow-hidden" aria-expanded="false">
+          <p class="" x-intersect="$el.classList.add('maskUp4')">Code</p>
+        </button>
+
+        <div class="absolute left-1/2 z-10 mt-3 w-screen max-w-[200px] -translate-x-1/2 overflow-hidden rounded-lg bg-paper shadow-lg ring-1 ring-gray-900/5" 
+            x-show="open"
+            @mouseenter = "open = true"
+            @mouseleave = "open = false"
+            x-transition:enter="ease-out duration-200"
+            x-transition:enter-start="opacity-0 translate-y-1"
+            x-transition:enter-end="opacity-100 translate-y-0"
+            x-transition:leave="ease-in duration-150"
+            x-transition:leave-start="opacity-100 translate-y-0"
+            x-transition:leave-end="opacity-0 translate-y-1"
+            x-cloak>
+          <div class="p-4">
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="amg.html" class="block">
+                  Audio Media Grading
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="caboenvivo.html" class="block">
+                  Cabo en Vivo
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="laneone.html" class="block">
+                  LaneOne
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="numnums.html" class="block">
+                  numnums
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="onvedeo.html" class="block">
+                  Onvedeo
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="pwcc.html" class="block">
+                  Pre-war Card Collector
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+            <div class="group relative flex items-center gap-x-6 rounded-lg p-1 text-sm hover:bg-gray-50">
+              <div class="flex-auto">
+                <a href="seewelltolearn.html" class="block">
+                  See Well to Learn
+                  <span class="absolute inset-0"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="" class="relative text-[#3d3d3d] flex items-center gap-x-1 text-sm font-semibold overflow-hidden" x-data> 
+        <p class="" x-intersect="$el.classList.add('maskUp5')">About</p>
+      </a>
+
+    </div>
+    <div class="hidden lg:flex lg:flex-1 lg:justify-end relative" x-data>
+        <a href="contact" class="contact-link transition-all duration-700 flex flex-nowrap ">
+          {% raw %}
+          <img id="random-image" src="" alt="Random Image" class="h-20 sm:h-24 mt-1 inline-block -mr-3 z-10 relative" x-cloak x-intersect="$el.classList.add('scaleBounceDelay')">
+          <script>
+             (function() {
+                const images = [
+                    "assets/images/header-demon.svg",
+                    "assets/images/header-hairy.svg",
+                    "assets/images/header-handsome.svg",
+                    "assets/images/header-mech.svg",
+                    "assets/images/header-nowink.svg",
+                    "assets/images/header-poop.svg",
+                    "assets/images/header-slime.svg",
+                    "assets/images/header-wolf.svg",
+                    "assets/images/header-yao.svg",
+                    "assets/images/header-bunny.svg",
+                ];
+                const randomIndex = Math.floor(Math.random() * images.length);
+                const randomImage = images[randomIndex];
+                document.getElementById("random-image").src = randomImage;
+            })();
+          </script>
+          {% endraw %}
+          <div class="inline-block text-center uppercase mt-1 relative w-20 pt-5" x-intersect="$el.classList.add('swing-in-left-fwd-delay')">
+            <img src="assets/images/contact-bubble.svg" alt="TD Logo Mark" class="absolute mt-[2px]">
+            <span class="relative z-10 text-[#3d3d3d] text-[12px] font-bold heavy block pt-[5px] mt-1 sm:mt-[4px]">Contact</span>
+          </div>
+        </a>
+    </div>
+  </nav>
+  <!-- Mobile menu, show/hide based on menu open state. -->
+  <div class="hidden" role="dialog" aria-modal="true">
+    <!-- Background backdrop, show/hide based on slide-over state. -->
+    <div class="fixed inset-0 z-50"></div>
+    <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+      <div class="flex items-center justify-between">
+        <a href="#" class="-m-1.5 p-1.5">
+          <span class="sr-only">Your Company</span>
+          <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+        </a>
+        <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+          <span class="sr-only">Close menu</span>
+          <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="mt-6 flow-root">
+        <div class="-my-6 divide-y divide-gray-500/10">
+          <div class="space-y-2 py-6">
+            <div class="-mx-3">
+              <button type="button" class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50" aria-controls="products" aria-expanded="false">
+                Product
+                <!--
+                  Expand/collapse icon, toggle classes based on menu open state.
+
+                  Open: "rotate-180", Closed: ""
+                -->
+                <svg class="size-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                </svg>
+              </button>
+              <!-- 'Product' sub-menu, show/hide based on menu state. -->
+              <div class="mt-2 space-y-2" id="products">
+                <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Analytics</a>
+                <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Engagement</a>
+                <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Security</a>
+                <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Integrations</a>
+                <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Automations</a>
+                <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Watch demo</a>
+                <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Contact sales</a>
+              </div>
+            </div>
+            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Features</a>
+            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Marketplace</a>
+            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Company</a>
+          </div>
+          <div class="py-6">
+            <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
