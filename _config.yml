@@ -1,5 +1,5 @@
 url: ''
-baseurl: '/coguro'
+baseurl: ''
 title: ''
 
 plugins:
@@ -53,3 +53,4 @@ assets:
   plugins:
     css: { autoprefixer: {}}
     img: { optim: {}}
+
