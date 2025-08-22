@@ -823,6 +823,10 @@ body {
     .fadeRightIn {
         animation: fadeRightIn 1s;
     }
+    .fadeRightInDelay {
+        animation: fadeRightIn 1s;
+        animation-delay: 0.5s;
+    }
     @keyframes fadeRightIn {
         0% {
             opacity: 0;
