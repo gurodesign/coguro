@@ -34,7 +34,7 @@ custom_preload:
         <div class="w-full flex-none relative -mb-[200px]" x-data="{ imagesLoaded: false }">
           <img src="assets/images/work/laneone/homepage.png" alt="App screenshot" class="w-full lg:h-[90%] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10" 
           x-show="imagesLoaded" 
-          x-transition:enter="transition ease-out duration-700"
+          x-transition:enter="transition ease-out duration-700 delay-300"
           x-transition:enter-start="opacity-0 transform translate-x-20"
           x-transition:enter-end="opacity-100 transform translate-x-0" 
           x-init="$nextTick(() => imagesLoaded = true)" 
