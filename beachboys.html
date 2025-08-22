@@ -27,8 +27,8 @@ title: "The Beach Boys"
     </div>
 
 
-   <div class="mx-auto mt-16 flex max-w-full sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32" x-intersect="$el.classList.add('fadeUpIn')">
-        <img src="assets/images/work/beachboys/bb-logo-stacked-hero.png" alt="App screenshot" class="max-h-[50rem] md:max-h-[60rem] w-auto">
+   <div class="mx-auto mt-16 flex max-w-full sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32" x-data="{ show: false }" x-init="$nextTick(() => show = true)">
+      <img src="assets/images/work/beachboys/bb-logo-stacked-hero.png" alt="App screenshot" class="max-h-[50rem] md:max-h-[60rem] w-auto"  x-show="show" x-transition x-cloak x-intersect="$el.classList.add('fadeUpIn')">
     </div>
   </div>
 

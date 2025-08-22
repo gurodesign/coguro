@@ -27,9 +27,9 @@ title: "GameSpot Redesign"
       </div>
 
 
-      <div class="mx-auto flex mt-8 md:mt-0 lg:ml-10 lg:mr-0 lg:flex-none xl:ml-32">
-        <div class="w-full flex-none relative -mb-[200px]">
-          <img src="assets/images/work/gamespot/homepage_hero-v2.jpg" alt="App screenshot" class="w-full lg:h-[90%] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10" x-cloak x-intersect="$el.classList.add('fadeRightIn')">
+      <div class="mx-auto flex mt-8 md:mt-0 lg:ml-10 lg:mr-0 lg:flex-none xl:ml-32" x-data="{ show: false }" x-init="$nextTick(() => show = true)">
+        <div class="w-full flex-none relative -mb-[200px]" x-show="show" x-transition x-cloak x-intersect="$el.classList.add('fadeRightIn')">
+          <img src="assets/images/work/gamespot/homepage_hero-v2.jpg" alt="App screenshot" class="w-full lg:h-[90%] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10">
         </div>
       </div>
 

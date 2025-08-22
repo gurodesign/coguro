@@ -7,8 +7,8 @@ title: "Kezar Life Sciences"
 
 <div class="relative isolate overflow-hidden">
 
-  <div class="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-32 relative z-20">
-    <div class="mx-auto max-w-xl shrink-0 lg:mx-0 lg:pt-8">
+  <div class="mx-auto container px-6 pb-24 pt-10 lg:flex items-stretch lg:px-8 pt-48 lg:h-screen" x-data='{onDiscover: false, scrollPosition: window.pageYOffset}' @scroll.window='scrollPosition = window.pageYOffset'>
+    <div class="mx-auto lg:max-w-xl shrink-0 lg:mx-0 self-end sm:pb-16" x-cloak x-intersect="$el.classList.add('fadeUpIn')">
       <img src="assets/images/work/kezar/logo-mark.svg" alt="TD Logo Mark" class="h-24">
       <div class="mt-24 sm:mt-32 lg:mt-12 mb-6">
         <a href="#" class="inline-flex space-x-3">
@@ -17,11 +17,10 @@ title: "Kezar Life Sciences"
       </div>
       <h1 class="mt-10 text-pretty text-5xl font-black tracking-tight text-gray-900 sm:text-7xl">Kezar Life Sciences</h1>
       <p class="mt-8 text-pretty text-lg font-medium text-gray-600 sm:text-xl/8">Disrupting the premium ticketing and live event experience.</p>
-      <p class="mt-6 text-base/7 text-gray-700">From designing and developing sales systems to creating the digital experience for the live events to supporting marketing and growth initiatives, leading design at LaneOne was one of the most enriching roles I've ever had. We grew the company to great heights before the live entertainment industry was shutdown by the pandemic in 2020.</p>
     </div>
-    <div class="mx-auto mt-16 flex max-w-xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
-      <div class="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
-        <img src="assets/images/work/kezar/logo-big-texture.png" alt="App screenshot" class="w-[35%]">
+    <div class="mx-auto mt-16 flex max-w-xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32" x-data="{ show: false }" x-init="$nextTick(() => show = true)">
+      <div class="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none" x-show="show" x-transition x-cloak x-intersect="$el.classList.add('fadeRightIn')">
+        <img src="assets/images/work/kezar/logo-big-texture.png" alt="App screenshot" class="w-full sm:h-full">
       </div>
     </div>
   </div>

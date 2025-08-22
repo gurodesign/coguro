@@ -26,8 +26,8 @@ title: "Mentore"
     </div>
 
 
-   <div class="mx-auto mt-16 flex max-w-full sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32" x-intersect="$el.classList.add('fadeRightIn')">
-        <img src="assets/images/work/mentore/watch-hero.png" alt="App screenshot" class="max-h-[50rem] md:max-h-screen w-auto">
+   <div class="mx-auto mt-16 flex max-w-full sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32" x-data="{ show: false }" x-init="$nextTick(() => show = true)">
+        <img src="assets/images/work/mentore/watch-hero.png" alt="App screenshot" class="max-h-[50rem] md:max-h-screen w-auto" x-show="show" x-transition x-cloak x-intersect="$el.classList.add('fadeRightIn')">
     </div>
   </div>
 

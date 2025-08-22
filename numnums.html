@@ -29,8 +29,8 @@ title: "numnums"
 
 
       <div class="mx-auto flex mt-8 md:mt-0 lg:mr-0 lg:flex-none xl:ml-32">
-        <div class="w-full flex-none relative -mb-[100px]">
-          <img src="assets/images/work/numnums/numnums-dude.png" alt="App screenshot" class="w-full h-[120%]" x-cloak x-intersect="$el.classList.add('fadeRightIn')">
+        <div class="w-full flex-none relative -mb-[100px]" x-data="{ show: false }" x-init="$nextTick(() => show = true)">
+          <img src="assets/images/work/numnums/numnums-dude.png" alt="App screenshot" class="w-full h-[120%]" x-show="show" x-transition x-cloak x-intersect="$el.classList.add('fadeRightIn')">
         </div>
       </div>
 

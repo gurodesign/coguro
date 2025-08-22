@@ -27,8 +27,8 @@ title: "Onvedeo"
     </div>
 
 
-   <div class="mx-auto mt-16 flex max-w-full sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32" x-intersect="$el.classList.add('fadeUpIn')">
-      <div class="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none relative">
+   <div class="mx-auto mt-16 flex max-w-full sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32" x-data="{ show: false }" x-init="$nextTick(() => show = true)">
+      <div class="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none relative" x-show="show" x-transition x-cloak x-intersect="$el.classList.add('fadeRightIn')">
         <img src="assets/images/work/onvedeo/hero-listing-page.jpg" alt="App screenshot" class="onvedeo-hero-media w-[55%] absolute ml-16 rounded-md shadow-2xl">
         <img src="assets/images/work/onvedeo/hero-image.jpg" alt="App screenshot" class="w-[45%] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10">
       </div>

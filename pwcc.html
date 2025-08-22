@@ -10,7 +10,7 @@ title: "Pre-war Card Collector"
 <div x-data :style='`transform: translateY(${scrollPosition/4}px)`'>
 
   <div class="mx-auto container px-6 pb-24 pt-10 lg:flex items-stretch lg:px-8 pt-48 lg:h-screen">
-    <div class="mx-auto lg:max-w-xl shrink-0 lg:mx-0 self-end">
+    <div class="mx-auto lg:max-w-xl shrink-0 lg:mx-0 self-end" x-cloak x-intersect="$el.classList.add('fadeUpIn')">
 
       <img src="assets/images/work/pwcc/logo-mark.svg" alt="TD Logo Mark" class="h-10 md:h-12">
       <h1 class="mt-6 text-pretty text-5xl font-black tracking-tight text-gray-900 sm:text-7xl">Pre-war Card Collector</h1>
@@ -27,8 +27,8 @@ title: "Pre-war Card Collector"
 
 
     <div class="mx-auto flex mt-8 md:mt-0 lg:ml-10 lg:mr-0 lg:flex-none xl:ml-32">
-      <div class="w-full flex-none relative -mb-[200px]">
-        <img src="assets/images/work/pwcc/hero-image-2.jpg" alt="App screenshot" class="w-full lg:h-[90%] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10" x-cloak x-intersect="$el.classList.add('fadeUpIn')">
+      <div class="w-full flex-none relative -mb-[200px]" x-data="{ show: false }" x-init="$nextTick(() => show = true)">
+        <img src="assets/images/work/pwcc/hero-image-2.jpg" alt="App screenshot" class="w-full lg:h-[90%] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10" x-show="show" x-transition x-cloak x-intersect="$el.classList.add('fadeRightIn')">
       </div>
     </div>
 
@@ -148,4 +148,4 @@ title: "Pre-war Card Collector"
 
 </div>
 
-<script src="/assets/js/fading-slideshow.js"></script>
+<script src="{{ site.baseurl}}/assets/js/fading-slideshow.js"></script>
