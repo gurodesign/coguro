@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/nvt4zii.css">
 
     {% if page.custom_preload %}
-      {% for js_file in page.custom_js %}
-        <link rel="preload" as="image" href="/assets/js/{{ hero_image }}">
+      {% for hero_image in page.custom_preload %}
+        <link rel="preload" as="image" href="/assets/images/work/{{ hero_image }}">
       {% endfor %}
     {% endif %}
 
