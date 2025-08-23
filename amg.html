@@ -29,10 +29,22 @@ title: "Audio Media Grading"
 
     <div class="mx-auto flex mt-8 md:mt-0 lg:ml-10 lg:mr-0 lg:flex-none xl:ml-32 relative">
       <div class="w-full flex-none relative">
-      <div class="mx-auto max-w-3xl lg:flex-none sm:max-w-5xl lg:max-w-none relative lg:h-screen" x-data="{ show: false }" x-init="$nextTick(() => show = true)">
-        <img src="assets/images/work/amg/amg-hero-media.png" alt="App screenshot" class="w-[75%] lg:w-[70%] absolute -ml-8 z-20 mt-16 sm:mt-24" x-show="show" x-transition x-intersect="$el.classList.add('fadeUpIn')">
-        <img src="assets/images/work/amg/amg-hero-bg.jpg" alt="App screenshot" class="lg:h-[90%] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10" x-show="show" x-transition x-cloak x-intersect="$el.classList.add('fadeRightIn')">
-      </div>
+        <div class="mx-auto max-w-3xl lg:flex-none sm:max-w-5xl lg:max-w-none relative lg:h-screen" x-data="{ imagesLoaded: false }">
+          <img src="assets/images/work/amg/amg-hero-media.png" alt="App screenshot" class="w-[75%] lg:w-[70%] absolute -ml-8 z-20 mt-16 sm:mt-24" 
+            x-show="imagesLoaded" 
+            x-transition:enter="transition ease-out duration-700 delay-300"
+            x-transition:enter-start="opacity-0 transform translate-x-20"
+            x-transition:enter-end="opacity-100 transform translate-x-0" 
+            x-init="$nextTick(() => imagesLoaded = true)"
+          >
+          <img src="assets/images/work/amg/amg-hero-bg.jpg" alt="App screenshot" class="lg:h-[90%] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10"
+            x-show="imagesLoaded" 
+            x-transition:enter="transition ease-out duration-700 delay-300"
+            x-transition:enter-start="opacity-0 transform translate-y-20"
+            x-transition:enter-end="opacity-100 transform translate-y-0" 
+            x-init="$nextTick(() => imagesLoaded = true)"
+          >
+        </div>
       </div>
     </div>
 

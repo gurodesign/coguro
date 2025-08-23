@@ -18,8 +18,14 @@ title: "Editorial Design"
       <p class="mt-8 text-pretty text-lg font-medium text-gray-600 sm:text-2xl/9">Working at GameSpot was the perfect opportunity to work with the content and people that made the job not a job. I wouldn't realize until years later how much it formed my creativity and work ethic.
       </p>
     </div>
-    <div class="mx-auto flex mt-8 md:mt-0 lg:ml-10 lg:mr-0 lg:flex-none xl:ml-32" x-data="{ show: false }" x-init="$nextTick(() => show = true)">
-      <div class="w-full flex-none relative" x-show="show" x-transition x-cloak x-intersect="$el.classList.add('fadeUpIn')">
+    <div class="mx-auto flex mt-8 md:mt-0 lg:ml-10 lg:mr-0 lg:flex-none xl:ml-32" x-data="{ imagesLoaded: false }">
+      <div class="w-full flex-none relative"
+        x-show="imagesLoaded" 
+        x-transition:enter="transition ease-out duration-700 delay-300"
+        x-transition:enter-start="opacity-0 transform translate-x-20"
+        x-transition:enter-end="opacity-100 transform translate-x-0" 
+        x-init="$nextTick(() => imagesLoaded = true)"
+      >
         <img src="assets/images/work/editorial-design/science-of-playtesting.jpg" alt="App screenshot" class="w-full lg:h-[100%] xl:h-[110%] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10">
       </div>
     </div>

@@ -5,9 +5,9 @@ title: "Kezar Life Sciences"
  
 {% include header.html %}
 
-<div class="relative isolate overflow-hidden">
+<div class="relative isolate overflow-hidden" x-data='{onDiscover: false, scrollPosition: window.pageYOffset}' @scroll.window='scrollPosition = window.pageYOffset'>
 
-  <div class="mx-auto container px-6 pb-24 pt-10 lg:flex items-stretch lg:px-8 pt-48 lg:h-screen" x-data='{onDiscover: false, scrollPosition: window.pageYOffset}' @scroll.window='scrollPosition = window.pageYOffset'>
+  <div class="mx-auto container px-6 pb-24 pt-10 lg:flex items-stretch lg:px-8 pt-48 lg:h-screen" x-data :style='`transform: translateY(${scrollPosition/4}px)`'>
     <div class="mx-auto lg:max-w-xl shrink-0 lg:mx-0 self-end sm:pb-16" x-cloak x-intersect="$el.classList.add('fadeUpIn')">
       <img src="assets/images/work/kezar/logo-mark.svg" alt="TD Logo Mark" class="h-24">
       <div class="mt-24 sm:mt-32 lg:mt-12 mb-6">
@@ -18,8 +18,14 @@ title: "Kezar Life Sciences"
       <h1 class="mt-10 text-pretty text-5xl font-black tracking-tight text-gray-900 sm:text-7xl">Kezar Life Sciences</h1>
       <p class="mt-8 text-pretty text-lg font-medium text-gray-600 sm:text-xl/8">Disrupting the premium ticketing and live event experience.</p>
     </div>
-    <div class="mx-auto mt-16 flex max-w-xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32" x-data="{ show: false }" x-init="$nextTick(() => show = true)">
-      <div class="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none" x-show="show" x-transition x-cloak x-intersect="$el.classList.add('fadeRightIn')">
+    <div class="mx-auto mt-16 flex max-w-xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32" x-data="{ imagesLoaded: false }">
+      <div class="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none"
+        x-show="imagesLoaded" 
+        x-transition:enter="transition ease-out duration-700 delay-300"
+        x-transition:enter-start="opacity-0 transform translate-x-20"
+        x-transition:enter-end="opacity-100 transform translate-x-0" 
+        x-init="$nextTick(() => imagesLoaded = true)"
+      >
         <img src="assets/images/work/kezar/logo-big-texture.png" alt="App screenshot" class="w-full sm:h-full">
       </div>
     </div>

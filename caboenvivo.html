@@ -28,8 +28,14 @@ title: "Cabo en Vivo"
       </div>
 
 
-      <div class="mx-auto flex mt-8 md:mt-0 lg:ml-10 lg:mr-0 lg:flex-none xl:ml-32 -mb-[175px]" x-data="{ show: false }" x-init="$nextTick(() => show = true)">
-        <div class="w-full flex-none relative lg:h-[85%] rounded-md overflow-hidden"  x-show="show" x-transition x-cloak x-intersect="$el.classList.add('fadeRightIn')">
+      <div class="mx-auto flex mt-8 md:mt-0 lg:ml-10 lg:mr-0 lg:flex-none xl:ml-32 -mb-[175px]" x-data="{ imagesLoaded: false }">
+        <div class="w-full flex-none relative lg:h-[85%] rounded-md overflow-hidden"
+            x-show="imagesLoaded" 
+            x-transition:enter="transition ease-out duration-700 delay-300"
+            x-transition:enter-start="opacity-0 transform translate-x-20"
+            x-transition:enter-end="opacity-100 transform translate-x-0" 
+            x-init="$nextTick(() => imagesLoaded = true)"
+            >
             <img src="assets/images/work/caboenvivo/cabo-rocks.png" alt="TD Logo Mark" class="absolute bottom-0 z-20 max-w-full">
             <img src="assets/images/work/caboenvivo/marquee-logo.png" alt="TD Logo Mark" class="cabo-hero-lockup absolute center right-0 left-0 top-[18%] mx-auto w-[50%]">
             <video width="100%" muted loop autoplay="true"  class="w-full lg:h-full">

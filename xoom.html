@@ -1,6 +1,8 @@
 ---
 layout: default
 title: "Xoom Homepage"
+custom_preload:
+- xoom/hero.jpg
 ---
  
 {% include header.html %}
@@ -25,9 +27,15 @@ title: "Xoom Homepage"
     </div>
 
 
-    <div class="mx-auto flex mt-8 md:mt-0 lg:ml-10 lg:mr-0 lg:flex-none xl:ml-32" x-intersect="$el.classList.add('fadeUpIn')">
-        <div class="w-full flex-none relative -mb-[200px]">
-            <img src="assets/images/work/xoom/hero.jpg" alt="App screenshot" class="w-full lg:h-[90%] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10">
+    <div class="mx-auto flex mt-8 md:mt-0 lg:ml-10 lg:mr-0 lg:flex-none xl:ml-32" x-data="{ imagesLoaded: false }">
+        <div class="w-full flex-none relative -mb-[200px]"
+          x-show="imagesLoaded" 
+          x-transition:enter="transition ease-out duration-700 delay-300"
+          x-transition:enter-start="opacity-0 transform translate-x-20"
+          x-transition:enter-end="opacity-100 transform translate-x-0" 
+          x-init="$nextTick(() => imagesLoaded = true)"
+        >
+          <img src="assets/images/work/xoom/hero.jpg" alt="App screenshot" class="w-full lg:h-[90%] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10">
         </div>
     </div>
   </div>
