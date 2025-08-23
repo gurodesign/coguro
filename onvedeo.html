@@ -36,7 +36,8 @@ custom_preload:
         x-transition:enter="transition ease-out duration-700 delay-300"
         x-transition:enter-start="opacity-0 transform translate-x-20"
         x-transition:enter-end="opacity-100 transform translate-x-0" 
-        x-init="$nextTick(() => imagesLoaded = true)">
+        x-init="$nextTick(() => imagesLoaded = true)"
+        x-cloak
       >
         <img src="assets/images/work/onvedeo/hero-listing-page.jpg" alt="App screenshot" class="onvedeo-hero-media w-[55%] absolute ml-16 rounded-md shadow-2xl">
         <img src="assets/images/work/onvedeo/hero-image.jpg" alt="App screenshot" class="w-[45%] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10">

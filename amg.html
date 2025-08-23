@@ -39,6 +39,7 @@ custom_preload:
             x-transition:enter-start="opacity-0 transform translate-x-20"
             x-transition:enter-end="opacity-100 transform translate-x-0" 
             x-init="$nextTick(() => imagesLoaded = true)"
+            x-cloak
           >
           <img src="assets/images/work/amg/amg-hero-bg.jpg" alt="App screenshot" class="lg:h-[90%] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10"
             x-show="imagesLoaded" 
@@ -46,6 +47,7 @@ custom_preload:
             x-transition:enter-start="opacity-0 transform translate-y-20"
             x-transition:enter-end="opacity-100 transform translate-y-0" 
             x-init="$nextTick(() => imagesLoaded = true)"
+            x-cloak
           >
         </div>
       </div>
