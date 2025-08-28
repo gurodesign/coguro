@@ -183,12 +183,12 @@ body {
 .card__back { backface-visibility: hidden;}
 .card__back{ transform: rotateY(.5turn);}
 
-.show-more {
-
+.showmore-bar .cls-1 {
+  fill: #374151 !important;
 }
 
-.show-less {
-
+.showmore-bar:hover .cls-1 {
+  fill: white !important;
 }
 
 /* index */

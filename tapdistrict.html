@@ -30,7 +30,7 @@ custom_preload:
 
 
       <div class="mx-auto flex mt-8 md:mt-0 lg:ml-10 lg:mr-0 lg:flex-none xl:ml-32">
-        <div class="w-full flex-none relative -mb-[200px]" x-data="{ imagesLoaded: false }">
+        <div class="w-full flex-none relative -mb-[220px]" x-data="{ imagesLoaded: false }">
           <img src="assets/images/work/tapdistrict/td-product-page.jpg" alt="App screenshot" class="w-full lg:h-[90%] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10"
             x-show="imagesLoaded" 
             x-transition:enter="transition ease-out duration-700 delay-300"
@@ -49,15 +49,20 @@ custom_preload:
       <div class="container px-6 lg:px-8 mx-auto pt-[100px] pb-[300px]">
 
         <div class="max-w-xs mr-16 inline-block align-top">
-          <h2 class="font-black text-xs text-[#f4a300]">ROLE</h2>
-          <div class="text-gray-600 text-sm mt-1 font-bold">Principal / Design Director</div>
-          <div class="text-gray-600 text-sm">Product design</div>
-          <div class="text-gray-600 text-sm">Prototype creation</div>
-          <div class="text-gray-600 text-sm">Branding</div>
+          <h2 class="font-black text-xs text-[#f4a300] mb-3">ROLE</h2>
+          <div class="text-gray-600 sm:text-sm">Guro Design</div>
+          <div class="text-gray-600 text-sm mt-1 font-bold">Principal</div>
         </div>
-
-        <div class="max-w-xs inline-block align-to">
-          <h2 class="font-black text-xs text-[#f4a300]">OVERVIEW</h2>
+        <div class="mr-16 inline-block max align-top">
+          <h2 class="font-black text-xs text-[#f4a300] mb-3">CONTRIBUTION</h2>
+            <ul class="list-disc pl-4 text-sm text-gray-600">
+                <li>Product design</li>
+                <li>Prototype creation</li>
+                <li>Branding</li>
+            </ul>
+        </div>
+        <div class="max-w-sm inline-block align-to">
+          <h2 class="font-black text-xs text-[#f4a300] mb-3">OVERVIEW</h2>
           <div class="text-gray-600 text-sm mt-1">Tap District gave me a chance to work in a few areas that I hadn't previously had experience with; consumables, inventory systems, and last mile delivery. Collaborating with former bus-dev and engineering co-workers allowed me to dive in and focus on design and product vision.</div>
         </div>
 
@@ -175,6 +180,7 @@ custom_preload:
     <h2 class="text-pretty text-3xl font-semibold text-white mt-12">Discovery & Purchase</h2>      
     <p class="mt-8 text-white  text-sm/6">Selling alcohol-based beverages presents a unique challenge as there are a multitude of federal and state laws with significant variations across different jurisdictions. Our goal was to focus on craft makers selling in their local area. We had a relationship with Zilker Brewing in Austin, Texas that would serve as our geolocal launchpad. <br/><br/>
     The main storefront would showcase all the local sellers in the region, while each distinct seller would have a landing page that could be white labeled with custom branding. Sponsored placements on the homepage would allow for additional revenue streams. <br/><br/>
+    Deeper in the site we would allow for white labeled storefronts that would allow vendors to marlet their goods directly to businesses.
     </p>
   </div>
 </div>
@@ -246,53 +252,43 @@ custom_preload:
 
 </div>
 
-<div class="px-6 py-28 lg:px-8">
-  <div class="mx-auto max-w-6xl text-base/7 text-gray-700">
-    <div class="max-w-2xl mx-auto">
-      <h2 class="mt-16 text-pretty text-3xl font-semibold tracking-tight text-gray-900">Order Management and Delivery</h2>
-      <p class="mt-6 text-base/7">Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod vitae interdum mauris enim, consequat vulputate nibh. Maecenas pellentesque id sed tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam turpis ipsum eu a sed convallis diam.</p>
-      <ul id="gallery" class="fading-slideshow rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10 mt-8">
+<div class="grid md:grid-cols-2 gap-2 p-2">
+  <div class="col-span-1 bg-zinc-900 p-[15%] rounded-md overflow-hidden">
+    <h2 class="text-pretty text-3xl font-semibold text-white mt-12">Order Management</h2>      
+    <p class="mt-8 text-white  text-sm/6">Selling alcohol-based beverages presents a unique challenge as there are a multitude of federal and state laws with significant variations across different jurisdictions. Our goal was to focus on craft makers selling in their local area. We had a relationship with Zilker Brewing in Austin, Texas that would serve as our geolocal launchpad. <br/><br/>
+    </p>
+    <img src="assets/images/work/tapdistrict/td-graph.png" alt="Surfin Safari" class="bg-gray-50 mt-5 mb-1 rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10" loading="lazy">
+  </div>
+  <div class="col-span-1 rounded-md overflow-hidden p-[15%] bg-[#e7e7e7]">        
+
+      <ul id="gallery" class="fading-slideshow rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10 mt-8 overflow-hidden">
           <li><img src="assets/images/work/tapdistrict/order-gallery/InventoryIndex.png" alt="" class="" loading="lazy"></li>
           <li><img src="assets/images/work/tapdistrict/order-gallery/OrderDetail.png" alt="" class="" loading="lazy"></li>
           <li><img src="assets/images/work/tapdistrict/order-gallery/OrderIndex.png" alt="" class="" loading="lazy"></li>
           <li><img src="assets/images/work/tapdistrict/order-gallery/SupplierDashboard.png" alt="" class="" loading="lazy"></li>
       </ul>
-      <figcaption class="mt-4 flex gap-x-2 text-sm/6 text-gray-500">
-        <svg class="mt-0.5 size-5 flex-none text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-          <path fill-rule="evenodd" d="M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Zm-7-4a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM9 9a.75.75 0 0 0 0 1.5h.253a.25.25 0 0 1 .244.304l-.459 2.066A1.75 1.75 0 0 0 10.747 15H11a.75.75 0 0 0 0-1.5h-.253a.25.25 0 0 1-.244-.304l.459-2.066A1.75 1.75 0 0 0 9.253 9H9Z" clip-rule="evenodd" />
-        </svg>
-        Faucibus commodo massa rhoncus, volutpat.
-      </figcaption>
-      <img src="assets/images/work/tapdistrict/td-graph.png" alt="Surfin Safari" class="bg-gray-50 mt-5 mb-1 rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10" loading="lazy">
-      <figcaption class="mt-4 flex gap-x-2 text-sm/6 text-gray-500">
-        <svg class="mt-0.5 size-5 flex-none text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-          <path fill-rule="evenodd" d="M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Zm-7-4a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM9 9a.75.75 0 0 0 0 1.5h.253a.25.25 0 0 1 .244.304l-.459 2.066A1.75 1.75 0 0 0 10.747 15H11a.75.75 0 0 0 0-1.5h-.253a.25.25 0 0 1-.244-.304l.459-2.066A1.75 1.75 0 0 0 9.253 9H9Z" clip-rule="evenodd" />
-        </svg>
-        Faucibus commodo massa rhoncus, volutpat.
-      </figcaption>
-      <p class="mt-10">Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit.</p>
-    </div>
-    <div class="mt-16 max-w-2xl mx-auto">
-      <h2 class="text-pretty text-3xl font-semibold tracking-tight text-gray-900 mt-10">Delivery & Fufillment</h2>
-      <p class="mt-6">Purus morbi dignissim senectus mattis adipiscing. Amet, massa quam varius orci dapibus volutpat cras. In amet eu ridiculus leo sodales cursus tristique. Tincidunt sed tempus ut viverra ridiculus non molestie. Gravida quis fringilla amet eget dui tempor dignissim. Facilisis auctor venenatis varius nunc, congue erat ac. Cras fermentum convallis quam.</p>
-      <img src="assets/images/work/tapdistrict/delivery-map.png" alt="Surfin Safari" class="bg-gray-50 mt-10 mb-1 rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10" loading="lazy">
-      <figcaption class="mt-4 flex gap-x-2 text-sm/6 text-gray-500 mb-5">
-        <svg class="mt-0.5 size-5 flex-none text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-          <path fill-rule="evenodd" d="M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Zm-7-4a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM9 9a.75.75 0 0 0 0 1.5h.253a.25.25 0 0 1 .244.304l-.459 2.066A1.75 1.75 0 0 0 10.747 15H11a.75.75 0 0 0 0-1.5h-.253a.25.25 0 0 1-.244-.304l.459-2.066A1.75 1.75 0 0 0 9.253 9H9Z" clip-rule="evenodd" />
-        </svg>
-        Faucibus commodo massa rhoncus, volutpat.
-      </figcaption>
-      <p class="mt-8">Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit.</p>
-    </div>
+
   </div>
+
 </div>
 
-<div class="pt-32 pb-24 lg:px-8 bg-[#f4a300] relative">
+<div class="grid md:grid-cols-2 gap-2 px-2">
 
-  <div class="mx-auto max-w-4xl text-base/7 text-gray-700">
-    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/1aBKuUSS6UCmNL5hubMkJ0/TD?page-id=0%3A1&node-id=2-5650&starting-point-node-id=2%3A5650&embed-host=share" allowfullscreen></iframe>
+  <div class="col-span-1 bg-[#f4a300] p-[15%] rounded-md overflow-hidden">
+     <img src="assets/images/work/tapdistrict/delivery-map.png" alt="Surfin Safari" class="bg-gray-50 rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10" loading="lazy">
   </div>
 
+  <div class="col-span-1 rounded-md overflow-hidden p-[15%] bg-paper"> 
+    <h2 class="text-pretty text-3xl font-semibold tracking-tight text-gray-900 mt-10">Delivery & Fufillment</h2>
+    <p class="mt-6">Purus morbi dignissim senectus mattis adipiscing. Amet, massa quam varius orci dapibus volutpat cras. In amet eu ridiculus leo sodales cursus tristique. Tincidunt sed tempus ut viverra ridiculus non molestie. Gravida quis fringilla amet eget dui tempor dignissim. Facilisis auctor venenatis varius nunc, congue erat ac. Cras fermentum convallis quam.</p>
+  </div>
+
+</div>
+
+<div class="lg:px-2 pt-2 relative">
+  <div class="py-24 text-base/7 text-gray-700 bg-[#e7e7e7] rounded-md">
+    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" class="mx-auto" width="800" height="450" src="https://embed.figma.com/proto/1aBKuUSS6UCmNL5hubMkJ0/TD?page-id=0%3A1&node-id=2-5650&starting-point-node-id=2%3A5650&embed-host=share" allowfullscreen></iframe>
+  </div>
 </div>
 
 <script src="{{ site.baseurl}}/assets/js/fading-slideshow.js"></script>

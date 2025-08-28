@@ -1,9 +1,6 @@
 ---
 layout: default
 title: "Cabo en Vivo"
-custom_preload:
-- beachboys/caboenvivo/cabo-rocks.png
-- beachboys/caboenvivo/marquee-logo.png
 ---
  
 {% include header.html %}
@@ -31,15 +28,8 @@ custom_preload:
       </div>
 
 
-      <div class="mx-auto flex mt-8 md:mt-0 lg:ml-10 lg:mr-0 lg:flex-none xl:ml-32 -mb-[175px]" x-data="{ imagesLoaded: false }">
-        <div class="w-full flex-none relative lg:h-[85%] rounded-md overflow-hidden"
-            x-show="imagesLoaded" 
-            x-transition:enter="transition ease-out duration-700 delay-300"
-            x-transition:enter-start="opacity-0 transform translate-x-20"
-            x-transition:enter-end="opacity-100 transform translate-x-0" 
-            x-init="$nextTick(() => imagesLoaded = true)"
-            x-cloak
-            >
+      <div class="mx-auto flex mt-8 md:mt-0 lg:ml-10 lg:mr-0 lg:flex-none xl:ml-32 -mb-[175px]">
+        <div class="w-full flex-none relative lg:h-[85%] rounded-md overflow-hidden"  x-cloak x-intersect="$el.classList.add('fadeRightIn')">
             <img src="assets/images/work/caboenvivo/cabo-rocks.png" alt="TD Logo Mark" class="absolute bottom-0 z-20 max-w-full">
             <img src="assets/images/work/caboenvivo/marquee-logo.png" alt="TD Logo Mark" class="cabo-hero-lockup absolute center right-0 left-0 top-[18%] mx-auto w-[50%]">
             <video width="100%" muted loop autoplay="true"  class="w-full lg:h-full">
@@ -50,21 +40,31 @@ custom_preload:
 
     </div>
 
-    <div class="w-full border-t border-solid">
+    <div class="w-full border-t border-solid pt-12">
 
-      <div class="container px-6 lg:px-8 mx-auto pt-[100px] pb-[325px]">
+      <div class="container px-6 lg:px-8 mx-auto pt-[80px] pb-[325px]">
 
-        <div class="max-w-xs mr-16 inline-block align-top">
-          <h2 class="font-black text-xs text-[#f4a300]">ROLE</h2>
-          <div class="text-gray-600 text-sm mt-1 font-bold">Principal / Design Director / Product</div>
-          <div class="text-gray-600 text-sm">Product design</div>
-          <div class="text-gray-600 text-sm">Prototype creation</div>
-          <div class="text-gray-600 text-sm"></div>
+        <div class="max-w-xs mr-12 inline-block align-top">
+          <h2 class="font-black text-xs text-[#f4a300] mb-3">ROLE</h2>
+          <div class="text-gray-600 sm:text-sm">LaneOne</div>
+          <div class="text-gray-600 text-sm mt-1 font-bold">Principal / Design Director</div>
         </div>
 
-        <div class="max-w-xs inline-block align-to">
-          <h2 class="font-black text-xs text-[#f4a300]">OVERVIEW</h2>
-          <div class="text-gray-600 text-sm mt-1">Tap District gave me a chance to work in a few areas that I hadn't previously had experience with; consumables, inventory systems, and last mile delivery. Collaborating with former bus-dev and engineering co-workers allowed me to dive in and focus on design and product vision.</div>
+        <div class="max-w-xs inline-block align-top pr-12">
+          <h2 class="font-black text-xs text-[#f4a300] mb-3">CONTRIBUTION</h2>
+          <div class="text-gray-600 text-sm mt-1">
+            <ul class="list-disc pl-4">
+                <li>Event site design and build</li>
+                <li>3D rendering</li>
+                <li>Purchase flow design and build</li>
+                <li>Mobile app enhancements</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="max-w-sm inline-block align-to">
+          <h2 class="font-black text-xs text-[#f4a300] mb-3">OVERVIEW</h2>
+          <div class="text-gray-600 text-sm mt-1">Building the systems to support luxury destination events would require us to add a variety of new features to the LaneOne product. Partnering with Onboard Experiential would give us some event design and marketing support.</div>
         </div>
 
       </div>
@@ -122,13 +122,13 @@ custom_preload:
   <div class="py-24 sm:pt-32">
     <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
 
-        <h2 class="text-base/7 font-semibold text-teal-400">3D Modeling</h2>
-        <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight sm:text-5xl mb-6">Site Renderings</p>
+        <h2 class="text-base/7 font-semibold text-teal-400">3D Renderings</h2>
+        <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight sm:text-5xl mb-12">Site Concepts</p>
 
-        <div class="slide-reveal-container rounded-lg shadow-2xl ">
+        <div class="slide-reveal-container rounded-lg shadow-2xl mb-16">
             <div class="image-container">
-                <img src="assets/images/work/caboenvivo/site-1.jpg" alt="Site 1A" class="image-before slider-image" loading="lazy">
-                <img src="assets/images/work/caboenvivo/site-2.jpg" alt="Site 1B" class="image-after slider-image" loading="lazy">
+                <img src="assets/images/work/caboenvivo/site-1.jpg" alt="New Homepage" class="image-before slider-image" loading="lazy">
+                <img src="assets/images/work/caboenvivo/site-2.jpg" alt="Old HomePage" class="image-after slider-image" loading="lazy">
             </div>
             <!-- step="10" -->
             <input
@@ -202,13 +202,13 @@ custom_preload:
             </div>
         </div>
 
-        <p class="my-10 md:pr-10 text-sm/6 ">We needed a way to show the event set up even if plans weren't fully baked. After capturing drone footage from multiple angles I rendered the event area over a couple of stills using sketchup and composited flat imagery. Rendering the models pushed the 16gb of ram on my laptop to its limits. While the fidelity wasn't perfect it was enough to give a sense of scale and layout of the event and something for fans to get excited over.
+        <p class="my-10 md:pr-10 text-sm/6 mb-16">Using drone footage from multiple angles I rendered the event area over a couple of stills using sketchup and composited flat imagery. While the fidelity wasn't perfect it was enough to give a sense of scale and layout of the event and something for fans to get excited about.
         </p>
 
-        <div class="slide-reveal-container2 rounded-lg shadow-2xl ">
+        <div class="slide-reveal-container2 rounded-lg shadow-2xl mb-16">
             <div class="image-container">
-                <img src="assets/images/work/caboenvivo/site-3.jpg" alt="Site 2A" class="image-before slider-image" loading="lazy">
-                <img src="assets/images/work/caboenvivo/site-4.jpg" alt="Site 2B" class="image-after slider-image" loading="lazy">
+                <img src="assets/images/work/caboenvivo/site-3.jpg" alt="New Homepage" class="image-before slider-image">
+                <img src="assets/images/work/caboenvivo/site-4.jpg" alt="Old HomePage" class="image-after slider-image">
             </div>
             <!-- step="10" -->
             <input
@@ -309,10 +309,10 @@ custom_preload:
 
     <div class="col-span-6 lg:col-span-4 lg:pt-32 pl-8 lg:pl-24  order-first lg:order-last mb-20">
         <ul id="gallery" class="fading-slideshow sm:rounded-tl-lg sm:rounded-bl-lg overflow-hidden shadow-2xl mt-8">
-            <li><img src="assets/images/work/caboenvivo/purchase-flow-0.jpg" alt="" class="" loading="lazy"></li>
-            <li><img src="assets/images/work/caboenvivo/purchase-flow-1.jpg" alt="" class="" loading="lazy"></li>
-            <li><img src="assets/images/work/caboenvivo/purchase-flow-2.jpg" alt="" class="" loading="lazy"></li>
-            <li><img src="assets/images/work/caboenvivo/purchase-flow-3.jpg" alt="" class="" loading="lazy"></li>
+            <li><img src="assets/images/work/caboenvivo/purchase-flow-0.jpg" alt="" class=""></li>
+            <li><img src="assets/images/work/caboenvivo/purchase-flow-1.jpg" alt="" class=""></li>
+            <li><img src="assets/images/work/caboenvivo/purchase-flow-2.jpg" alt="" class=""></li>
+            <li><img src="assets/images/work/caboenvivo/purchase-flow-3.jpg" alt="" class=""></li>
         </ul>
     </div>
 
@@ -339,9 +339,9 @@ custom_preload:
             <path fill="#343E4E" d="M16 59c0-23.748 19.252-43 43-43h246c23.748 0 43 19.252 43 43v615c0 23.196-18.804 42-42 42H58c-23.196 0-42-18.804-42-42V59Z" />
             <foreignObject width="316" height="684" transform="translate(24 24)" clip-path="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)" id="slide-container">
                 <ul id="gallery" class="fading-slideshow mt-0">
-                    <li><img src="assets/images/work/caboenvivo/app-1.jpg" alt="" class="rounded-lg" loading="lazy"></li>
-                    <li><img src="assets/images/work/caboenvivo/app-2.jpg" alt="" class="rounded-lg" loading="lazy"></li>
-                    <li><img src="assets/images/work/caboenvivo/app-3.jpg" alt="" class="rounded-lg" loading="lazy"></li>
+                    <li><img src="assets/images/work/caboenvivo/app-1.jpg" alt="" class="rounded-lg"></li>
+                    <li><img src="assets/images/work/caboenvivo/app-2.jpg" alt="" class="rounded-lg"></li>
+                    <li><img src="assets/images/work/caboenvivo/app-3.jpg" alt="" class="rounded-lg"></li>
                 </ul>
             </foreignObject>
             </svg>
@@ -356,6 +356,6 @@ custom_preload:
 
 
 
-<script src="{{ site.baseurl}}/assets/js/fading-slideshow.js"></script>
-<script src="{{ site.baseurl}}/assets/js/slide-reveal.js"></script>
-<script src="{{ site.baseurl}}/assets/js/slide-reveal-2.js"></script>
+<script src="/assets/js/fading-slideshow.js"></script>
+<script src="/assets/js/slide-reveal.js"></script>
+<script src="/assets/js/slide-reveal-2.js"></script>
