@@ -11,7 +11,7 @@ custom_preload:
 
 <div x-data :style='`transform: translateY(${scrollPosition/4}px)`'>
 
-  <div class="mx-auto container px-6 pb-24 pt-10 lg:flex items-stretch lg:px-8 pt-48 lg:h-screen">
+  <div class="mx-auto container px-6 pb-6 sm:pb-24 pt-10 lg:flex items-stretch lg:px-8 pt-48 lg:h-screen">
     <div class="mx-auto lg:max-w-xl shrink-0 lg:mx-0 self-end" x-cloak x-intersect="$el.classList.add('fadeUpIn')">
 
       <img src="assets/images/work/surveymonkey/sm-mark.svg" alt="TD Logo Mark" class="h-16 md:h-20">
@@ -23,12 +23,12 @@ custom_preload:
           <span class="rounded-full bg-gray-600/10 px-3 py-1 text-xs/6 font-semibold text-gray-600 ring-1 ring-inset ring-gray-600/10">Motion Graphics</span>
         </a>
       </div>
-      <p class="mt-8 text-pretty font-medium text-gray-600 text-2xl/9">A change in direction to the world's best survey platform presented a great design opportunity and a way to reinvigorate a long established brand.</p>
+      <p class="mt-8 text-pretty font-medium text-gray-600 text-xl sm:text-2xl/9">A change in direction to the world's best survey platform presented a great design opportunity and a way to reinvigorate a long established brand.</p>
     
     </div>
 
-    <div class="mx-auto flex mt-8 md:mt-0 lg:ml-10 lg:mr-0 lg:flex-none xl:ml-32">
-      <div class="w-full flex-none relative -mb-[220px]" x-data="{ imagesLoaded: false }">
+    <div class="mx-auto flex mt-8 lg:mt-0 lg:ml-10 lg:mr-0 lg:flex-none xl:ml-32">
+      <div class="w-full flex-none relative lg:-mb-[220px]" x-data="{ imagesLoaded: false }">
         <img src="assets/images/work/surveymonkey/hero-image.jpg" alt="App screenshot" class="w-full lg:h-[90%] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10"
           x-show="imagesLoaded" 
           x-transition:enter="transition ease-out duration-700 delay-300"
@@ -42,14 +42,14 @@ custom_preload:
 
   </div>
 
-  <div class="w-full border-t border-solid">
-      <div class="container px-6 lg:px-8 mx-auto pt-[100px] pb-[300px]">
-        <div class="mr-16 inline-block max align-top">
+  <div class="w-full md:border-t md:border-solid">
+      <div class="container px-6 lg:px-8 mx-auto md:pt-[100px] pb-[400px] lg:pb-[350px]">
+        <div class="mr-16 md:inline-block mt-10 md:mt-0 align-top">
           <h2 class="font-black text-xs text-[#3cb462] mb-3">ROLE</h2>
-          <div class="text-gray-600 sm:text-sm">Guro Design</div>
-          <div class="text-gray-600 font-bold sm:text-sm">Staff Designer</div>
+          <div class="text-gray-600 text-sm">Guro Design</div>
+          <div class="text-gray-600 font-bold text-sm">Staff Designer</div>
         </div>
-        <div class="mr-16 inline-block max">
+        <div class="mr-16 md:inline-block mt-10 md:mt-0">
           <h2 class="font-black text-xs text-[#3cb462] mb-3">CONTRIBUTION</h2>
             <ul class="list-disc pl-4 text-sm text-gray-600">
               <li>Produce wireframes and high fidelity mockups</li>
@@ -59,9 +59,9 @@ custom_preload:
               <li>Pitch deck and presentation design</li>
             </ul>
         </div>
-        <div class=" inline-block max-w-sm align-top">
+        <div class="md:inline-block mt-10 md:mt-0 sm:max-w-sm align-top">
           <h2 class="font-black text-xs text-[#3cb462] uppercase mb-3">Overview</h2>
-          <div class="text-gray-600 sm:text-sm">Working with SurveyMonkey over the course of two years allowed me to jump in and contribute during a transitional period in the company's history. After spending a few years under the umbrella brand, Momentive, a reoganization consolidated the business units back under the singular and more recognizible SurveyMonkey brand.</div>
+          <div class="text-gray-600 text-sm">Working with SurveyMonkey over the course of two years allowed me to jump in and contribute in the midst of a transition. After spending a few years under the umbrella brand, Momentive, a reoganization consolidated the business units back under the singular and more recognizible SurveyMonkey brand.</div>
         </div>
       </div>
   </div>
@@ -71,18 +71,18 @@ custom_preload:
 
 </div>
 
-<div class="bg-[#3cb462] lg:py-32">
-  <div class="mx-auto px-6 container lg:px-8">
+<div class="bg-[#00b96d] lg:py-20">
+  <div class="mx-auto px-6 container lg:pt-8 md:pb-16">
 
     <div class="grid grid-cols-1 gap-1 lg:grid-cols-6">
       <div class="relative lg:col-span-4" x-data>
-        <img src="assets/images/work/surveymonkey/sm-hero-2.jpg" alt="New Homepage" class="top-20 sticky rounded-lg shadow-2xl " x-cloak x-intersect="$el.classList.add('fadeUpIn')" loading="lazy">
+        <img src="assets/images/work/surveymonkey/sm-hero-2.jpg" alt="New Homepage" class="mt-8 md:mt-16 lg:mt-0 rounded-lg shadow-2xl " x-cloak x-intersect="$el.classList.add('fadeUpIn')" loading="lazy">
       </div>
       
-      <div class="relative lg:col-span-2 pl-16">
+      <div class="relative lg:col-span-2 lg:pl-16 my-12 lg:my-0">
         <h2 class="text-base/7 font-semibold text-[#d9ffe5]">Survey says...</h2>
-        <p class="mt-2 max-w-xl text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl mb-6">New Homepage</p>
-        <p class="mt-2 max-w-lg text-sm/6 text-white">With the homepage update I wanted to inject some personality into the brand, something that could be improved upon and resonate alongside the playful name. After concpeting a hadful of directions one stood out to me. It involved a bit of subtle interactivity that would showcase the product and value proposition at the same time.<br/><br/>
+        <p class="mt-2 lg:max-w-xl text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl mb-6">New Homepage</p>
+        <p class="mt-2 lg:max-w-lg text-sm/6 text-white">I was hoping to inject some personality into the brand with a new homepage concept, something that could be improved upon and resonate alongside the playful name. Out of a handful of concepts one stood out to me. It involved some subtle interactivity that would showcase the product and value proposition at the same time.<br/><br/>
         It revolved around embedding a mock survey in the hero area. Each multiple choice option would be a core user intention (the final answer being all of the above). Every selection would result in a form response detailing the associated value proposition and each answer would laterally lead to the other value propositions and inevitably end at the 'All the above' result with a sign up form.<br/><br/>
         By skewing the axis of the form and surrounded it with graphics, it was emphasized as a visual element rather than an actual working survey making it a bit of an easter egg. To stay playful and define a visual style I incorporated animated patterns in the background that would move and rotate organically. As they passed under the hero module I would use an svg filter to blur them to maintain legibility.
         </p>
@@ -91,20 +91,20 @@ custom_preload:
   </div>
 </div>
 
-<div class="bg-gray-800 pt-12 sm:pt-20">
+<div class="bg-gray-800">
   <div class="mx-auto px-6 container lg:px-8">
 
-    <div class="mt-10 grid grid-cols-1 gap-1 sm:mt-16 lg:grid-cols-6 ">
-      <div class="relative lg:col-span-2 pr-16">
-        <div class="top-20 sticky relative pb-20">
+    <div class="grid grid-cols-1 gap-1 md:pt-16 lg:pt-32 pb-16 lg:pb-0 lg:grid-cols-6 ">
+      <div class="my-12 lg:my-0 relative lg:col-span-2 lg:pb-16 lg:pr-16">
+        <div class="sticky top-20 relative">
           <h2 class="text-base/7 font-semibold text-[#3cb462]">Survey says...</h2>
-          <p class="mt-2 max-w-xl text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl mb-6">Brand Refresh</p>
-          <p class="mt-2 max-w-lg text-sm/6 text-white">SurveyMonkey was in the midst of a leadership change and brand reorganization. They spent the past few years building distinct business units for their consumer, enterprise and data products under the umbrella brand, Momentive, but the new direction involved consolidating the brands back into the singlular SurveyMonkey entity.<br/><br/>To recognize the re-org, it was necessary to launch an updates to key pages to reflect the change. It was an opportunity to change the creative that had not been updated for some time.</p>
+          <p class="mt-2 lg:max-w-xl text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl mb-6">Brand Refresh</p>
+          <p class="mt-2 lg:max-w-lg text-sm/6 text-white">SurveyMonkey was in the midst of a leadership change and brand reorganization. They spent the past few years building distinct business units for their consumer, enterprise and data products under the umbrella brand, Momentive, but the new direction involved consolidating the brands back into the singlular SurveyMonkey entity.<br/><br/>To recognize the re-org, it was necessary to launch an updates to key pages to reflect the change. It was an opportunity to change the creative that had not been updated for some time.</p>
         </div>
       </div>
       <div class="relative lg:col-span-4">
          
-        <div class="slide-reveal-container rounded-tl-lg rounded-tr-lg shadow-2xl ">
+        <div class="slide-reveal-container rounded-bl-lg rounded-br-lg lg:rounded-bl-none lg:rounded-br-none rounded-tl-lg rounded-tr-lg shadow-2xl ">
           <div class="image-container">
             <img src="assets/images/work/surveymonkey/homepage-update-2.jpg" alt="New Homepage" class="image-before slider-image" loading="lazy">
             <img src="assets/images/work/surveymonkey/old-hp-2.jpg" alt="Old HomePage" class="image-after slider-image" loading="lazy">
@@ -187,63 +187,68 @@ custom_preload:
 
 
 
-<div class="bg-[#dedede] lg:py-36">
+<div class="bg-[#dedede] lg:py-32">
   <div class="container grid grid-cols-1 lg:grid-cols-6 mx-auto lg:px-8">
-    <div class="lg:col-span-4">
+    <div class="lg:col-span-4 order-last lg:order-first mb-16 lg:mb-0 px-6 lg:px-0">
       <img src="assets/images/work/surveymonkey/old-UI.jpg" alt="" class="rounded-lg bg-white/5 shadow-2xl ring-1 ring-white/10" loading="lazy">
     </div>
-    <div class="mx-auto text-base/7 lg:col-span-2  pl-20">
+    <div class="mx-auto text-base/7 lg:col-span-2 px-6 lg:px-0 py-12 lg:py-0 lg:pl-20">
       <h2 class="text-base/7 font-semibold text-[#3cb462]">Marketing dilemma</h2>
       <p class="mt-2 max-w-xlg text-pretty text-4xl font-semibold tracking-tight sm:text-5xl mb-6">A Product Design Gap</p>
-      <p class="mt-8 mb-16 text-sm/6 ">The core direction of the visual design was to incorporate more UI graphics to reinforce feature propostion, problem being that the presentability of product shots was lacking. The brand design team were designing UI mock-ups specifically for marketing use only. This felt necessary, but disingenuous seeing that they lacked parity with the design of the in-use product. Product shots were being incorporated as core visuals without any additional flourish which made it feel dry.<br/><br/>
+      <p class="mt-8 text-sm/6 ">The core direction of the visual design was to incorporate more UI graphics to reinforce feature propostion, problem being that the presentability of product shots was lacking. The brand design team were designing UI mock-ups specifically for marketing use only. This felt necessary, but disingenuous seeing that they lacked parity with the design of the in-use product. Product shots were being incorporated as core visuals without any additional flourish which made it feel dry.<br/><br/>
       Instead using the UI components as secondary imagery seemed to work well and bred a visual style, something that was lacking from the existing site. I opted for a line driven style incorporating the range of brand colors. Photographic imagery would be used a visual anchor</p>
     </div>
   </div>
 </div>
 
-<div class="bg-paper lg:py-36">
+<div class="bg-paper lg:py-32">
   <div class="container grid grid-cols-1 lg:grid-cols-6 mx-auto lg:px-8">
-    <div class="mx-auto text-base/7 lg:col-span-2 pr-20">
-      <div class="top-24 sticky">
-      <h2 class="text-base/7 font-semibold text-[#009CDB]">A land of ...</h2>
+    <div class="mx-auto text-base/7 lg:col-span-2 lg:pr-20 px-6 lg:px-0 mt-12 sm:mt-0">
+      <div class="lg:top-20 lg:sticky">
+      <h2 class="text-base/7 font-semibold text-[#009CDB]">The land of ...</h2>
       <p class="mt-2 max-w-xlg text-pretty text-4xl font-semibold tracking-tight sm:text-5xl mb-6">Landing Pages</p>
       <p class="mt-8 mb-16 text-sm/6">There were dozens of landing pages and side doors funneled through paid search. All of these would also need updated content and imagery for a unified launch.<br/><br/>The core direction of the visual design was to incorporate more UI graphics to reinforce feature propostion, problem being that the presentability of product shots was lacking. The brand design team was designing UI mock-ups specifically for marketing use, lacking parity with the in use product. This felt disingenuous. Additionally these product shots were being incorporated as core visuals without any accompanying graphics which also felt dry.
       </p>
       </div>
     </div>
     <div class="lg:col-span-4">
-      <img src="assets/images/work/surveymonkey/salesforce-page.jpg" alt="" class="rounded-lg bg-white/5 shadow-2xl ring-1 ring-white/10" loading="lazy">
+      <div class=" mb-16 lg:mb-0 px-6 lg:px-0">
+        <img src="assets/images/work/surveymonkey/salesforce-page.jpg" alt="" class="rounded-lg bg-white/5 shadow-2xl ring-1 ring-white/10" loading="lazy">
+      </div>
     </div>
   </div>
 </div>
 
-<!-- <div class="bg-[#394851] lg:py-32">
-  <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-    <img src="assets/images/work/surveymonkey/3up-module.svg" alt="App screenshot" class="">
+<div class="bg-[#394851] lg:py-24">
+  <div>Core Value Propositions</div>
+  <div class="mx-auto container grid grid-cols-1 sm:grid-cols-3 gap-6">
+    <div class="col-span-1 px-24 sm:px-8 py-0 sm:py-8"><img src="assets/images/work/surveymonkey/values-surveys.svg" alt="App screenshot" class=""></div>
+    <div class="col-span-1 px-24 sm:px-8 py-0 sm:py-8"><img src="assets/images/work/surveymonkey/values-insights.svg" alt="App screenshot" class=""></div>
+    <div class="col-span-1 px-24 sm:px-8 py-0 sm:py-8"><img src="assets/images/work/surveymonkey/values-feedback.svg" alt="App screenshot" class=""></div>
   </div>
-</div> -->
+</div>
 
-<div class="bg-[#F7F2FD] lg:py-32">
+<div class="bg-[#F7F2FD] py-16 lg:py-32">
   
     <div class="container grid grid-cols-1 lg:grid-cols-6 mx-auto lg:px-8">
 
-      <div class="relative lg:col-span-2 pr-20">
+      <div class="relative lg:col-span-2 pr-20 px-6 md:px-0">
         <h2 class="text-base/7 text-[#CC8AC6] font-semibold">Brand assets</h2>
         <p class="mt-2 max-w-xl text-pretty text-4xl font-semibold tracking-tight sm:text-5xl mb-6">Workin' with what you got</p>
         <p class="mt-2 max-w-lg text-sm/6">Attempts at incoporating new creative</p>
       </div>
 
       <div class="relative lg:col-span-4">
-        <img src="assets/images/work/surveymonkey/sm-people-icons.png" alt="New Homepage" class="-mt-[200px]" loading="lazy">
+        <img src="assets/images/work/surveymonkey/sm-people-icons.png" alt="New Homepage" class="lg:-mt-[200px]" loading="lazy">
       </div>
      
-    <div class="lg:col-span-6 mt-20">
-      <img src="assets/images/work/surveymonkey/workin-modules.svg" alt="New Homepage" class="lg:max-w-6xl mx-auto" loading="lazy">
+    <div class="lg:col-span-6 mt-12 lg:mt-20 px-6 md:px-0">
+      <img src="assets/images/work/surveymonkey/workin-modules.svg" alt="New Homepage" class="mx-auto" loading="lazy">
     </div>
   </div>
 </div>
 
-<div class="grid grid-cols-1 grid-rows-5 md:grid-cols-8 md:grid-rows-4 gap-2 p-2 rounded-md overflow-hidden">
+<div class="grid grid-cols-2 grid-rows-5 md:grid-cols-8 md:grid-rows-4 gap-2 p-2 rounded-md overflow-hidden">
   <div class="col-span-1 md:col-span-2 rounded-md overflow-hidden bg-[#EEF9FE] flex items-center p-[10%]">
     <img src="assets/images/work/surveymonkey/salesforce.svg" alt="App screenshot" class="" loading="lazy">
   </div>
@@ -318,14 +323,12 @@ custom_preload:
   </div> -->
 </div>
 
-<div class=""><img src="assets/images/work/sm-graphics/enterprise-1.jpg" alt="App screenshot" class="w-full rounded-md"></div>
+<div class="bg-[#00bf6f] lg:py-32">
+  <div class="mx-auto px-0 container lg:px-8">
 
-<div class="bg-[#3cb462] lg:py-32">
-  <div class="mx-auto px-6 container lg:px-8">
-
-    <div class="grid grid-cols-1 gap-1 lg:grid-cols-6 ">
-      <div class="relative lg:col-span-4">
-         <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 ">
+    <div class="grid grid-cols-1 gap-1 lg:grid-cols-6 pt-2 md:pt-8 lg:pt-0">
+      <div class="relative lg:col-span-4 px-2 lg:px-0">
+         <div class="grid grid-cols-1 gap-y-2 md:gap-y-4 lg:gap-x-4 lg:grid-cols-2 ">
             <div class="col-span-2"><img src="assets/images/work/sm-graphics/mrx-1.jpg" alt="App screenshot" class="w-full rounded-md"></div>
             <div class=""><img src="assets/images/work/sm-graphics/mrx-2.jpg" alt="App screenshot" class="w-full rounded-md"></div>
             <div class=""><img src="assets/images/work/sm-graphics/mrx-4.jpg" alt="App screenshot" class="w-full rounded-md"></div>
@@ -335,10 +338,10 @@ custom_preload:
          </div>
       </div>
       
-      <div class="relative lg:col-span-2 pl-16">
+      <div class="relative lg:col-span-2 lg:pl-16 px-6 md:px-0 pt-12 md:pt-0 pb-6 md:pb-0">
         <h2 class="text-base/7 font-semibold text-[#d9ffe5]">SurveyMonkey</h2>
-        <p class="mt-2 max-w-xl text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl mb-6">Market Research Solutions</p>
-        <p class="mt-2 max-w-lg text-sm/6 text-white">Getting the opportunity to redesign the homepage for a site that receives over 50 million visits per a month is not something that typically gets dropped in your lap. The bar for improvement was low, as the existing site content had remained stagnant for some time. I had a handful of interesting directions I wanted to explore. One in particular involved a bit of subtle interactivity that would showcase the product and market the value proposition at the same time.<br/><br/>
+        <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl mb-6">Market Research Solutions</p>
+        <p class="mt-2 text-sm/6 text-white">Getting the opportunity to redesign the homepage for a site that receives over 50 million visits per a month is not something that typically gets dropped in your lap. The bar for improvement was low, as the existing site content had remained stagnant for some time. I had a handful of interesting directions I wanted to explore. One in particular involved a bit of subtle interactivity that would showcase the product and market the value proposition at the same time.<br/><br/>
         The idea revolved around embedding a mock survey in the hero area with each mutltiple choice selection being a core user intention (the final answer being all of the above). A click on any of the individual answers would animate in a form response detailing the associated value prop. Each answer would laterally lead to each other value prop and inevitably end at the 'All the above' result with a 'Sign up for free' CTA.<br/><br/>
         I wanted the interactivity of the unit to be an easter egg so I skewed the axis of the form and surrounded it with graphics to emphasize it was a visual element rather than an actual working survey. To stay playful and define a visual style I incorporated animated paterns in the background that would move and rotate organically. As they passed under the hero module I would use an svg:filter to blur them to maintain legibility.
         </p>
@@ -347,20 +350,21 @@ custom_preload:
   </div>
 </div>
 
-<div class="bg-gray-800 pt-12 sm:pt-20">
-  <div class="mx-auto px-6 container lg:px-8">
+<div class=""><img src="assets/images/work/sm-graphics/enterprise-1.jpg" alt="App screenshot" class="w-full"></div>
 
-    <div class="mt-10 grid grid-cols-1 gap-1 sm:mt-16 lg:grid-cols-6 ">
-      <div class="relative lg:col-span-2 pr-16">
+<div class="bg-gray-800 lg:pt-12">
+  <div class="mx-auto py-2 container lg:py-8">
+
+    <div class="grid grid-cols-1 gap-1 sm:mt-16 lg:grid-cols-6 ">
+      <div class="relative lg:col-span-2 lg:pr-16 px-6 lg:px-0 py-12 lg:py-0">
         <h2 class="text-base/7 font-semibold text-[#3cb462]">SurveyMonkey</h2>
-        <p class="mt-2 max-w-xl text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl mb-6">Enterprise</p>
-        <p class="mt-2 max-w-lg text-base/7 text-white">SurveyMonkey was in the midst of a leadership change and brand reorganization. They spent the past few years building distinct business units for their consumer, enterprise and data products under the umbrella brand, Momentive, but the new direction involved consolidating the brands back into the singlular SurveyMonkey entity.</p><br/>
+        <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl mb-6">Enterprise</p>
+        <p class="mt-2 text-base/7 text-white">SurveyMonkey was in the midst of a leadership change and brand reorganization. They spent the past few years building distinct business units for their consumer, enterprise and data products under the umbrella brand, Momentive, but the new direction involved consolidating the brands back into the singlular SurveyMonkey entity.</p><br/>
         <p class="mt-2 max-w-lg text-sm/6 text-white pr-10">To recognize the re-org, it was necessary to launch an updates to key pages to reflect the change. It was an opportunity to change the creative that had not been updated for some time. </p>
       </div>
       <div class="relative lg:col-span-4">
          
-        <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 mb-20">
-            <div class="col-span-2"><img src="assets/images/work/sm-graphics/enterprise-1.jpg" alt="App screenshot" class="w-full rounded-md"></div>
+        <div class="grid grid-cols-1 gap-2 lg:gap-4 lg:grid-cols-2 mb-0 lg:mb-20 px-2">
             <div class=""><img src="assets/images/work/sm-graphics/enterprise-2.jpg" alt="App screenshot" class="w-full rounded-md"></div>
             <div class=""><img src="assets/images/work/sm-graphics/enterprise-3.jpg" alt="App screenshot" class="w-full rounded-md"></div>
             <div class=""><img src="assets/images/work/sm-graphics/enterprise-4.jpg" alt="App screenshot" class="w-full rounded-md"></div>
@@ -373,19 +377,21 @@ custom_preload:
 </div>
 
 <div class="bg-[#dedede] lg:py-36">
-  <div class="container grid grid-cols-1 lg:grid-cols-6 mx-auto">
-    <div class="lg:col-span-4">
-        <video width=100% muted loop autoplay="true" class="rounded-lg bg-white/5 shadow-2xl ring-1 ring-white/10">
+  <div class="container grid grid-cols-1 lg:grid-cols-6 mx-auto relative">
+    <div class="lg:col-span-4 sm:pr-20 p-2">
+        <video width=100% muted loop autoplay="true" class="rounded-lg bg-white/5 shadow-2xl ring-1 ring-white/10 mb-2">
             <source src="assets/videos/SM-Loop-movie.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <img src="assets/images/work/sm-graphics/customer-continuum.svg" alt="App screenshot" class="w-full mt-20 rounded-md shadow-2xl ring-1 ring-white/10">
+        <img src="assets/images/work/sm-graphics/customer-continuum.svg" alt="App screenshot" class="w-full lg:mt-12 rounded-md shadow-2xl ring-1 ring-white/10">
     </div>
 
-    <div class="mx-auto text-base/7 lg:col-span-2 pl-20">
-      <h2 class="text-base/7 font-semibold text-[#3cb462]">The SurveyMonkey Loop</h2>
-      <p class="mt-2 max-w-xlg text-pretty text-4xl font-semibold tracking-tight sm:text-5xl mb-6">Ushering in a new era</p>
-      <p class="mt-8 mb-16  text-base/7">The core direction of the visual design was to incorporate more UI graphics to reinforce feature propostion, problem being that the presentability of product shots was lacking. The brand design team were designing UI mock-ups specifically for marketing use only. This felt disingenuous. Additionally these product shots were being incorporated as core visuals without any accompanying graphics which also felt dry.</p>
+    <div class="mx-auto text-base/7 lg:col-span-2 sm:pr-16">
+      <div class="sticky top-20 px-6 lg:px-0 py-12 lg:py-0">
+        <h2 class="text-base/7 font-semibold text-[#3cb462]">The SurveyMonkey Loop</h2>
+        <p class="mt-2 max-w-xlg text-pretty text-4xl font-semibold tracking-tight sm:text-5xl mb-6">Ushering in a new era</p>
+        <p class="mt-8 mb-16  text-base/7">The core direction of the visual design was to incorporate more UI graphics to reinforce feature propostion, problem being that the presentability of product shots was lacking. The brand design team were designing UI mock-ups specifically for marketing use only. This felt disingenuous. Additionally these product shots were being incorporated as core visuals without any accompanying graphics which also felt dry.</p>
+      </div>
     </div>
 
   </div>

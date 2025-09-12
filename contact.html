@@ -5,65 +5,54 @@ title: "Guro Design"
  
 {% include header.html %}
 
-<div class="px-8">
-<div class="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8 max-w-6xl mx-auto mt-36 bg-paper border border-1 rounded-lg shadow-xl">
-  <div class="mx-auto max-w-xl lg:max-w-4xl">
-    <h2 class="text-4xl font-black tracking-tight text-pretty text-gray-900 sm:text-6xl">Tap in!</h2>
-    <p class="mt-2 text-lg/8 text-gray-600">Let's talk about how we can make something amazing together.</p>
-    <div class="mt-16 flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
-      <form action="#" method="POST" class="lg:flex-auto">
-        <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-          <div>
-            <label for="first-name" class="block text-sm/6 font-semibold text-gray-900">First name</label>
-            <div class="mt-2.5">
-              <input id="first-name" type="text" name="first-name" autocomplete="given-name" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 backdrop-blur-sm placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600" />
-            </div>
+<div class="px-12">
+  <div class="relative isolate px-6 py-24 sm:py-32 lg:px-24 max-w-6xl mx-auto mb-36 mt-[180px]">
+      <div class="flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
+          <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+                  <input type="hidden" name="access_key" value="fe682960-8d55-455a-84d8-0554d868272d" />
+                  <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+                  <input type="hidden" name="from_name" value="guro.design" />
+                  <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
+
+                  <div class="form-group-container grid grid-cols-1 gap-3 sm:grid-cols-2">
+                    <div class="form-group sm:col-span-1">
+                        <label for="name" class="form-label block text-sm/6 font-semibold text-gray-900">Name</label>
+                        <input id="name" name="name" class="form-input block w-full rounded-sm bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 backdrop-blur-sm placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 border border-gray-600 mt-2" placeholder="Your name" type="text" />
+                    </div>
+                    <div class="form-group sm:col-span-1">
+                        <label for="email" class="form-label block text-sm/6 font-semibold text-gray-900">Email</label>
+                        <input id="email" name="email" class="form-input block w-full rounded-sm bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 backdrop-blur-sm placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 border border-gray-600 mt-2" placeholder="Your email" type="email" />
+                    </div>
+                    <div class="form-group sm:col-span-2">
+                        <label for="message" class="form-label block text-sm/6 font-semibold text-gray-900">Message</label>
+                        <textarea class="form-textarea block w-full rounded-sm bg-white px-3.5 py-2 text-base text-gray-900 outline-1 outline-gray-800 backdrop-blur-sm placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 border border-gray-600 mt-2" id="message" name="message" placeholder="Your message"></textarea>
+                    </div>
+                  </div>
+                  <button class="form-submit bg-[#2986d3] text-white px-8 py-3 rounded-md mt-8" type="submit">Send Message</button>
+                  <p class="mt-4 text-sm/6 text-gray-500">By submitting this form, I agree to the <a href="#" class="font-semibold whitespace-nowrap text-[#2986d3]">privacy policy</a>.</p>
+
+            </form>
+            
+          <div class="lg:flex-none">
+            <figure class="sm:ml-16">
+              <h2 class="text-4xl font-black tracking-tight text-pretty text-gray-900 sm:text-6xl mb-6">Talk to me.</h2>
+              <blockquote class="text-sm/6 text-gray-900">
+                <p>I'm glad you're reaching out and I'm excited to provide any and all the design support you need. To give you an idea of cost, <span class="font-bold">my standard billrate is $150/hr</span>. This can be variable depending if it's a project I may have an interest in or supports a social cause I can get behind. I'm also available to work on retainer and can offer a fixed project bid if that construct better suits your budget.</p>
+              </blockquote>
+              <figcaption class="mt-10 flex gap-x-6">
+                <img src="assets/images/headshot.jpeg" alt="" class="size-12 flex-none rounded-full bg-gray-50">
+                <div>
+                  <div class="text-base font-semibold text-gray-900">Collin Oguro</div>
+                  <div class="text-sm/6 text-gray-600">Designerd</div>
+                </div>
+              </figcaption>
+            </figure>
           </div>
-          <div>
-            <label for="last-name" class="block text-sm/6 font-semibold text-gray-900">Last name</label>
-            <div class="mt-2.5">
-              <input id="last-name" type="text" name="last-name" autocomplete="family-name" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 backdrop-blur-sm placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600" />
-            </div>
-          </div>
-          <div>
-            <label for="budget" class="block text-sm/6 font-semibold text-gray-900">Budget</label>
-            <div class="mt-2.5">
-              <input id="budget" type="text" name="budget" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 backdrop-blur-sm placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600" />
-            </div>
-          </div>
-          <div>
-            <label for="website" class="block text-sm/6 font-semibold text-gray-900">Website</label>
-            <div class="mt-2.5">
-              <input id="website" type="url" name="website" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 backdrop-blur-sm placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600" />
-            </div>
-          </div>
-          <div class="sm:col-span-2">
-            <label for="message" class="block text-sm/6 font-semibold text-gray-900">Message</label>
-            <div class="mt-2.5">
-              <textarea id="message" name="message" rows="4" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 backdrop-blur-sm placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"></textarea>
-            </div>
-          </div>
+
         </div>
-        <div class="mt-10">
-          <button type="submit" class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let’s talk</button>
-        </div>
-        <p class="mt-4 text-sm/6 text-gray-500">By submitting this form, I agree to the <a href="#" class="font-semibold whitespace-nowrap text-indigo-600">privacy policy</a>.</p>
-      </form>
-      <div class="lg:mt-6 lg:w-80 lg:flex-none">
-        <figure class="mt-10">
-          <blockquote class="text-lg text-gray-900">
-            <p>Hey I'm totally looking forward to talking to you and providing any design support you need. To give you an idea of cost, my standard billrate is $150/hr. This can be variable depending if it's a project I may have vested interest in, whether it piques my enthusiasm or supports a social cause I can get behind. I'm also available to work on retainer if the construct better suits your budget. Hit me up!</p>
-          </blockquote>
-          <figcaption class="mt-10 flex gap-x-6">
-            <img src="assets/images/headshot.jpeg" alt="" class="size-12 flex-none rounded-full bg-gray-50">
-            <div>
-              <div class="text-base font-semibold text-gray-900">Collin Oguro</div>
-              <div class="text-sm/6 text-gray-600">Designerd</div>
-            </div>
-          </figcaption>
-        </figure>
       </div>
     </div>
   </div>
-</div>
-</div>

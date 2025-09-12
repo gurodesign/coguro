@@ -5,7 +5,7 @@ title: "Guro Design"
 
 {% include header-home.html %}
 
-<div class=""  x-data='{onDiscover: false, scrollPosition: window.pageYOffset}' @scroll.window='scrollPosition = window.pageYOffset'>
+<div class="overflow-hidden"  x-data='{onDiscover: false, scrollPosition: window.pageYOffset}' @scroll.window='scrollPosition = window.pageYOffset'>
 
 
   <div class="hero block pt-20 md:pt-0 pb-8 sm:pb-16 relative overflow-x-clip sm:h-[90vh]">
@@ -36,7 +36,7 @@ title: "Guro Design"
     <lottie-player src="assets/lottie/hero-slanted-2.json" background="transparent"  speed="1" class="hidden md:block pointer-events-none mt-12 -ml-[3%]" style="width: 100%; height: auto;" autoplay :style='`transform: translateY(${scrollPosition/4}px)`'></lottie-player>
     <lottie-player src="assets/lottie/hero-blob-portrait.json" background="transparent"  speed="1" class="block md:hidden pointer-events-none" style="width: 100%; height: auto;" autoplay :style='`transform: translateY(${scrollPosition/4}px)`'></lottie-player>
 
-    <div class="block mx-auto sm:mb-12 sm:text-right sm:-mt-28 pr-6">
+    <div class="block mx-auto sm:mb-12 text-right sm:-mt-28 pr-4">
       <div class="text-xs mt-1 ml-3 sm:ml-0 sm:mr-2">best viewed<br/> on monitor</div>
       <div class="text-xs mt-1 ml-3 sm:ml-0 sm:mr-2"><img src="assets/images/browser-icons.png" alt="" class="h-5 inline"></div>
     </div>
@@ -56,10 +56,10 @@ title: "Guro Design"
         </div>
       </div>
       <div class="col-span-2 row-span-1 md:col-span-1 md:row-span-2 myname-box relative rounded-lg overflow-hidden">
-        <a href="" class="absolute bottom-0 right-0 px-5 py-3 bg-black bg-opacity-50 w-full">
+        <!-- <a href="" class="absolute bottom-0 right-0 px-5 py-3 bg-black bg-opacity-50 w-full">
           <p class="text-white inline text-sm mr-1">More than just a designerd</p>
           <img src="assets/images/right-chevron.svg" class="inline-block h-3">
-        </a>
+        </a> -->
         <img src="assets/images/halftone-collin-line.jpg" alt="Oguro" class="mx-auto mon">
       </div>
       <div class="col-span-2 row-span-1 md:col-span-1 md:row-span-2 oguro-box bg-gray-700 p-[12%] relative rounded-lg overflow-hidden">
@@ -78,7 +78,7 @@ title: "Guro Design"
     <section class="grid sm:grid-cols-4 md:grid-rows-3 gap-2 px-2 pb-2">
       <div class="col-span-4 sm:col-span-2 lg:col-span-3 row-span-3 lg:row-span-1 relative">
         <div class="h-full w-full rounded-lg overflow-hidden bg-gray-700 text-white py-14 px-20 text-base/7 leading-relaxed content-center">
-          I'm an multi-disciplinary designer with over 20 years experience in a range of different fields and industries. Currently I've been operating Guro Design for over 5 years, serving clients from start-up to corporate. In between I've led a design team at CBS Interactive, co-founded a video-based start-up, and headed design at a AAA live experience company. I can provide any design need at any level, and my experience and skillset allows me to build products, soup to nuts. I'm blessed to have been able to collaborate with so many amazing people and brands over the years and look forward to connecting with <span class="underline">you</span>.
+          I'm an multi-disciplinary designer with over 25 years experience in a range of different fields and industries. For the past 5 years I've been focused on operating Guro Design, serving clients from start-up to corporate. In between I've led a design team at CBS Interactive, co-founded a video-based start-up, and headed design at a AAA live experience company. I can provide any design need at any level, and my experience and technical skillset allow me to build products, soup to nuts. I'm blessed to have been able to collaborate with so many amazing people and brands over the years and look forward to connecting with <span class="underline">you</span>.
         </div>
         <img src="assets/images/ffff-button.png" alt="" class="jb-button absolute bottom-0 z-10 -mb-10 right-0 mr-3">
       </div>
@@ -95,7 +95,7 @@ title: "Guro Design"
           <li>Frontend Development</li>
           <li>Mobile App</li>
           <li>Responsive Design</li>
-          <li>Branding</li>
+          <li>Brand Identity</li>
           <li>Mascot Design</li>
           <li>Graphic Illustration</li>
           <li>Data Visualization</li>
@@ -137,7 +137,7 @@ title: "Guro Design"
       </div>
 
       <div class="col-span-4 sm:col-span-2 lg:col-span-2 md:row-span-1  relative p-14  text-base/7 leading-relaxed rounded-lg overflow-hidden">
-        The past few years I've traded time between design engineer and brand designer, but I like to think with every project I've been involved in I've boosted my contribution with the knowledge and skill I've built in laterally related design fields. I consider adaptabilty my strongest asset and take pride in my ability to bend styles to fit any given project. Check me weighing the balance of creative distinction, user experience, and business outcome. 
+        A design generalist can sometimes be overlooked, but I believe with every project I've been a part of I've boosted my contribution with the knowledge and skill I've built in laterally related design fields. Whether it's filling a role as a design engineer or brand designer I enjoy taking high level ideas and molding them into tangible realities. Check me weighing the balance of creative distinction, user experience, and business outcome. 
       </div>
       
     </section>
@@ -148,151 +148,152 @@ title: "Guro Design"
       <a href="amg.html" class="col-span-4 md:col-span-2 md:row-span-1 relative rounded-lg overflow-hidden hp-tile">
         <div class="p-4 text-white absolute bottom-0 bg-black bg-opacity-50 w-full z-20 pointer-events-none flex text-bar transition-all">
           <div class="flex-auto">
+            <h3 class="font-bold">Audio Media Grading</h3>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block uppercase">Brand</div>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Product</div>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Frontend</div>
-            <h3 class="font-bold mt-1">Audio Media Grading</h3>
           </div>
           <div class="w-8 flex-none content-center"><img src='assets/images/right-chevron.svg', class="w-3 text-center m-auto"></div>
         </div>
-        <img src='assets/images/home/amg.jpg', class="h-full w-full object-cover relative sm:absolute top-0 z-5" loading="lazy">
-        <img src='assets/images/home/amg.jpg', class="h-full w-full object-cover opacity-0 sm:opacity-100 absolute duotone-redorange transition-opacity duration-700 hover:opacity-0 z-10">
+        <div class="h-full w-full object-cover relative md:hidden top-0 z-5"><img src='/assets/images/work/amg/bg-pattern.svg' loading="lazy"></div>
+        <div class="amg-bg h-full w-full object-cover relative md:absolute top-0 z-5"></div>
+        <div class="amg-bg h-full w-full object-cover opacity-0 md:opacity-100 absolute duotone-redorange transition-opacity duration-700 hover:opacity-0 z-10"></div>
       </a>
 
       <a href="beachboys.html"  class="col-span-4 md:col-span-1 md:row-span-1 md:row-start-2 relative rounded-lg overflow-hidden hp-tile">
         <div class="p-4 text-white absolute bottom-0 bg-black bg-opacity-50 w-full z-20 pointer-events-none flex text-bar transition-all">
           <div class="flex-auto">
+            <h3 class="font-bold">The Beach Boys</h3>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block uppercase">Logo</div>
-            <h3 class="font-bold mt-1">The Beach Boys</h3>
           </div>
           <div class="w-8 flex-none content-center"><img src='assets/images/right-chevron.svg', class="w-3 text-center m-auto"></div>
         </div>
-        <img src='assets/images/home/beachboys.jpg', class="h-full w-full object-cover relative sm:absolute top-0 z-5" loading="lazy">
-        <img src='assets/images/home/beachboys.jpg', class="h-full w-full object-cover opacity-0 sm:opacity-100 absolute duotone-darkgray transition-opacity duration-700 hover:opacity-0 z-10">
+        <img src='assets/images/home/beachboys.jpg', class="h-full w-full object-cover relative md:absolute top-0 z-5" loading="lazy">
+        <img src='assets/images/home/beachboys.jpg', class="h-full w-full object-cover opacity-0 md:opacity-100 absolute duotone-darkgray transition-opacity duration-700 hover:opacity-0 z-10">
       </a>
 
       <a href="mentore.html" class="col-span-4 md:col-span-1 md:row-span-1 md:row-start-2 relative rounded-lg overflow-hidden hp-tile">
        <div class="p-4 text-white absolute bottom-0 bg-black bg-opacity-50 w-full z-20 pointer-events-none flex text-bar transition-all">
           <div class="flex-auto">
+            <h3 class="font-bold">Mentore</h3>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Product</div>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Prototype</div>
-            <h3 class="font-bold mt-1">Mentore</h3>
           </div>
           <div class="w-8 flex-none content-center"><img src='assets/images/right-chevron.svg', class="w-3 text-center m-auto"></div>
         </div>
-        <img src='assets/images/home/mentore.jpg', class="h-full w-full object-cover relative sm:absolute top-0 z-5" loading="lazy">
-        <img src='assets/images/home/mentore.jpg', class="h-full w-full object-cover opacity-0 sm:opacity-100 absolute duotone-bluish transition-opacity duration-700 hover:opacity-0 z-10"> 
+        <img src='assets/images/home/mentore.jpg', class="h-full w-full object-cover relative md:absolute top-0 z-5" loading="lazy">
+        <img src='assets/images/home/mentore.jpg', class="h-full w-full object-cover opacity-0 md:opacity-100 absolute duotone-bluish transition-opacity duration-700 hover:opacity-0 z-10"> 
       </a>
 
 
       <a href="surveymonkey.html" class="col-span-4 md:col-span-2 md:row-span-2 md:col-start-3 relative rounded-lg overflow-hidden hp-tile">
         <div class="p-4 text-white absolute bottom-0 bg-black bg-opacity-50 w-full pointer-events-none z-20 flex text-bar transition-all">
           <div class="flex-auto">
+            <h3 class="font-bold">SurveyMonkey</h3>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Brand</div>
-            <h3 class="font-bold mt-1">SurveyMonkey</h3>
           </div>
           <div class="w-8 flex-none content-center"><img src='assets/images/right-chevron.svg', class="w-3 text-center m-auto"></div>
         </div>
-        <img src='assets/images/home/surveymonkey.jpg', class="h-full w-full object-cover relative sm:absolute top-0 z-5" loading="lazy">
-        <img src='assets/images/home/surveymonkey.jpg', class="h-full w-full object-cover opacity-0 sm:opacity-100 absolute duotone-darkgray transition-opacity duration-700 hover:opacity-0 z-10">
+        <img src='assets/images/home/surveymonkey.jpg', class="h-full w-full object-cover relative md:absolute top-0 z-5" loading="lazy">
+        <img src='assets/images/home/surveymonkey.jpg', class="h-full w-full object-cover opacity-0 md:opacity-100 absolute duotone-darkgray transition-opacity duration-700 hover:opacity-0 z-10">
       </a>
 
       <a href="laneone.html" class="col-span-4 md:col-span-2 md:row-span-2 relative rounded-lg overflow-hidden hp-tile">
         <div class="p-4 text-white absolute bottom-0 bg-black bg-opacity-50 w-full pointer-events-none z-20 flex text-bar transition-all">
           <div class="flex-auto">
+            <h3 class="font-bold">Laneone</h3>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Brand</div>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Product</div>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Frontend</div>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Motion</div>
-            <h3 class="font-bold mt-1">Laneone</h3>
           </div>
           <div class="w-8 flex-none content-center"><img src='assets/images/right-chevron.svg', class="w-3 text-center m-auto"></div>
         </div>
-        <img src='assets/images/home/laneone.jpg', class="h-full w-full object-cover relative sm:absolute top-0 z-5" loading="lazy">
-        <img src='assets/images/home/laneone.jpg', class="h-full w-full object-cover opacity-0 sm:opacity-100 absolute duotone-redorange transition-opacity duration-700 hover:opacity-0 z-10">
+        <img src='assets/images/home/laneone.jpg', class="h-full w-full object-cover relative md:absolute top-0 z-5" loading="lazy">
+        <img src='assets/images/home/laneone.jpg', class="h-full w-full object-cover opacity-0 md:opacity-100 absolute duotone-redorange transition-opacity duration-700 hover:opacity-0 z-10">
       </a>
 
       <a href="caboenvivo.html" class="col-span-4 md:col-span-2 md:col-span-2 row-span-1 relative overflow-hidden flex justify-center relative rounded-lg overflow-hidden hp-tile">
         <div class="p-4 text-white absolute bottom-0 bg-black bg-opacity-50 w-full pointer-events-none z-20 flex text-bar transition-all">
           <div class="flex-auto">
+            <h3 class="font-bold">Cabo en Vivo</h3>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Product</div>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Frontend</div>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Motion</div>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">3D</div>
-            <h3 class="font-bold mt-1">Cabo en Vivo</h3>
           </div>
           <div class="w-8 flex-none content-center"><img src='assets/images/right-chevron.svg', class="w-3 text-center m-auto"></div>
         </div>
-        <img src='assets/images/home/caboenvivo.jpg', class="h-full w-full object-cover relative sm:absolute top-0 z-5" loading="lazy">
-        <img src='assets/images/home/caboenvivo.jpg', class="h-full w-full object-cover opacity-0 sm:opacity-100 absolute duotone-bluish transition-opacity duration-700 hover:opacity-0 z-5">
+        <img src='/assets/images/work/caboenvivo/mobile-tile.jpg' class="block object-cover relative block md:hidden z-5" loading="lazy">
+        <img src='assets/images/home/caboenvivo.jpg', class="hidden md:block h-full w-full object-cover relative md:absolute top-0 z-5" loading="lazy">
+        <img src='assets/images/home/caboenvivo.jpg', class="hidden md:block h-full w-full object-cover opacity-0 md:opacity-100 absolute duotone-bluish transition-opacity duration-700 hover:opacity-0 z-5">
       </a>
 
       <a href="tapdistrict.html" class="col-span-4 md:col-span-2 md:row-span-2 md:row-start-4 md:col-start-3 relative rounded-lg overflow-hidden hp-tile">
         <div class="p-4 text-white absolute bottom-0 bg-black bg-opacity-50 w-full pointer-events-none z-20 flex text-bar transition-all">
           <div class="flex-auto">
+            <h3 class="font-bold">Tap District</h3>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Product</div>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block uppercase">Brand</div>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block uppercase">Prototype</div>
-            <h3 class="font-bold mt-1">Tap District</h3>
           </div>
           <div class="w-8 flex-none content-center"><img src='assets/images/right-chevron.svg', class="w-3 text-center m-auto"></div>
         </div>
-        <img src='assets/images/home/tap-district.jpg', class="h-full w-full object-cover relative sm:absolute top-0 z-5" loading="lazy">
-        <img src='assets/images/home/tap-district.jpg', class="h-full w-full object-cover opacity-0 sm:opacity-100 absolute duotone-darkgray transition-opacity duration-700 hover:opacity-0 z-10">
+        <img src='assets/images/home/tap-district.jpg', class="h-full w-full object-cover relative md:absolute top-0 z-5" loading="lazy">
+        <img src='assets/images/home/tap-district.jpg', class="h-full w-full object-cover opacity-0 md:opacity-100 absolute duotone-darkgray transition-opacity duration-700 hover:opacity-0 z-10">
       </a>
 
       <a href="gs-redesign.html" class="col-span-4 md:col-span-2 md:row-span-2 md:col-start-1 md:row-start-5 relative rounded-lg overflow-hidden overflow-hidden hp-tile">
         <div class="p-4 text-white absolute bottom-0 bg-black bg-opacity-50 w-full pointer-events-none z-20 flex text-bar transition-all">
           <div class="flex-auto">
+            <h3 class="font-bold">GameSpot Redesign</h3>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Brand</div>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Product</div>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Frontend</div>
-            <h3 class="font-bold mt-1">GameSpot Redesign</h3>
           </div>
           <div class="w-8 flex-none content-center"><img src='assets/images/right-chevron.svg', class="w-3 text-center m-auto"></div>
         </div>
-        <img src='assets/images/home/gs-redesign.jpg', class="h-full w-full object-cover relative sm:absolute top-0 z-5" loading="lazy">
-        <img src='assets/images/home/gs-redesign.jpg', class="h-full w-full object-cover sm:opacity-100 absolute duotone-bluish transition-opacity duration-700 hover:opacity-0 z-10">
+        <img src='assets/images/home/gs-redesign.jpg', class="h-full w-full object-cover relative md:absolute top-0 z-5" loading="lazy">
+        <img src='assets/images/home/gs-redesign.jpg', class="h-full w-full object-cover md:opacity-100 absolute duotone-bluish transition-opacity duration-700 hover:opacity-0 z-10">
       </a>
 
       <a href="pwcc.html" class="col-span-4 md:col-span-2 md:row-span-1 relative rounded-lg overflow-hidden hp-tile">
         <div class="p-4 text-white absolute bottom-0 bg-black bg-opacity-50 w-full pointer-events-none z-20 flex text-bar transition-all">
           <div class="flex-auto">
+            <h3 class="font-bold">Pre-war Card Collector</h3>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block uppercase">Brand</div>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Product</div>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Frontend</div>
-            <h3 class="font-bold mt-1">Pre-war Card Collector</h3>
           </div>
           <div class="w-8 flex-none content-center"><img src='assets/images/right-chevron.svg', class="w-3 text-center m-auto"></div>
         </div>
-        <img src='assets/images/home/pwcc-wide.jpg', class="h-full w-full object-cover relative sm:absolute top-0 z-5" loading="lazy">
-        <img src='assets/images/home/pwcc-wide.jpg', class="h-full w-full object-cover sm:opacity-100 absolute duotone-redorange transition-opacity duration-700 hover:opacity-0 z-10" loading="lazy">
+        <img src='assets/images/home/pwcc-wide.jpg', class="h-full w-full object-cover relative md:absolute top-0 z-5" loading="lazy">
+        <img src='assets/images/home/pwcc-wide.jpg', class="h-full w-full object-cover md:opacity-100 absolute duotone-redorange transition-opacity duration-700 hover:opacity-0 z-10" loading="lazy">
       </a>
 
       <a href="onvedeo.html" class="col-span-4 md:col-span-1 md:row-span-1 row relative rounded-lg overflow-hidden hp-tile">
         <div class="p-4 text-white absolute bottom-0 bg-black bg-opacity-50 w-full z-20 pointer-events-none flex text-bar transition-all">
           <div class="flex-auto">
+            <h3 class="font-bold">Onvedeo</h3>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Brand</div>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Product</div>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Frontend</div>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Motion</div>
-            <h3 class="font-bold mt-1">Onvedeo</h3>
           </div>
           <div class="w-8 flex-none content-center">
             <img src='assets/images/right-chevron.svg', class="w-3 text-center m-auto">
           </div>
         </div>
-        <img src='assets/images/home/onvedeo.jpg', class="h-full w-full object-cover relative sm:absolute top-0 z-5" loading="lazy">
-        <img src='assets/images/home/onvedeo.jpg', class="h-full w-full object-cover opacity-0 sm:opacity-100 absolute duotone-redorange transition-opacity duration-700 hover:opacity-0 z-10" loading="lazy">
+        <img src='assets/images/home/onvedeo.jpg', class="h-full w-full object-cover relative md:absolute top-0 z-5" loading="lazy">
+        <img src='assets/images/home/onvedeo.jpg', class="h-full w-full object-cover opacity-0 md:opacity-100 absolute duotone-redorange transition-opacity duration-700 hover:opacity-0 z-10" loading="lazy">
       </a>
       
       <div class="col-span-4 md:col-span-1 md:row-span-1 relative hp-tile flex items-center card z-20">
 
         <div class="card__content h-full w-full relative transition-transform duration-1000 text-white ">
     
-          <div class="card__front absolute top-0 bottom-0 right-0 left-0 bg-[#515d6f] p-4 lg:p-10 flex items-center justify-center rounded-md">
+          <div class="card__front md:absolute top-0 bottom-0 right-0 left-0 bg-[#515d6f] p-4 lg:p-10 flex items-center justify-center rounded-md">
             <img src='assets/images/bowie2.svg', class="relative z-5 mt-4" loading="lazy">
-            <!-- <span class="text-xs absolute bottom-3 right-3">*kinda made with AI</span> -->
           </div>
           <div class="card__back absolute top-0 bottom-0 right-0 left-0 md-text-sm p-12 md:p-4 lg:p-8 xl:p-12 bg-[#ff542c] rounded-md text-xs xl:text-sm">
             <p><span class="font-black lg:text-lg mb-1">Ch-ch-ch-ch-changes...</span> <br/>are hard. In a world of technological displacement, shifting business goals and fleeting trend I stand on my ability to execute under uncertain conditions. Evolve with technology, pivot when business neccesities dictate, and design for the longhaul. Like Uncle Bruce said, 'Be like water', adaptible, flexible and resilent.</p>
@@ -308,44 +309,32 @@ title: "Guro Design"
       <a href="numnums.html" class="col-span-4 md:col-span-2 md:row-span-2 md:col-start-3 relative rounded-lg overflow-hidden hp-tile">
         <div class="p-4 text-white absolute bottom-0 bg-black bg-opacity-50 w-full pointer-events-none z-20 flex text-bar transition-all">
           <div class="flex-auto">
+            <h3 class="font-bold">numnums</h3>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Product</div>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block uppercase">Brand</div>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block uppercase">Illustration</div>
-            <h3 class="font-bold mt-1">numnums</h3>
           </div>
           <div class="w-8 flex-none content-center"><img src='assets/images/right-chevron.svg', class="w-3 text-center m-auto"></div>
         </div>
         <img src='assets/images/home/numnums.jpg', class="h-full w-full object-cover absolute top-0 z-5" loading="lazy">
-        <img src='assets/images/home/numnums.jpg', class="h-full w-full object-cover relative opacity-0 sm:opacity-100 duotone-bluish transition-opacity duration-700 hover:opacity-0 z-10" loading="lazy">
+        <img src='assets/images/home/numnums.jpg', class="h-full w-full object-cover relative opacity-0 md:opacity-100 duotone-bluish transition-opacity duration-700 hover:opacity-0 z-10" loading="lazy">
       </a>
 
-      <div class="col-span-4 md:col-span-2 md:row-span-2 bg-gray-700 text-white rounded-md overflow-hidden relative">
+      <div class="col-span-4 md:col-span-2 md:row-span-2 bg-gray-700 text-white h-[500px] md:h-auto rounded-md overflow-hidden relative">
         <img src='assets/images/quote-grid.svg', class="absolute w-[50%] h-auto opacity-[35%] pl-[10%] pt-[10%]" loading="lazy">
         <!-- Image Slider: With Autoplay -->
          
         <div
           x-data="{
             // Images array
-            images: [
-                {
-                    imgSrc: 'assets/images/work/surveymonkey/surveymonkey_logo_white.svg',
-                    imgSrc2: 'assets/images/work/surveymonkey/eric.jpg',
-                    imgAlt: 'Vibrant abstract painting with swirling blue and light pink hues on a canvas.',  
-                    name: 'Eric Johnson',
-                    title: 'CEO, SurveyMonkey',
-                    description: 'The architects of the digital world, constantly battling against their mortal enemy browser compatibility.',    
-                    ctaUrl: 'https://example.com',
-                    ctaText: 'Become a Developer',          
-                },                
+            images: [         
                 {                    
                     imgSrc: 'assets/images/work/mentore/mentore-logo.svg',                    
                     imgSrc2: 'assets/images/work/mentore/dino-pic.jpg',
                     imgAlt: 'Vibrant abstract painting with swirling red, yellow, and pink hues on a canvas.',  
                     name: 'Dino Brusco',
                     title: 'Strategy &amp; Product Management, Mentore',
-                    description: 'Because not all superheroes wear capes, some wear headphones and stare at terminal screens', 
-                    ctaUrl: 'https://example.com',
-                    ctaText: 'Become a Developer',             
+                    description: 'As our lead product designer, Collin excelled at translating complex technical and operational requirements into clear and effective design solutions for our industrial wearables ... Collin played a key role in delivering solutions that successfully met both business objectives and field performance goals. I would highly recommend Collin to any team in need of a world-class product designer.',            
                 },                
                 {                    
                     imgSrc: 'assets/images/work/pwcc/pwcc-logo-final.svg',               
@@ -353,19 +342,15 @@ title: "Guro Design"
                     imgAlt: 'Vibrant abstract painting with swirling blue and purple hues on a canvas.',    
                     name: 'Brent Huigens',
                     title: 'Founder, Pre-war Card Collector',
-                    description: 'I engaged GURO Design to receive a face-lift to a pre-existing company brand. What I received far exceeded my expectations ... for an internet based company like mine, the outward digital appearance is of critical-path importance and the trust I placed in Guro Design proved well placed.',
-                    ctaUrl: 'https://example.com',
-                    ctaText: 'Become a Developer',          
+                    description: 'I engaged GURO Design to receive a face-lift to a pre-existing company brand. What I received far exceeded my expectations ... for an internet based company like mine, the outward digital appearance is of critical-path importance and the trust I placed in Guro Design proved well placed.',          
                 }, 
                 {                    
                     imgSrc: 'assets/images/work/pwcc/pwcc-logo-final.svg',               
-                    imgSrc2: 'assets/images/work/pwcc/brent.jpeg',    
+                    imgSrc2: 'assets/images/work/xoom/bernadette.jpg',    
                     imgAlt: 'Vibrant abstract painting with swirling blue and purple hues on a canvas.',    
-                    name: 'Brent Huigens',
-                    title: 'Founder, Pre-war Card Collector',
-                    description: 'I engaged GURO Design to receive a face-lift to a pre-existing company brand. What I received far exceeded my expectations and has taken the project from a facelift to something closer to a redefinition. The feedback we\'ve received for Collin and Carm\'s work has been consistently rave reviews. For an internet based company like mine, the outward digital appearance is of critical-path importance and the trust I placed in Guro Design proved well placed.',
-                    ctaUrl: 'https://example.com',
-                    ctaText: 'Become a Developer',          
+                    name: 'Bernadette Cikes',
+                    title: 'Senior Product Manager, Xoom',
+                    description: 'Guro Design openned our eyes to the effectiveness of good design. We wroked together on a design project to gain trust and legitamacy to new users on our site. With the new design there was a 20% uplift of new user accounts. We no longer take pixels for granted.',          
                 }, 
             ],
 
@@ -526,16 +511,14 @@ title: "Guro Design"
                   x-bind:aria-hidden="currentIndex !== index">
                         
                         <!-- Content -->
-                        <div class="px-28">
-                          <!-- <img class="h-8 self-start top-0 mb-6" x-bind:src="image.imgSrc" x-bind:alt="image.imgAlt" /> -->
-
+                        <div class="px-16 lg:px-20 xl:px-28 text-sm:6 lg:text-2xl/8">
                           <figure class="flex flex-auto flex-col justify-between">
-                            <blockquote class="text-2xl/8 viroqua">
+                            <blockquote class=" viroqua">
                               <p x-text="image.description" x-bind:id="'image' + (index + 1) + 'Description'"></p>
                             </blockquote>
                             <figcaption class="mt-6 flex items-center gap-x-6">
                               <img class="size-14 rounded-full bg-gray-50" x-bind:src="image.imgSrc2" x-bind:alt="image.imgAlt" />
-                              <div class="text-base text-sm">
+                              <div class="text-base text-xs sm:text-sm">
                                 <div class="font-semibold" x-text="image.name" x-bind:aria-describedby="'image' + (index + 1) + 'Description'"></div>
                                 <div class="" x-text="image.title"></div>
                               </div>
@@ -632,9 +615,9 @@ title: "Guro Design"
       <a href="seewelltolearn.html" class="col-span-4 md:col-span-1 md:row-span-1 row relative rounded-lg overflow-hidden hp-tile">
         <div class="p-4 text-white absolute bottom-0 bg-black bg-opacity-50 w-full z-20 pointer-events-none flex text-bar transition-all">
           <div class="flex-auto">
+            <h3 class="font-bold">See Well to Learn</h3>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Brand</div>
             <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Frontend</div>
-            <h3 class="font-bold mt-1">See Well to Learn</h3>
           </div>
           <div class="w-8 flex-none content-center">
             <img src='assets/images/right-chevron.svg', class="w-3 text-center m-auto">
@@ -652,14 +635,14 @@ title: "Guro Design"
 
   <section x-data="{ expanded: false }">
 
-    <div x-show="expanded" class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-5 gap-2 px-2 pt-2 bg-paper" x-collapse.duration.1000ms>
+    <div x-show="expanded" class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-4 gap-2 px-2 pt-2 bg-paper" x-collapse.duration.1000ms>
 
         <div x-data="{ isOpen: false }" class="col-span-4 md:col-span-1 md:row-span-1 relative overflow-hidden hp-tile">
           <div href="" type="button" @click="isOpen = !isOpen" class="cursor-pointer">
             <div class="p-4 text-white absolute bottom-0 bg-black bg-opacity-50 w-full pointer-events-none z-20 flex rounded-b-lg text-bar transition-all">
               <div class="flex-auto">
+                <h3 class="font-bold">Giant Bomb</h3>
                 <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Product</div>
-                <h3 class="font-bold mt-1">Giant Bomb</h3>
               </div>
               <div class="w-8 flex-none content-center"><img src='assets/images/magnify-pop.svg', class="w-5 text-center m-auto"></div>
             </div>
@@ -712,11 +695,11 @@ title: "Guro Design"
                                 slides: [                
                                     {
                                         imgSrc: 'assets/images/home/giantbomb-profile.jpg',
-                                        imgAlt: 'Vibrant abstract painting with swirling blue and light pink hues on a canvas.',                
+                                        imgAlt: 'Giant Bomb Profile Page.',                
                                     },                
                                     {                    
                                         imgSrc: 'assets/images/home/giantbomb-top10.jpg',                    
-                                        imgAlt: 'Vibrant abstract painting with swirling red, yellow, and pink hues on a canvas.',                
+                                        imgAlt: 'Giant Bomb Top 10 Page',                
                                     },                       
                                 ],            
                                 currentSlideIndex: 1,
@@ -819,8 +802,8 @@ title: "Guro Design"
           <div href="" type="button" @click="isOpen = !isOpen" class="cursor-pointer">
             <div class="p-4 text-white absolute bottom-0 bg-black bg-opacity-50 w-full pointer-events-none z-20 flex rounded-b-lg overflow-hidden text-bar transition-all">
               <div class="flex-auto">
-                <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Brand</div>
                 <h3 class="font-bold mt-1">Rocket Lawyer</h3>
+                <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Brand</div>
               </div>
               <div class="w-8 flex-none content-center"><img src='assets/images/magnify-pop.svg', class="w-5 text-center m-auto"></div>
             </div>
@@ -995,8 +978,8 @@ title: "Guro Design"
         <a href="kezar.html" class="col-span-4 md:col-span-2 md:row-span-1 relative rounded-lg overflow-hidden hp-tile" >
           <div class="p-4 text-white absolute bottom-0 bg-black bg-opacity-50 w-full pointer-events-none z-20 flex text-bar transition-all">
             <div class="flex-auto">
+              <h3 class="font-bold">Kezar Life Sciences</h3>
               <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block uppercase">Logo</div>
-              <h3 class="font-bold mt-1">Kezar Life Sciences</h3>
             </div>
             <div class="w-8 flex-none content-center"><img src='assets/images/right-chevron.svg', class="w-3 text-center m-auto"></div>
           </div>
@@ -1007,8 +990,8 @@ title: "Guro Design"
         <a href="editorial.html" class="col-span-4 md:col-span-2 md:row-span-1 relative rounded-lg overflow-hidden hp-tile">
           <div class="p-4 text-white absolute bottom-0 bg-black bg-opacity-50 w-full pointer-events-none z-20 flex rounded-b-lg text-bar transition-all">
             <div class="flex-auto">
+              <h3 class="font-bold">Editorial Graphics</h3>
               <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block uppercase">Illustration</div>
-              <h3 class="font-bold mt-1">Editorial Graphics</h3>
             </div>
             <div class="w-8 flex-none content-center"><img src='assets/images/right-chevron.svg', class="w-3 text-center m-auto"></div>
           </div>
@@ -1021,8 +1004,8 @@ title: "Guro Design"
           <div href="" type="button" @click="isOpen = !isOpen" class="cursor-pointer">
             <div class="p-4 text-white absolute bottom-0 bg-black bg-opacity-50 w-full pointer-events-none z-20 flex rounded-b-lg overflow-hidden text-bar transition-all">
               <div class="flex-auto">
+                <h3 class="font-bold">Orbit</h3>
                 <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Product</div>
-                <h3 class="font-bold mt-1">Orbit</h3>
               </div>
               <div class="w-8 flex-none content-center"><img src='assets/images/magnify-pop.svg', class="w-5 text-center m-auto"></div>
             </div>
@@ -1187,8 +1170,8 @@ title: "Guro Design"
           <div href="" type="button" @click="isOpen = !isOpen" class="cursor-pointer">
             <div class="p-4 text-white absolute bottom-0 bg-black bg-opacity-50 w-full pointer-events-none z-20 flex rounded-b-lg overflow-hidden text-bar transition-all">
               <div class="flex-auto">
+                <h3 class="font-bold">Ajapop Films</h3>
                 <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Logo</div>
-                <h3 class="font-bold mt-1">Ajapop Films</h3>
               </div>
               <div class="w-8 flex-none content-center"><img src='assets/images/magnify-pop.svg', class="w-5 text-center m-auto"></div>
             </div>
@@ -1254,8 +1237,8 @@ title: "Guro Design"
         <a href="xoom.html" class="col-span-4 md:col-span-1 md:row-span-1 relative rounded-lg overflow-hidden hp-tile">
           <div class="p-4 text-white absolute bottom-0 bg-black bg-opacity-50 w-full pointer-events-none z-20 flex text-bar transition-all">
             <div class="flex-auto">
+              <h3 class="font-bold">Xoom</h3>
               <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block uppercase">Product</div>
-              <h3 class="font-bold mt-1">Xoom</h3>
             </div>
             <div class="w-8 flex-none content-center"><img src='assets/images/right-chevron.svg', class="w-3 text-center m-auto"></div>
           </div>
@@ -1265,11 +1248,11 @@ title: "Guro Design"
 
 
 
-        <a href="editorial.html" class="col-span-4 md:col-span-2 md:row-span-1 relative rounded-lg overflow-hidden hp-tile">
+        <a href="" class="col-span-4 md:col-span-2 md:row-span-1 relative rounded-lg overflow-hidden hp-tile">
           <div class="p-4 text-white absolute bottom-0 bg-black bg-opacity-50 w-full pointer-events-none z-20 flex text-bar transition-all">
             <div class="flex-auto">
-              <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block uppercase">Illustration</div>
-              <h3 class="font-bold mt-1">Print Design</h3>
+              <h3 class="font-bold">Print Design</h3>
+              <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Coming Soon</div>
             </div>
             <div class="w-8 flex-none content-center"><img src='assets/images/right-chevron.svg', class="w-3 text-center m-auto"></div>
           </div>
@@ -1293,24 +1276,12 @@ title: "Guro Design"
 
         </div>
 
-        <a href="" class="col-span-4 md:col-span-2 md:row-span-2 relative overflow-hidden hp-tile">
-          <div class="p-4 text-white absolute bottom-0 bg-black bg-opacity-50 w-full pointer-events-none z-10 flex rounded-b-lg overflow-hidden text-bar transition-all">
-            <div class="flex-auto">
-              <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block uppercase">Stuff</div>
-              <h3 class="font-bold mt-1">More Shit</h3>
-            </div>
-            <div class="w-8 flex-none content-center"><img src='assets/images/right-chevron.svg', class="w-3 text-center m-auto"></div>
-          </div>
-          <img src='assets/images/home/shit.jpg', class="h-full w-full object-cover absolute top-0 z-5 rounded-lg overflow-hidden" loading="lazy">
-          <img src='assets/images/home/shit.jpg', class="h-full w-full object-cover opacity-0 sm:opacity-100 duotone-bluish transition-opacity duration-700 hover:opacity-0 z-10 rounded-lg overflow-hidden" loading="lazy">
-        </a>
-
         <div x-data="{ isOpen: false }" class="col-span-4 md:col-span-1 md:row-span-1 relative overflow-hidden hp-tile">
           <div href="" type="button" @click="isOpen = !isOpen" class="cursor-pointer">
             <div class="p-4 text-white absolute bottom-0 bg-black bg-opacity-50 w-full pointer-events-none z-20 flex rounded-b-lg overflow-hidden text-bar transition-all">
               <div class="flex-auto">
+                <h3 class="font-bold">DJ Sasha</h3>
                 <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Product</div>
-                <h3 class="font-bold mt-1">DJ Sasha</h3>
               </div>
               <div class="w-8 flex-none content-center"><img src='assets/images/magnify-pop.svg', class="w-5 text-center m-auto"></div>
             </div>
@@ -1475,8 +1446,8 @@ title: "Guro Design"
           <div href="" type="button" @click="isOpen = !isOpen" class="cursor-pointer">
             <div class="p-4 text-white absolute bottom-0 bg-black bg-opacity-50 w-full pointer-events-none z-20 flex rounded-b-lg overflow-hidden text-bar transition-all">
               <div class="flex-auto">
+                <h3 class="font-bold">Totango</h3>
                 <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Brand</div>
-                <h3 class="font-bold mt-1">Totango</h3>
               </div>
               <div class="w-8 flex-none content-center"><img src='assets/images/magnify-pop.svg', class="w-5 text-center m-auto"></div>
             </div>
@@ -1665,17 +1636,27 @@ title: "Guro Design"
 
         <!-- end dialog -->
 
-        <a href="" class="col-span-4 md:col-span-2 md:row-span-1 relative rounded-lg overflow-hidden hp-tile" >
+        <div class="col-span-4 md:col-span-1 md:row-span-1 relative rounded-lg overflow-hidden hp-tile" >
           <div class="p-4 text-white absolute bottom-0 bg-black bg-opacity-50 w-full pointer-events-none z-20 flex text-bar transition-all">
             <div class="flex-auto">
-              <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Product</div>
-              <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Frontend</div>
-              <h3 class="font-bold mt-1">Trucentive</h3>
+              <h3 class="font-bold">Trucentive</h3>
+              <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block mr uppercase">Coming Soon</div>
+            </div>
+          </div>
+          <img src='assets/images/home/trucentive-2.jpg', class="w-full relative sm:absolute top-0 z-5" loading="lazy">
+          <img src='assets/images/home/trucentive-2.jpg', class="w-full sm:opacity-100 absolute duotone-redorange transition-opacity duration-700 hover:opacity-0 z-10" loading="lazy">
+        </div>
+
+        <a href="" class="col-span-4 md:col-span-1 md:row-span-1 relative overflow-hidden hp-tile">
+          <div class="p-4 text-white absolute bottom-0 bg-black bg-opacity-50 w-full pointer-events-none z-10 flex rounded-b-lg overflow-hidden text-bar transition-all">
+            <div class="flex-auto">
+              <h3 class="font-bold">More Shit</h3>
+              <div class="px-2 py-[2px] rounded-full text-[8px] tracking-widest border border-1 border-white inline-block uppercase">Stuff</div>
             </div>
             <div class="w-8 flex-none content-center"><img src='assets/images/right-chevron.svg', class="w-3 text-center m-auto"></div>
           </div>
-          <img src='assets/images/home/trucentive.jpg', class="w-full relative sm:absolute top-0 z-5" loading="lazy">
-          <img src='assets/images/home/trucentive.jpg', class="w-full sm:opacity-100 duotone-redorange transition-opacity duration-700 hover:opacity-0 z-10" loading="lazy">
+          <img src='assets/images/home/shit.jpg', class="h-full w-full object-cover absolute top-0 z-5 rounded-lg overflow-hidden" loading="lazy">
+          <img src='assets/images/home/shit.jpg', class="h-full w-full object-cover opacity-0 sm:opacity-100 duotone-bluish transition-opacity duration-700 hover:opacity-0 z-10 rounded-lg overflow-hidden" loading="lazy">
         </a>
       
       </div>

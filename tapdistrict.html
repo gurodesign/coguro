@@ -11,7 +11,7 @@ custom_preload:
 
   <div class=" overflow-hidden" x-data :style='`transform: translateY(${scrollPosition/4}px)`'>
 
-    <div class="mx-auto container px-6 pb-24 pt-10 lg:flex items-stretch lg:px-8 pt-48 lg:h-screen">
+    <div class="mx-auto container px-6 pb-16 sm:pb-24 pt-10 lg:flex items-stretch lg:px-8 pt-48 lg:h-screen">
 
       <div class="mx-auto lg:max-w-xl shrink-0 lg:mx-0 self-end" x-intersect="$el.classList.add('fadeUpIn')">
 
@@ -24,13 +24,12 @@ custom_preload:
             <span class="rounded-full bg-gray-600/10 px-3 py-1 text-xs/6 font-semibold text-gray-600 ring-1 ring-inset ring-gray-600/10">Branding</span>
           </a>
         </div>
-        <p class="mt-8 text-pretty font-medium text-gray-600 text-2xl/9">A fully integrated sales, inventory, and delivery system for craft brewers, vinters and spirit makers.</p>
+        <p class="mt-8 text-pretty font-medium text-gray-600 text-xl sm:text-2xl/9">A fully integrated sales, inventory, and delivery system for craft brewers, vinters and spirit makers.</p>
       
       </div>
 
-
-      <div class="mx-auto flex mt-8 md:mt-0 lg:ml-10 lg:mr-0 lg:flex-none xl:ml-32">
-        <div class="w-full flex-none relative -mb-[220px]" x-data="{ imagesLoaded: false }">
+      <div class="mx-auto flex mt-8 lg:mt-0 lg:ml-10 lg:mr-0 lg:flex-none xl:ml-32">
+        <div class="w-full flex-none relative lg:-mb-[250px]" x-data="{ imagesLoaded: false }">
           <img src="assets/images/work/tapdistrict/td-product-page.jpg" alt="App screenshot" class="w-full lg:h-[90%] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10"
             x-show="imagesLoaded" 
             x-transition:enter="transition ease-out duration-700 delay-300"
@@ -44,16 +43,16 @@ custom_preload:
 
     </div>
 
-    <div class="w-full border-t border-solid">
+    <div class="w-full sm:border-t sm:border-solid">
 
-      <div class="container px-6 lg:px-8 mx-auto pt-[100px] pb-[300px]">
+      <div class="container px-6 lg:px-8 mx-auto sm:pt-[100px] pb-[400px] lg:pb-[300px]">
 
-        <div class="max-w-xs mr-16 inline-block align-top">
+        <div class="max-w-xs mr-16 md:inline-block align-top">
           <h2 class="font-black text-xs text-[#f4a300] mb-3">ROLE</h2>
-          <div class="text-gray-600 sm:text-sm">Guro Design</div>
+          <div class="text-gray-600 text-sm">Guro Design</div>
           <div class="text-gray-600 text-sm mt-1 font-bold">Principal</div>
         </div>
-        <div class="mr-16 inline-block max align-top">
+        <div class="mr-16   md:inline-block mt-10 md:mt-0 align-top">
           <h2 class="font-black text-xs text-[#f4a300] mb-3">CONTRIBUTION</h2>
             <ul class="list-disc pl-4 text-sm text-gray-600">
                 <li>Product design</li>
@@ -61,7 +60,7 @@ custom_preload:
                 <li>Branding</li>
             </ul>
         </div>
-        <div class="max-w-sm inline-block align-to">
+        <div class="md:max-w-xs lg:max-w-sm md:inline-block mt-10 md:mt-0 align-to">
           <h2 class="font-black text-xs text-[#f4a300] mb-3">OVERVIEW</h2>
           <div class="text-gray-600 text-sm mt-1">Tap District gave me a chance to work in a few areas that I hadn't previously had experience with; consumables, inventory systems, and last mile delivery. Collaborating with former bus-dev and engineering co-workers allowed me to dive in and focus on design and product vision.</div>
         </div>
@@ -83,7 +82,7 @@ custom_preload:
 </div>
 
 
-<div class="pt-32 pb-24 lg:px-8 bg-[#f4a300] relative">
+<div class="pt-32 pb-24 lg:px-8 bg-[#f4a300] relative px-6">
 
   <div class="mx-auto max-w-4xl text-base/7 text-gray-700">
     <div class="grid grid-cols-5 grid-rows-5">
@@ -98,7 +97,22 @@ custom_preload:
         <div class="col-start-5 row-start-5"></div>
     </div>
     <p class="max-w-lg mx-auto mt-8 text-sm/6 text-white">While providing a functional concept was the priority, we needed a logo quickly and incoporating the spigot mark into the typeform proved to be a quick win. </p>
+    
   </div>
+
+  <div class="text-center grid grid-cols-2 sm:grid-cols-5 lg:grid-cols-10 text-white w-full mt-24 flex items-center justify-center justify-items-center max-w-6xl mx-auto">
+      <div class="col-span-1 text-center mb-12"><img src="assets/images/work/tapdistrict/icon-bell.png" alt="TD Logo Mark" class="h-12 w-auto" loading="lazy"></div>
+      <div class="col-span-1 text-center mb-12"><img src="assets/images/work/tapdistrict/icon-boxes.png" alt="TD Logo Mark" class="h-14 w-auto" loading="lazy"></div>
+      <div class="col-span-1 text-center mb-12"><img src="assets/images/work/tapdistrict/icon-cans.png" alt="TD Logo Mark" class="h-12 w-auto" loading="lazy"></div>
+      <div class="col-span-1 text-center mb-12"><img src="assets/images/work/tapdistrict/icon-half-barrel.png" alt="TD Logo Mark" class="h-12 w-auto" loading="lazy"></div>
+      <div class="col-span-1 text-center mb-12"><img src="assets/images/work/tapdistrict/icon-barrel.png" alt="TD Logo Mark" class="h-12 w-auto" loading="lazy"></div>
+      <div class="col-span-1 text-center mb-12"><img src="assets/images/work/tapdistrict/icon-brewery.png" alt="TD Logo Mark" class="h-12 w-auto" loading="lazy"></div>
+      <div class="col-span-1 text-center mb-12"><img src="assets/images/work/tapdistrict/icon-mouth.png" alt="TD Logo Mark" class="w-16 h-auto" loading="lazy"></div>
+      <div class="col-span-1 text-center mb-12"><img src="assets/images/work/tapdistrict/icon-nug.png" alt="TD Logo Mark" class="h-14 w-auto" loading="lazy"></div>
+      <div class="col-span-1 text-center mb-12"><img src="assets/images/work/tapdistrict/icon-truck.png" alt="TD Logo Mark" class="h-8 w-auto" loading="lazy"></div>
+      <div class="col-span-1 text-center mb-12"><img src="assets/images/work/tapdistrict/icon-shapes.png" alt="TD Logo Mark" class="h-10 w-auto" loading="lazy"></div>
+    </div>
+
 </div>
 
 <div class="mx-auto max-w-full">
@@ -123,7 +137,7 @@ custom_preload:
             <img src="assets/images/work/tapdistrict/product-mobile.gif" alt="" loading="lazy">
           </foreignObject>
         </svg>
-        <div class="max-w-xl lg:row-start-3 lg:mt-10 lg:max-w-md lg:border-t lg:border-white/10 lg:pt-10">
+        <div class="max-w-xl lg:row-start-3 lg:mt-10 lg:max-w-md ">
           <dl class="max-w-xl space-y-8 text-base/7 text-gray-300 lg:max-w-none"> 
             <div class="relative">
               <dt class="ml-9 inline-block font-semibold text-white text-lg/8">
@@ -160,7 +174,7 @@ custom_preload:
 </div>
 
 <div class="grid md:grid-cols-2 gap-2 p-2">
-  <div class="col-span-1 rounded-md overflow-hidden p-[15%] bg-[#e7e7e7]">        
+  <div class="col-span-1 rounded-md overflow-hidden p-5 sm:p-[15%] sm:bg-[#e7e7e7]">        
 
     <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[454px] max-w-[341px] md:h-[682px] md:max-w-[512px]">
       <div class="h-[32px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[72px] rounded-s-lg"></div>
@@ -176,19 +190,19 @@ custom_preload:
     </div>
 
   </div>
-  <div class="col-span-1 bg-zinc-900 p-[15%] rounded-md overflow-hidden">
-    <h2 class="text-pretty text-3xl font-semibold text-white mt-12">Discovery & Purchase</h2>      
-    <p class="mt-8 text-white  text-sm/6">Selling alcohol-based beverages presents a unique challenge as there are a multitude of federal and state laws with significant variations across different jurisdictions. Our goal was to focus on craft makers selling in their local area. We had a relationship with Zilker Brewing in Austin, Texas that would serve as our geolocal launchpad. <br/><br/>
+  <div class="col-span-1 bg-zinc-900 p-[10%] lg:p-[15%] rounded-md overflow-hidden">
+    <h2 class="text-pretty text-3xl font-semibold text-white">Discovery & Purchase</h2>      
+    <p class="lg:mt-8 text-white  text-sm/6">Selling alcohol-based beverages presents a unique challenge as there are a multitude of federal and state laws with significant variations across different jurisdictions. Our goal was to focus on craft makers selling in their local area. We had a relationship with Zilker Brewing in Austin, Texas that would serve as our geolocal launchpad. <br/><br/>
     The main storefront would showcase all the local sellers in the region, while each distinct seller would have a landing page that could be white labeled with custom branding. Sponsored placements on the homepage would allow for additional revenue streams. <br/><br/>
-    Deeper in the site we would allow for white labeled storefronts that would allow vendors to marlet their goods directly to businesses.
+    Deeper in the site we would allow for white labeled storefronts that would allow vendors to market their goods directly to businesses.
     </p>
   </div>
 </div>
 
-<div class="grid md:grid-cols-2 gap-2 px-2">
+<div class="grid md:grid-cols-2 gap-2 sm:px-2">
 
-  <div class="col-span-1 rounded-md overflow-hidden p-[15%] bg-paper"> 
-    <div class="font-black text-xs text-[#f4a300] mt-12 mb-1 uppercase">In the details</div>
+  <div class="col-span-1 rounded-md overflow-hidden p-[10%] lg:p-[15%] bg-paper"> 
+    <div class="font-black text-xs text-[#f4a300] mb-1 uppercase">In the details</div>
     <h2 class="text-pretty text-3xl font-semibold mb-8">SRM Values</h2>      
 
     <div class="relative">
@@ -241,27 +255,29 @@ custom_preload:
 
   </div>
 
-  <div class="col-span-1 bg-[#f4a300] p-[15%] rounded-md overflow-hidden">
-    <ul id="gallery" class="fading-slideshow rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10 mt-8">
-        <li><img src="assets/images/work/tapdistrict/td-product-page-4.png" alt="" class="rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10" loading="lazy"></li>
-        <li><img src="assets/images/work/tapdistrict/td-product-page-3.png" alt="" class="rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10" loading="lazy"></li>
-        <li><img src="assets/images/work/tapdistrict/td-product-page-5.png" alt="" class="rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10" loading="lazy"></li>
-        <li><img src="assets/images/work/tapdistrict/td-product-page-6.png" alt="" class="rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10" loading="lazy"></li>
+  <div class="col-span-1 bg-[#f4a300] p-[10%] lg:p-[15%] rounded-md overflow-hidden">
+    <ul id="gallery" class="fading-slideshow rounded-md shadow-2xl lg:mt-8 overflow-hidden">
+        <li><img src="assets/images/work/tapdistrict/td-product-page-4.png" alt="" class="ring-1 ring-white/10" loading="lazy"></li>
+        <li><img src="assets/images/work/tapdistrict/td-product-page-3.png" alt="" class="ring-1 ring-white/10" loading="lazy"></li>
+        <li><img src="assets/images/work/tapdistrict/td-product-page-5.png" alt="" class="ring-1 ring-white/10" loading="lazy"></li>
+        <li><img src="assets/images/work/tapdistrict/td-product-page-6.png" alt="" class="ring-1 ring-white/10" loading="lazy"></li>
     </ul>
   </div>
 
 </div>
 
 <div class="grid md:grid-cols-2 gap-2 p-2">
-  <div class="col-span-1 bg-zinc-900 p-[15%] rounded-md overflow-hidden">
-    <h2 class="text-pretty text-3xl font-semibold text-white mt-12">Order Management</h2>      
-    <p class="mt-8 text-white  text-sm/6">Selling alcohol-based beverages presents a unique challenge as there are a multitude of federal and state laws with significant variations across different jurisdictions. Our goal was to focus on craft makers selling in their local area. We had a relationship with Zilker Brewing in Austin, Texas that would serve as our geolocal launchpad. <br/><br/>
+  <div class="col-span-1 bg-zinc-900 p-[10%] lg:p-[15%] rounded-md overflow-hidden">
+    <h2 class="text-pretty text-3xl font-semibold text-white">Order Management</h2>      
+    <p class="mt-8 text-white  text-sm/6">
+      Invoicing, inventory management, order logging and CRM functions were all part of the order management system. The goal was to create a unified system that would allow vendors to manage their business from end to end. With so many moving parts to account for it was important to maintain the pared down visual language that we defined with the storefront. <br/><br/>
+      Orders would be itemized with color and shape coding to understand urgency and order status at a glance. Inventory levels would be visually represented to help vendors understand stock levels and potential shortages. Keeping businesses aware of their stock levels and sales charting with graphs would allow vendors to have a deeper understanding of market trend.<br/><br/>
     </p>
     <img src="assets/images/work/tapdistrict/td-graph.png" alt="Surfin Safari" class="bg-gray-50 mt-5 mb-1 rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10" loading="lazy">
   </div>
-  <div class="col-span-1 rounded-md overflow-hidden p-[15%] bg-[#e7e7e7]">        
+  <div class="col-span-1 rounded-md overflow-hidden p-[10%] lg:p-[15%] bg-[#e7e7e7]">        
 
-      <ul id="gallery" class="fading-slideshow rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10 mt-8 overflow-hidden">
+      <ul id="gallery" class="fading-slideshow rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10 lg:8 overflow-hidden">
           <li><img src="assets/images/work/tapdistrict/order-gallery/InventoryIndex.png" alt="" class="" loading="lazy"></li>
           <li><img src="assets/images/work/tapdistrict/order-gallery/OrderDetail.png" alt="" class="" loading="lazy"></li>
           <li><img src="assets/images/work/tapdistrict/order-gallery/OrderIndex.png" alt="" class="" loading="lazy"></li>
@@ -274,20 +290,22 @@ custom_preload:
 
 <div class="grid md:grid-cols-2 gap-2 px-2">
 
-  <div class="col-span-1 bg-[#f4a300] p-[15%] rounded-md overflow-hidden">
+  <div class="col-span-1 bg-[#f4a300] p-[10%] lg:p-[15%] rounded-md overflow-hidden">
      <img src="assets/images/work/tapdistrict/delivery-map.png" alt="Surfin Safari" class="bg-gray-50 rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10" loading="lazy">
   </div>
 
   <div class="col-span-1 rounded-md overflow-hidden p-[15%] bg-paper"> 
-    <h2 class="text-pretty text-3xl font-semibold tracking-tight text-gray-900 mt-10">Delivery & Fufillment</h2>
-    <p class="mt-6">Purus morbi dignissim senectus mattis adipiscing. Amet, massa quam varius orci dapibus volutpat cras. In amet eu ridiculus leo sodales cursus tristique. Tincidunt sed tempus ut viverra ridiculus non molestie. Gravida quis fringilla amet eget dui tempor dignissim. Facilisis auctor venenatis varius nunc, congue erat ac. Cras fermentum convallis quam.</p>
+    <h2 class="text-pretty text-3xl font-semibold tracking-tight text-gray-900">Delivery & Fufillment</h2>
+    <p class="mt-6">We incorporated new technology to help vendors execute their deliveries; automatic route creation for efficiency, inventory stock per vehicle, stock checklists for truck loading, QR code scanning to finalize order fufillment. These were all product features I concepted on the fly while designing the baseline functionality.<br/><br/>
+    Below you can find a prototype of the entire system from discovery to fufillment.
+    </p>
   </div>
 
 </div>
 
-<div class="lg:px-2 pt-2 relative">
-  <div class="py-24 text-base/7 text-gray-700 bg-[#e7e7e7] rounded-md">
-    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" class="mx-auto" width="800" height="450" src="https://embed.figma.com/proto/1aBKuUSS6UCmNL5hubMkJ0/TD?page-id=0%3A1&node-id=2-5650&starting-point-node-id=2%3A5650&embed-host=share" allowfullscreen></iframe>
+<div class="lg:px-2 sm:pt-2 relative">
+  <div class="sm:py-24 text-base/7 text-gray-700 bg-[#e7e7e7] rounded-md">
+    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" class="mx-auto w-full sm:w-[800px] h-[500px]" src="https://embed.figma.com/proto/1aBKuUSS6UCmNL5hubMkJ0/TD?page-id=0%3A1&node-id=2-5650&starting-point-node-id=2%3A5650&embed-host=share" allowfullscreen></iframe>
   </div>
 </div>
 
