@@ -17,7 +17,7 @@ custom_preload:
 
       <img src="assets/images/work/onvedeo/logo-mark.svg" alt="TD Logo Mark" class="h-10 md:h-12"  >
       <h1 class="mt-6 text-pretty text-5xl font-black tracking-tight text-gray-900 sm:text-7xl">Onvedeo</h1>
-      <div class="mt-6 lg:mt-8 mb-6">
+      <div class="mt-6 lg:mt-8 sm:mb-6">
         <a href="#" class="inline-flex space-x-3">
           <span class="rounded-full bg-gray-600/10 px-3 py-1 text-xs/6 font-semibold text-gray-600 ring-1 ring-inset ring-gray-600/10">Product</span>
           <span class="rounded-full bg-gray-600/10 px-3 py-1 text-xs/6 font-semibold text-gray-600 ring-1 ring-inset ring-gray-600/10">UX/UI</span>
@@ -30,8 +30,8 @@ custom_preload:
     </div>
 
 
-   <div class="mx-auto mt-16 flex max-w-full sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32" x-data="{ imagesLoaded: false }">
-      <div class="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none relative"
+   <div class="mx-auto mt-16 sm:mt-0 flex max-w-full sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32" x-data="{ imagesLoaded: false }">
+      <div class="flex-none w-full relative"
         x-show="imagesLoaded" 
         x-transition:enter="transition ease-out duration-700 delay-300"
         x-transition:enter-start="opacity-0 transform translate-x-20"
@@ -39,23 +39,18 @@ custom_preload:
         x-init="$nextTick(() => imagesLoaded = true)"
         x-cloak
       >
-        <img src="assets/images/work/onvedeo/hero-listing-page.jpg" alt="App screenshot" class="onvedeo-hero-media w-[55%] absolute ml-16 rounded-md shadow-2xl">
-        <img src="assets/images/work/onvedeo/hero-image.jpg" alt="App screenshot" class="w-[45%] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10">
+        <img src="assets/images/work/onvedeo/hero-listing-page-2.jpg" alt="App screenshot" class="w-full lg:w-[40%] xl:w-[50%] rounded-md shadow-2xl">
       </div>
     </div>
   </div>
 
   <div class="w-full border-t border-solid">
-    <div class="container px-6 lg:px-8 mx-auto pt-[50px] pb-[250px]">
+    <div class="container px-6 lg:px-8 mx-auto pt-[50px] pb-[350px]">
 
-      <div class="mt-8 mr-16 inline-block max-w-xs align-top">
-        <h2 class="font-black text-xs text-[#018deb]">ROLE</h2>
-        <div class="text-gray-600 font-bold text-sm mt-1">Principal / Co-founder</div>
-      </div>
       <div class="mt-8 mr-16 inline-block max-w-xs align-top">
         <h2 class="font-black text-xs text-[#018deb]">TEAM</h2>
         <div class="text-gray-600 text-sm mt-1">Product / Founder</div>
-        <div class="text-gray-600 text-sm">Principal Designer / Co-founder</div>
+        <div class="text-gray-600 font-bold text-sm">Principal / Co-founder</div>
         <div class="text-gray-600 text-sm">Operations / Co-founder</div>
         <div class="text-gray-600 text-sm">Business Developer</div>
         <div class="text-gray-600 text-sm">2  Engineers</div>
@@ -90,7 +85,7 @@ custom_preload:
                     <div class="lg:max-w-lg py-24 pr-12">
                         <h2 class="text-base/7 font-semibold text-[#018deb]">Product Design</h2>
                         <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight sm:text-5xl">The Website</p>
-                        <p class="mt-6 text-base/7">Initially Onvedeo was purely a geolocal video sharing app. It wasn't until a few months in we pivoted to service the real estate industry with listing videos. We would take large format data and imagery and pari it with our proprietary video engine that would generate thousands of listing videos at scale. While engineering was building the admin and backend, my focus was designing and developing the forward facing site. We went through many iterations of the homepage in a short amount of time. Our product and value propositions were changing rapidly and we adjusted accordingly. </p>
+                        <p class="mt-6 text-sm/6 ">Initially Onvedeo was purely a geolocal video sharing app. It wasn't until a few months in we pivoted to service the real estate industry with listing videos. We would take large format data and imagery and pair it with our proprietary video engine that would generate thousands of listing videos at scale. While engineering was building the admin and backend, my focus was designing and developing the forward facing site. Working through many iterations of the homepage in a short amount of time, our product and value propositions were changing rapidly and we adjusted accordingly. </p>
                     </div>
 
                 </div>
@@ -108,11 +103,11 @@ custom_preload:
             <div class="bg-gray-800 p-12 text-white rounded-md overflow-hidden">
                 <h2 class="text-base/7 font-semibold text-[#018deb]">Personas</h2>
                 <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">Agents,<br>Filmmakers,<br> & Brokers.</p>
-                <p class="mt-6 text-sm/8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+                <p class="mt-6 text-sm/6 ">The three targets we would focus on servicing we're agents, brokers and also filmmakers. We were attemtping to build a expansive library of local video content to add to our videos.</p>
             </div>
-            <div class="bg-blue-100 rounded-md overflow-hidden"><img src="assets/images/work/onvedeo/agent.png" alt="The Agent" class="" loading="lazy"></div>
-            <div class="bg-blue-100 rounded-md overflow-hidden"><img src="assets/images/work/onvedeo/filmmaker.png" alt="The Filmmaker" class="" loading="lazy"></div>
-            <div class="bg-blue-100 rounded-md overflow-hidden"><img src="assets/images/work/onvedeo/broker.png" alt="The Broker" class="" loading="lazy"></div>
+            <div class="bg-blue-100 rounded-md content-center overflow-hidden"><img src="assets/images/work/onvedeo/agent.png" alt="The Agent" class="" loading="lazy"></div>
+            <div class="bg-blue-100 rounded-md content-center overflow-hidden"><img src="assets/images/work/onvedeo/filmmaker.png" alt="The Filmmaker" class="" loading="lazy"></div>
+            <div class="bg-blue-100 rounded-md content-center overflow-hidden"><img src="assets/images/work/onvedeo/broker.png" alt="The Broker" class="" loading="lazy"></div>
         </div>
 
     </div>
@@ -127,7 +122,7 @@ custom_preload:
                     <div class="py-24 lg:max-w-lg">
                         <h2 class="text-base/7 font-semibold text-[#018deb]">Product Design</h2>
                         <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight sm:text-5xl">B2B2C</p>
-                        <p class="mt-6 text-base/7">Segueing from a company whose main revenue source was advertsing into a business and enterprise focused SaaS model was quite a change. The designfocus would be concentrated on marketing, communication and transaction rather than any advanced interactivity.</p>
+                        <p class="mt-6 text-sm/6 ">Segueing from a company whose main revenue source was advertsing into a business and enterprise focused SaaS model was quite a change. The focus of design efforts would be concentrated on marketing, communication and transaction rather than any advanced interactivity.</p>
                     </div>
                 </div>
 
@@ -153,39 +148,11 @@ custom_preload:
 
             <div class="sticky top-0">
                 <div class="lg:max-w-lg text-white py-24">
-                    <h2 class="text-[#b0deff] text-base/7 font-semibold">Product Design</h2>
-                    <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight sm:text-5xl">Video Anatomy</p>
-                    <p class="mt-6 text-base/7">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
-                    <dl class="mt-10 max-w-xl space-y-8 text-base/7 lg:max-w-none">
-                        <div class="relative pl-9">
-                        <dt class="inline font-semibold">
-                            <svg class="absolute left-1 top-1 size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                            <path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 0 1-1.44-8.765 4.5 4.5 0 0 1 8.302-3.046 3.5 3.5 0 0 1 4.504 4.272A4 4 0 0 1 15 17H5.5Zm3.75-2.75a.75.75 0 0 0 1.5 0V9.66l1.95 2.1a.75.75 0 1 0 1.1-1.02l-3.25-3.5a.75.75 0 0 0-1.1 0l-3.25 3.5a.75.75 0 1 0 1.1 1.02l1.95-2.1v4.59Z" clip-rule="evenodd" />
-                            </svg>
-                            Push to deploy.
-                        </dt>
-                        <dd class="inline text-base/7">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
-                        </div>
-                        <div class="relative pl-9">
-                        <dt class="inline font-semibold">
-                            <svg class="absolute left-1 top-1 size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                            <path fill-rule="evenodd" d="M10 1a4.5 4.5 0 0 0-4.5 4.5V9H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-.5V5.5A4.5 4.5 0 0 0 10 1Zm3 8V5.5a3 3 0 1 0-6 0V9h6Z" clip-rule="evenodd" />
-                            </svg>
-                            SSL certificates.
-                        </dt>
-                        <dd class="inline text-base/7">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.</dd>
-                        </div>
-                        <div class="relative pl-9">
-                        <dt class="inline font-semibold">
-                            <svg class="absolute left-1 top-1 size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                            <path d="M4.632 3.533A2 2 0 0 1 6.577 2h6.846a2 2 0 0 1 1.945 1.533l1.976 8.234A3.489 3.489 0 0 0 16 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234Z" />
-                            <path fill-rule="evenodd" d="M4 13a2 2 0 1 0 0 4h12a2 2 0 1 0 0-4H4Zm11.24 2a.75.75 0 0 1 .75-.75H16a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75h-.01a.75.75 0 0 1-.75-.75V15Zm-2.25-.75a.75.75 0 0 0-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 0 0 .75-.75V15a.75.75 0 0 0-.75-.75h-.01Z" clip-rule="evenodd" />
-                            </svg>
-                            Database backups.
-                        </dt>
-                        <dd class="inline text-base/7">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</dd>
-                        </div>
-                    </dl>
+                    <h2 class="text-[#b0deff] text-base/7 font-semibold">Video Anatomy</h2>
+                    <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight sm:text-5xl">Proprietary Video Language</p>
+                    <p class="mt-6 text-sm/6 ">We developed a java-based programming language based off of sketch.js to build the video templates. Every video would compile animated photos, text and music customized to every brokerage and agent. We would include custom voiceovers and were in the process of integrating natural language processing to optimize our audio track generation. <br/><br/>
+                    Local video would be integrated where available and if requested contracted videographers would film local b-roll footage to add to their films and our library.<br/><br/>
+                    </p>
                 </div>
             </div>
 
@@ -202,14 +169,15 @@ custom_preload:
     <div class="w-full pt-24 bg-[#f1f1f1] z-30 relative">
         <div class="mx-auto max-w-4xl">
             <img src="assets/images/work/onvedeo/inthepress.jpg" alt="Vinyl Packaging" class="" loading="lazy">
+            <div class="mt-8 text-base/7 mx-auto text-sm/6 max-w-4xl">In the product's lifespan we were able to garner awards, a significant following and client base. We were acceptted as a YC applicant and made it to the final round. We were chosen as a finalist in the Realogy Innovation Summit and became one of their vendors servicing their brokerages nationwide (Century 21, Coldwell Banker, Better Homes and Gardens Real Estate, etc.)</div>
         </div>
     </div>
 
     <div class="bg-[#f1f1f1] sm:py-24">
     <div class="mx-auto max-w-4xl text-base/7">
         <img src="assets/images/work/onvedeo/vixer.jpg" alt="" class="rounded-lg bg-white/5 shadow-2xl ring-1 ring-white/10" loading="lazy">
-        <p class="mt-12 max-w-xlg text-pretty text-4xl font-semibold tracking-tight sm:text-5xl mb-6">A short pivot</p>
-        <p class="mt-8 mb-16 text-base/7">is the single most important page across the site. The primary goal during our concepting phase was to evolve the display of content over the life-cycle of the game. In it's existing form the gamespace merely displayed the latest content in compartmentalized modules. We instead opted to evolve it into a feed sorted by recency while floating the most trafficked content up top (images, videos, review). The core gamespace navigation remained above the fold and the feed content could be emphasized in layout and scale depending on popularity. This concept of visual hierarchy would be thematic throughout the redesign process.</p>
+        <p class="mt-12 max-w-xlg text-pretty text-4xl font-semibold tracking-tight sm:text-5xl mb-6">A quick pivot</p>
+        <p class="mt-8 mb-16 text-sm/6 ">is the single most important page across the site. The primary goal during our concepting phase was to evolve the display of content over the life-cycle of the game. In it's existing form the gamespace merely displayed the latest content in compartmentalized modules. We instead opted to evolve it into a feed sorted by recency while floating the most trafficked content up top (images, videos, review). The core gamespace navigation remained above the fold and the feed content could be emphasized in layout and scale depending on popularity. This concept of visual hierarchy would be thematic throughout the redesign process.</p>
         <img src="assets/images/work/onvedeo/smartvix.jpg" alt="" class="rounded-lg bg-white/5 shadow-2xl ring-1 ring-white/10" loading="lazy">
     </div>
     </div>

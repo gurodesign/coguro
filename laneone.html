@@ -11,7 +11,7 @@ custom_preload:
 
   <div x-data :style='`transform: translateY(${scrollPosition/4}px)`'>
 
-    <div class="mx-auto container px-6 pb-24 pt-10 lg:flex items-stretch lg:px-8 pt-48 lg:h-screen">
+    <div class="mx-auto container px-6 pb-16 sm:pb-24 pt-10 lg:flex items-stretch lg:px-8 pt-48 lg:h-screen">
 
       <div class="mx-auto lg:max-w-xl shrink-0 lg:mx-0 self-end" x-cloak x-intersect="$el.classList.add('fadeUpIn')">
 
@@ -23,7 +23,6 @@ custom_preload:
               <span class="rounded-full bg-gray-600/10 px-3 py-1 text-xs/6 font-semibold text-gray-600 ring-1 ring-inset ring-gray-600/10">UX/UI</span>
               <span class="rounded-full bg-gray-600/10 px-3 py-1 text-xs/6 font-semibold text-gray-600 ring-1 ring-inset ring-gray-600/10">Frontend</span>
               <span class="rounded-full bg-gray-600/10 px-3 py-1 text-xs/6 font-semibold text-gray-600 ring-1 ring-inset ring-gray-600/10">Branding</span>
-              <span class="rounded-full bg-gray-600/10 px-3 py-1 text-xs/6 font-semibold text-gray-600 ring-1 ring-inset ring-gray-600/10">Motion Graphics</span>
           </a>
         </div>
         <p class="mt-8 text-pretty font-medium text-gray-600 text-xl sm:text-2xl/9">LaneOne raised the bar for live experiences before the pandemic shutdown in-person events for an indefinite amount of time and the company permanently.</p>
@@ -32,7 +31,7 @@ custom_preload:
 
       <div class="mx-auto flex mt-8 lg:mt-0 lg:ml-10 lg:mr-0 lg:flex-none xl:ml-32">
         <div class="w-full flex-none relative lg:-mb-[220px]" x-data="{ imagesLoaded: false }">
-          <img src="assets/images/work/laneone/homepage.png" alt="App screenshot" class="w-full lg:h-[90%] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10" 
+          <img src="assets/images/work/laneone/homepage.png" alt="App screenshot" class="lg:h-[90%] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10" 
           x-show="imagesLoaded" 
           x-transition:enter="transition ease-out duration-700 delay-300"
           x-transition:enter-start="opacity-0 transform translate-x-20"
@@ -76,10 +75,10 @@ custom_preload:
 </div>
 
 <div class="block mx-auto z-10 relative" x-data>
-  <section class="grid grid-cols-1 grid-rows-6 sm:grid-rows-5 md:grid-cols-4 md:grid-rows-4 gap-2 px-2 py-2 offwhite-bg overflow-hidden">
-    <div class="col-span-4 lg:col-span-2 row-span-2 sm:row-span-3 lg:row-span-4 relative bg-zinc-900 z-10 text-center rounded-md overflow-hidden experiences-hero p-16">
+  <section class="grid grid-cols-1 grid-rows-6 sm:grid-rows-5 md:grid-cols-4 md:grid-rows-4 gap-2 px-2 py-2 offwhite-bg">
+    <div class="col-span-4 lg:col-span-2 row-span-2 sm:row-span-3 lg:row-span-4 relative bg-zinc-900 z-10 text-center rounded-md overflow-visible experiences-hero sm:p-16">
 
-      <div class="relative mx-auto border-gray-700 dark:border-gray-700 bg-gray-700 border-[14px] rounded-[2.5rem] h-[600px] w-[300px]" x-intersect="$el.classList.add('fadeUpIn')">
+      <div class="relative mx-auto border-gray-700 dark:border-gray-700 bg-gray-700 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] -mt-10 sm:mt-0" x-intersect="$el.classList.add('fadeUpIn')">
         <div class="h-[32px] w-[3px] lg:h-[38px] bg-gray-700 dark:bg-gray-700 absolute -start-[17px] top-[72px] lg:top-[92px] rounded-s-lg"></div>
         <div class="h-[46px] w-[3px] lg:h-[64px] bg-gray-700 dark:bg-gray-700 absolute -start-[17px] top-[124px] lg:top-[144px] rounded-s-lg"></div>
         <div class="h-[46px] w-[3px] lg:h-[64px] bg-gray-700 dark:bg-gray-700 absolute -start-[17px] top-[178px] lg:top-[218px] rounded-s-lg"></div>
@@ -95,7 +94,7 @@ custom_preload:
       </div>
 
       <div class="relative">
-        <ul class="text-fade w-full mb-8 mt-8">
+        <ul class="text-fade w-full pb-16 sm:pb-8 mt-8">
           <li class="text-white">Upgrade Your Night</li>
           <li class="text-white">The app is your ticket</li>
           <li class="text-white">Find your perks on the ticket</li>
@@ -133,7 +132,7 @@ custom_preload:
 <div class="grid grid-cols-2 md:grid-cols-4 grid-rows-2 gap-2 px-2">
 
   <div class="col-span-2 row-span-2 flex bg-indigo-500 rounded-md overflow-hidden">
-    <div class="mx-auto max-w-full text-base/7 text-gray-700 text-center content-center px-16 py-16">
+    <div class="mx-auto max-w-full text-base/7 text-gray-700 text-center content-center px-8 sm:px-16 py-16">
       <h2 class="max-w-xl mx-auto text-pretty font-semibold tracking-tight text-white text-3xl lg:text-5xl mb-10 ">Building the brand</h2>
       <div class="mx-auto max-w-4xl">
         <div class="grid grid-cols-3 grid-rows-3 gap-1 text-center text-white">
@@ -166,11 +165,11 @@ custom_preload:
           <div class="col-start-10 row-start-5 col-span-1"></div>
       </div>
     </div>
-    <p class="max-w-xl mx-auto mt-8 text-white text-sm/6 text-center">Ultimately we settled on using a logotype whenever possible. As an emerging brand it was critical to get the full spelling of the name exposed.</p>
+    <p class="max-w-xl mx-auto mb-10 sm:mb-0 mt-8 text-white text-sm/6 text-center">Ultimately we settled on using a logotype whenever possible. As an emerging brand it was critical to get the full spelling of the name exposed.</p>
   </div>
 
   <div class="col-span-2 row-span-1 relative px-6 pt-6 pb-6 lg:px-8  bg-gray-800 border-t rounded-md overflow-hidden">
-    <div class="mx-auto max-w-2xl text-gray-700 px-[84px]">
+    <div class="mx-auto max-w-3xl text-gray-700 px-2 sm:px-[84px]">
       <lottie-player src="assets/lottie/laneone-mark.json" background="transparent" speed="1" class="block place-self-center" style="width: 100%; height: auto;" loop autoplay loading="lazy"></lottie-player>
     </div>
     <div class="pointer-events-none absolute left-12 top-1/2 -z-5 -translate-y-1/2 transform-gpu blur-3xl lg:bottom-[-12rem] lg:top-auto lg:translate-y-0 lg:transform-gpu" aria-hidden="true">
@@ -257,12 +256,12 @@ custom_preload:
         </div>
       </div>
       <div class="col-span-1">
-        <div class="mx-auto border-gray-700 dark:border-gray-700 bg-gray-700 border-[14px] rounded-t-[2.5rem] h-[650px] w-[388px] bottom-0 shadow-xl ring-1 ring-gray-400/10 relative">
+        <div class="mx-auto border-gray-700 dark:border-gray-700 bg-gray-700 border-[14px] rounded-t-[2.5rem] h-[548px] w-[325px] sm:h-[650px] sm:w-[388px] bottom-0 shadow-xl ring-1 ring-gray-400/10 relative">
           <div class="h-[32px] w-[3px] bg-gray-700 dark:bg-gray-700 absolute -start-[17px] top-[72px] rounded-s-lg"></div>
           <div class="h-[46px] w-[3px] bg-gray-700 dark:bg-gray-700 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
           <div class="h-[46px] w-[3px] bg-gray-700 dark:bg-gray-700 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
           <div class="h-[64px] w-[3px] bg-gray-700 dark:bg-gray-700 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
-          <div class="rounded-t-[2rem] overflow-hidden w-[360px] h-[640px] bg-white dark:bg-gray-800">
+          <div class="rounded-t-[2rem] overflow-hidden w-[300px] h-[640px] sm:w-[360px] sm:h-[640px] bg-white dark:bg-gray-800 relative">
             <video width=100% preload="none" muted loop autoplay="true" class="bg-white/5 shadow-2xl ring-1 ring-white/10">
               <source src="assets/videos/app-animation.mp4" type="video/mp4">
               Your browser does not support the video tag.
