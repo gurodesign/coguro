@@ -222,12 +222,19 @@ body {
 /* Card flip */
 
 .card { perspective: 800px;}
-.card__content {transform-style: preserve-3d;}
+.card__content {transform-style: preserve-3d;backface-visibility: hidden;}
 .card:hover .card__content {transform: rotateY(.5turn);}
+
+.card__content_2 {transform-style: preserve-3d;}
+.card__content_2 {transform: rotateY(.5turn)}
 
 .card__front,
 .card__back { backface-visibility: hidden;}
-.card__back{ transform: rotateY(.5turn);}
+.card__back { transform: rotateY(.5turn);}
+
+.card__front_2,
+.card__back_2 { backface-visibility: hidden;}
+.card__back_2 { transform: rotateY(.5turn);}
 
 .showmore-bar .cls-1 {
   fill: #374151 !important;
