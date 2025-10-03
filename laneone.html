@@ -76,9 +76,9 @@ custom_preload:
 
 <div class="block mx-auto z-10 relative" x-data>
   <section class="grid grid-cols-1 grid-rows-6 sm:grid-rows-5 md:grid-cols-4 md:grid-rows-4 gap-2 px-2 py-2 offwhite-bg">
-    <div class="col-span-4 lg:col-span-2 row-span-2 sm:row-span-3 lg:row-span-4 relative bg-zinc-900 z-10 text-center rounded-md overflow-visible experiences-hero sm:p-16">
+    <div class="col-span-4 lg:col-span-2 row-span-2 sm:row-span-3 lg:row-span-4 relative bg-zinc-900 z-10 text-center rounded-md overflow-hidden experiences-hero sm:p-16">
 
-      <div class="relative mx-auto border-gray-700 dark:border-gray-700 bg-gray-700 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] -mt-10 sm:mt-0" x-intersect="$el.classList.add('fadeUpIn')">
+      <div class="relative mx-auto border-gray-700 dark:border-gray-700 bg-gray-700 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] mt-10 sm:mt-0" x-intersect="$el.classList.add('fadeUpIn')">
         <div class="h-[32px] w-[3px] lg:h-[38px] bg-gray-700 dark:bg-gray-700 absolute -start-[17px] top-[72px] lg:top-[92px] rounded-s-lg"></div>
         <div class="h-[46px] w-[3px] lg:h-[64px] bg-gray-700 dark:bg-gray-700 absolute -start-[17px] top-[124px] lg:top-[144px] rounded-s-lg"></div>
         <div class="h-[46px] w-[3px] lg:h-[64px] bg-gray-700 dark:bg-gray-700 absolute -start-[17px] top-[178px] lg:top-[218px] rounded-s-lg"></div>
@@ -277,7 +277,7 @@ custom_preload:
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 relative">
       <div class="col-span-1 relative">
-        <div class="absolute overflow-hidden rounded-full h-[250px] w-[250px] mx-auto px-[2%] py-[8%] bg-black/85 mt-[15%] border border-white border-[4px] official-badge-bg drop-shadow-xl z-20">
+        <div class="absolute overflow-hidden rounded-full -ml-8 sm:-ml-0 h-[250px] w-[250px] mx-auto px-[2%] py-[12%] sm:py-[8%] bg-black/85 mt-[15%] border border-white border-[4px] official-badge-bg drop-shadow-xl z-20">
           <lottie-player src="assets/lottie/hologram-3.json"  id="firstLottie" background="transparent"  speed="1" class="" style="width: 100%; height: auto;" autoplay loop ></lottie-player>
         </div>
         <div class="mx-auto border-gray-700 dark:border-gray-700 bg-gray-700 border-[14px] rounded-t-[2.5rem] h-[650px] w-[388px] bottom-0 shadow-xl ring-1 ring-gray-400/10 relative">
@@ -369,7 +369,7 @@ custom_preload:
 </div>
 
 <div class="w-full relative">
-  <div class="grid grid-cols-4 grid-rows-2 gap-2 p-2 offwhite-bg">
+  <div class="grid grid-cols-2 sm:grid-cols-4 grid-rows-2 gap-2 p-2 offwhite-bg">
     <div class="rounded-md overflow-hidden"><img src="assets/images/work/laneone/ambassador-shirt.png" alt="" class=""></div>
     <div class="rounded-md overflow-hidden"><img src="assets/images/work/laneone/laneone-club.png" alt="" class=""></div>
     <div class="rounded-md overflow-hidden"><img src="assets/images/work/laneone/shrub-logo.png" alt="" class=""></div>
@@ -377,15 +377,15 @@ custom_preload:
     <div class="rounded-md overflow-hidden"><img src="assets/images/work/laneone/crate.jpg" alt="" class="" loading="lazy"></div>
     <div class="rounded-md overflow-hidden"><img src="assets/images/work/laneone/summer-series.png" alt="" class="" loading="lazy"></div>
     <div class="rounded-md overflow-hidden"><img src="assets/images/work/laneone/laneone-carpet.png" alt="" class="" loading="lazy"></div>
-    <div class="rounded-md row-span-2 col-start-4 overflow-hidden col-span-1 bg-black"><img src="assets/images/work/laneone/chase-ticket.jpg" alt="" class="" loading="lazy"></div>
-    <div class="rounded-md overflow-hidden col-span-2">
+    <div class="rounded-md sm:row-span-2 sm:col-start-4 overflow-hidden col-span-1 bg-black"><img src="assets/images/work/laneone/chase-ticket.jpg" alt="" class="" loading="lazy"></div>
+    <div class="rounded-md overflow-hidden hidden sm:block sm:col-span-2">
       <ul class="fading-slideshow h-full w-full">
         <li><img src="assets/images/work/laneone/lounge/lounge-1.jpg" class="w-full h-full object-fit" alt="" loading="lazy"></li>
         <li><img src="assets/images/work/laneone/lounge/lounge-2.jpg" class="w-full h-full object-fit" loading="lazy"></li>
         <li><img src="assets/images/work/laneone/lounge/lounge-3.jpg" class="w-full h-full object-fit" loading="lazy"></li>
       </ul>
     </div>
-    <div class="rounded-md overflow-hidden relative "><img src="assets/images/work/laneone/deadnco-stepnrepeat.jpg" alt="" class="h-full w-full object-cover" loading="lazy"></div>
+    <div class="rounded-md overflow-hidden relative order-first sm:order-last"><img src="assets/images/work/laneone/deadnco-stepnrepeat.jpg" alt="" class="h-full w-full object-cover" loading="lazy"></div>
   </div>
 </div>
 
