@@ -1,0 +1,53 @@
+<div id="cookie-notice" class="fixed block bottom-0 w-full px-3 py-2 z-30 bg-black/60 text-xs text-white text-center">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" viewBox="0 0 256 256" class="inline mr-1"><path d="M224,120a40,40,0,0,1-40-40,8,8,0,0,0-8-8,40,40,0,0,1-40-40,8,8,0,0,0-8-8A104,104,0,1,0,232,128,8,8,0,0,0,224,120ZM75.51,99.51a12,12,0,1,1,0,17A12,12,0,0,1,75.51,99.51Zm25,73a12,12,0,1,1,0-17A12,12,0,0,1,100.49,172.49Zm23-40a12,12,0,1,1,17,0A12,12,0,0,1,123.51,132.49Zm41,48a12,12,0,1,1,0-17A12,12,0,0,1,164.49,180.49Z"></path></svg>
+    <span class="mr-2">We use third party cookies and scripts to collect website data.</span>
+    <div class="sm:inline-block py-1 sm:py-0">
+        <a id="cookie-notice-accept" class="border border-1 border-white px-2 pb-[3px] rounded-sm cursor-pointer mr-1">Approve</a>
+        <a id="cookie-notice-deny" class="border border-1 border-white px-2 pb-[3px] rounded-sm cursor-pointer">Deny</a>
+    </div>
+</div>
+<script>
+    function createCookie(name,value,days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days*24*60*60*1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + value + expires + "; path=/";
+    }
+    function readCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+    function eraseCookie(name) {
+        createCookie(name,"",-1);
+    }
+
+    if(readCookie('cookie-notice-option')=='true') {
+        {% if jekyll.environment == "production" and site.google_analytics %}
+            {% include ga.js %}
+        {% endif %}
+    } else if (readCookie('cookie-notice-option')!='false'){
+        document.getElementById('cookie-notice').style.display = 'block';
+    }
+
+    document.getElementById('cookie-notice-accept').addEventListener("click",function() {
+        createCookie('cookie-notice-option','true',31);
+        document.getElementById('cookie-notice').style.display = 'none';
+        location.reload();
+    });
+
+    document.getElementById('cookie-notice-deny').addEventListener("click",function() {
+        createCookie('cookie-notice-option','false',31);
+        document.getElementById('cookie-notice').style.display = 'none';
+        location.reload();
+    });
+
+</script>
