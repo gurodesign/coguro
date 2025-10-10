@@ -27,9 +27,9 @@
       {% endfor %}
     {% endif %}
 
-    <!-- Google Tag Manager -->
+    <!-- Google Tag -->
     {% if jekyll.environment == 'production' and site.google_analytics %}
-      {% include _includes/analytics.html %}
+      {% include analytics.html %}
     {% endif %}
 
   </head>
