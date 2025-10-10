@@ -54,4 +54,4 @@ assets:
     css: { autoprefixer: {}}
     img: { optim: {}}
 
-  google_analytics: G-SW34NK74TK
+  google_analytics: "G-SW34NK74TK"
