@@ -53,3 +53,6 @@ assets:
   plugins:
     css: { autoprefixer: {}}
     img: { optim: {}}
+
+  google_analytics:
+    id: "G-SW34NK74TK"

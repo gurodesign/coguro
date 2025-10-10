@@ -27,9 +27,19 @@
       {% endfor %}
     {% endif %}
 
+    <!-- Google Tag Manager -->
+    {% if jekyll.environment == 'production' and site.google_analytics %}
+      {% include analytics.html %}
+    {% endif %}
+
   </head>
   
-  <body class="bg-paper text-gray-800 scroll-smooth"></body>
+  <body class="bg-paper text-gray-800 scroll-smooth">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJ39MGQH"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <svg class="absolute inset-0 size-full stroke-gray-300 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
       <defs>
@@ -47,4 +57,5 @@
 
     {% include footer.html %}
   </body>
+
 </html>
