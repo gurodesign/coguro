@@ -6,7 +6,11 @@ title: "Guro Design"
 {% include header-home.html %}
 
 <div class="overflow-hidden"  x-data='{onDiscover: false, scrollPosition: window.pageYOffset}' @scroll.window='scrollPosition = window.pageYOffset'>
-
+{% if jekyll.environment == 'production' %}
+  I'm in production!
+{% else %} 
+  I'm in development!
+{% endif %}
 
   <div class="hero block pt-20 md:pt-0 pb-8 sm:pb-16 relative overflow-x-clip sm:h-[90vh]">
     <div class="absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]" aria-hidden="true">
