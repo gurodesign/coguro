@@ -27,7 +27,7 @@ assets:
     path: ".jekyll-cache/assets"
     type: file
   # --
-  # Assets you wish to always have compiled.
+  # Assets you wish to always have compiled. 2
   #   This can also be combined with raw_precompile which
   #   copies assets without running through the pipeline
   #   making them ultra fast.
@@ -55,3 +55,4 @@ assets:
     img: { optim: {}}
 
 google_analytics: "G-SW34NK74TK"
+
