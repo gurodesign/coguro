@@ -600,6 +600,14 @@ body {
 
 }
 
+.ticket-pages-bg {
+  background-image: url('{{ site.baseurl }}/assets/images/work/laneone/ticket-pages-sketch.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .duotone {
   filter: url('#duotone');
 }

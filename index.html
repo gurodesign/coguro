@@ -84,9 +84,9 @@ title: "Guro Design"
 
       <div class="col-span-4 sm:col-span-2 lg:col-span-1 row-span-3 lg:row-span-3 relative powers-box rounded-lg flex items-center card z-20 relative" x-data="{ isActive: false, isFlip: false }">
 
-        <div class=" h-full w-full relative transition-transform duration-1000 text-white" :class="{ 'card__content_2': isActive }"  >
+        <div class=" h-full w-full relative transition-transform duration-1000 text-white relative" :class="{ 'card__content_2': isActive }"  >
     
-          <div class="card__front_2 lg:absolute top-0 bottom-0 right-0 left-0 red-bg justify-center rounded-md pt-3 h-full">
+          <div class="card__front_2 lg:absolute top-0 bottom-0 right-0 left-0 red-bg justify-center rounded-md h-full lg:p-4">
 
             <div class="block rounded-lg overflow-hidden w-full">
               <lottie-player src="assets/lottie/powers.json" background="transparent" speed="1"  style="width: 100%; height: auto;"loop autoplay></lottie-player>
@@ -127,10 +127,10 @@ title: "Guro Design"
         
           </div>
 
-          <div class="card__back_2 absolute lg:relative top-0 bottom-0 right-0 left-0 md-text-sm bg-gray-700 rounded-md backface-hidden h-full">
+          <div class="card__back_2 absolute lg:relative top-0 bottom-0 right-0 left-0 md-text-sm bg-gray-700 rounded-md backface-hidden h-full lg:p-4">
 
             <div class="block rounded-lg overflow-hidden px-4">
-              <img src='assets/images/home/tools-text.svg', class="w-[80%] h-auto pt-6">
+              <img src='assets/images/home/tools-text.svg', class="w-[80%] h-auto pt-4">
               <div class="font-black text-xs md:text-[1em] uppercase my-3">Languages &amp; Frameworks</div>
             </div>
 
